@@ -1,0 +1,13 @@
+.spotifyhead {
+    background-image: url(/assets/full_screen/desktop/spotify.jpg);
+}
+
+.spotifybody {
+    background-image: url(/assets/images/spotify.jpg);
+}
+
+@media screen and (max-width: 650px) {
+    .spotifyhead {
+        background-image: url(/assets/full_screen/mobile/spotify.png);
+      }
+}

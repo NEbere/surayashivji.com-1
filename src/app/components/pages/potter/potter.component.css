@@ -1,0 +1,13 @@
+.potterhead {
+    background-image: url(/assets/full_screen/desktop/potter.jpg);
+}
+
+.potterbody {
+    background-image: url(/assets/images/fullsize.jpg);
+}
+
+@media screen and (max-width: 650px) {
+    .potterhead{
+        background-image: url(/assets/full_screen/mobile/potter.png);
+      }
+}

@@ -1,0 +1,17 @@
+.cryptonitehead {
+    background-image: url(/assets/full_screen/desktop/cryptonite.png);
+}
+
+.cryptonitebody {
+    background-image: url(/assets/images/potter.jpg);
+}
+
+.hmw-cryptonites {
+    color: #939AFA;
+}
+
+@media screen and (max-width: 650px) {
+    .cryptonitehead {
+        background-image: url(/assets/full_screen/mobile/cryptonite.png);
+      }
+}

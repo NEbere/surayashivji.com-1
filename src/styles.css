@@ -1,0 +1,1007 @@
+@font-face {
+  font-family: CircularStd;
+  src: url(./assets/fonts/CircularStd-Black.otf);
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: csBlackItalic;
+  src: url(./assets/fonts/CircularStd-BlackItalic.otf);
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: csBold;
+  src: url(./assets/fonts/CircularStd-Bold.otf);
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: csBoldItalic;
+  src: url(./assets/fonts/CircularStd-BoldItalic.otf);
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: cdBook;
+  src: url(./assets/fonts/CircularStd-Book.otf);
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: csBookItalic;
+  src: url(./assets/fonts/CircularStd-BookItalic.otf);
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: csMedium;
+  src: url(./assets/fonts/CircularStd-Medium.otf);
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: csMediumItalic;
+  src: url(./assets/fonts/CircularStd-MediumItalic.otf);
+  font-weight: 400;
+  font-style: normal;
+}
+
+.parallax-screen {
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Fade */
+/* make keyframes that tell the start state and the end state of our object */
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  /* make things invisible upon start */
+  -webkit-animation: fadeIn ease-in 1;
+  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  -moz-animation: fadeIn ease-in 1;
+  animation: fadeIn ease-in 1;
+
+  -webkit-animation-fill-mode: forwards;
+  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  animation-duration: 1s;
+}
+
+.fade-in.one {
+  -webkit-animation-delay: 0.7s;
+  -moz-animation-delay: 0.7s;
+  animation-delay: 0.7s;
+}
+
+.btn,
+article {
+  font-family: sfuiboldRegular;
+}
+
+.view {
+  position: relative;
+  top: 0;
+  transition: .3s;
+  width: 100%
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden
+}
+
+.filter-button-group {
+  padding: 15px
+}
+
+.btn.btn-default {
+  padding: 1rem 0;
+  font-size: 1.7rem;
+  border-radius: 0;
+  border: 0;
+  color: #000;
+  font-style: normal
+}
+
+a.black-circle,
+p.home-center.text {
+  font-weight: 700;
+  font-size: 1.25em
+}
+
+.btn-default:active {
+  box-shadow: none
+}
+
+.btn-group:focus,
+.btn.active,
+.btn:active {
+  box-shadow: none !important
+}
+
+.btn.btn-default.is-checked,
+.btn.btn-default:active,
+.btn.btn-default:focus,
+.btn.btn-default:hover {
+  color: #333;
+  border: none;
+  outline: 0;
+  background: 0 0;
+  font-weight: 700
+}
+
+.thumbnail {
+  border-radius: 0;
+  padding: 0
+}
+
+.headername {
+  margin: 40px 0px 30px 0px;
+}
+
+.row.projectHeader {
+  margin-top: 40px;
+  margin-bottom: 25px;
+}
+
+.row.projectbody {
+  margin-bottom: 20px;
+}
+
+.logo {
+  width: 36px;
+  height: 36px;
+  background: #000;
+  border-radius: 50%;
+  position: absolute;
+  left: 30px;
+  top: 50px
+}
+
+.imagesblock {
+  padding: 0px 0px 30px 0px;
+}
+
+.btn-group:focus {
+  border: none !important;
+  background: 0 0 !important;
+  outline: 0 !important;
+}
+
+.video img {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.btn-default:active:focus {
+  background-color: transparent !important;
+  border: transparent !important;
+  outline: 0 !important;
+}
+
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: #bfbfbf;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .5)
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+  background: #bfbfbf;
+}
+
+
+/* SOCIAL */
+i.fa-2x {
+  font-size: 1.5em
+}
+
+.social-icon {
+  color: #000
+}
+
+ul.social-icons {
+  padding: 0;
+  list-style: none;
+  margin: 0;
+  text-align: center
+}
+
+.social-icons li {
+  vertical-align: top;
+  display: inline;
+  height: 100px
+}
+
+.social-icons a {
+  color: #000;
+  text-decoration: none
+}
+
+.fa-envelope,
+.fa-file-pdf-o,
+.fa-github,
+.fa-linkedin,
+.fa-spotify,
+.fa-twitter {
+  padding: 10px 14px;
+  -o-transition: .5s;
+  -ms-transition: .5s;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
+  transition: .5s
+}
+
+.visiblemobile {
+  display: none !important;
+}
+
+body {
+  background-color: #fff;
+}
+
+.reveal-animation {
+  width: 100%;
+}
+
+.col-sm-3 {
+  margin-right: -1px;
+}
+
+p.sub {
+  font-family: sfuibold;
+  font-size: 24px;
+  color: #999;
+}
+
+li.menu__item {
+  padding-left: 22px;
+}
+
+.menu .menu__link {
+  color: #fff;
+}
+
+.menu__inner h3 {
+  color: #fff;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.abtlist .menu__item {
+  padding-left: 0px;
+  font-size: 40px;
+}
+
+button.close {
+  position: fixed;
+  top: 10px;
+  right: 15px;
+  color: black;
+  font-size: 40px;
+  font-weight: 300;
+}
+
+ul.mainmenu li {
+  list-style: none;
+  display: inline-block;
+  padding: 0px 10px;
+}
+
+ul.mainmenu li a {
+  color: #000;
+  font-size: 18px;
+}
+
+h1.maintitle {
+  font-size: 30px;
+}
+
+.txtright {
+  text-align: right !important;
+}
+
+p.maintit_caption {
+  color: #898989;
+  font-size: 18px;
+  font-family: cdBook;
+  font-weight: 100;
+}
+
+.filterbtn {
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  font-size: 15px !important;
+  font-family: cdBook;
+  font-weight: normal !IMPORTANT;
+  border:none !important;
+  background: none !important;
+  outline: none !important;
+  padding: 0px 15px;
+}
+
+button.btn.btn-default.is-checked {
+  font-weight: bold;
+  font-family: CircularStd;
+}
+
+ul.mainmenu {
+  padding-left: 0px;
+}
+
+.clearboth {
+  clear: both;
+}
+
+
+.headercontainer {
+  font-family: cdBook;
+  margin: 0 30px;
+}
+
+h1.maintitle {
+  font-size: 30px;
+  margin: 0px;
+  outline: 0px;
+  overflow: hidden;
+  display: inline-block;
+}
+
+
+/* .col-xs-12.col-sm-6.col-md-4.grid-item:nth-child(odd) {
+    
+} */
+
+.grid-item {
+  padding: 8px;
+  /* outline: 10px solid transparent; */
+}
+
+div#container {
+  padding: 0px;
+}
+
+.container.reveal-animation {
+  padding: 0px;
+}
+
+div#mobilemenu li {
+  display: flow-root;
+}
+
+div#mobilemenu li .is-checked {
+  font-family: csMedium !important;
+  font-size: 14px !IMPORTANT;
+}
+
+.filterbtn.is-checked {
+  text-decoration: underline !important;
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 14%;
+  left: 0;
+  background-color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 5%;
+  width: 100%;
+  text-align: center;
+  left: 0%;
+}
+
+.mobileheadnamee p.maintit_caption {
+  font-size: 14px;
+  text-align: left;
+}
+
+.mobileheadnamee h1.maintitle {
+  font-size: 24px;
+}
+
+.overlay-content ul li {
+  list-style: none;
+  text-align: left;
+  text-transform: capitalize;
+}
+
+.overlay-content ul li a {
+  color: #000000c4;
+  font-size: 20px;
+  font-weight: 100;
+  text-transform: initial;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 26px;
+  color: #818181;
+  display: none;
+  transition: 0.3s;
+  font-family: cdBook;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: fixed;
+  top: 43px;
+  right: 37px;
+  font-size: 24px;
+  color: #8181819c;
+}
+
+.visiblemobile {
+  display: none;
+}
+
+a.mainmobilehead {
+  font-weight: bolder;
+  color: #000;
+  font-family: csMedium;
+  display: block;
+}
+
+li#visiblemobile i.fa.fa-bars {
+  color: #9b9898;
+  font-size: 16px;
+}
+
+p.projectHeader_desc {
+  font-family: cdBook;
+  font-size: 30px;
+  padding-top: 20px;
+  text-align: right;
+}
+
+.dkpmenu {
+  margin-top: 60px;
+}
+
+
+.full-screen {
+  height: 85%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.reveal-animation {
+  height: 100vh;
+}
+
+.projectHeader_heading {
+  font-family: CircularStd;
+  font-size: 50px;
+  color: #000;
+}
+
+p.projectHeader_role,
+.projectHeader_tools {
+  color: gray;
+  font-size: 18px;
+  font-family: cdBook;
+  line-height: 35px;
+  letter-spacing: 0px;
+  font-weight: 100;
+}
+
+p.projectHeader_role {
+  margin-bottom: 0px;
+}
+
+h1.mainbodytitle {
+  font-family: CircularStd;
+  font-size: 35px;
+  margin: 0px;
+  padding: 20px 0px;
+}
+
+.mainparagraph p {
+  font-family: cdBook;
+  color: #000;
+  padding-bottom: 15px;
+  font-size: 20px;
+}
+
+h6.submaintitle {
+  font-family: csMedium;
+  font-size: 25px;
+  margin: 0px;
+  padding: 0px 0px 15px 0px;
+}
+
+.video {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 25px 0px;
+  margin: 50px 0px;
+  width: 100%;
+}
+
+video {
+  width: 100%;
+}
+
+.quotesImage .video {
+  margin: 0px;
+}
+
+.row.quotesContainer {
+  margin-bottom: 50px;
+}
+
+.quotesText {
+  padding-top: 25px;
+}
+
+.container.custom-container {
+  padding-bottom: 50px;
+}
+
+ul.gridfilterList li {
+  list-style: none;
+  display: inline-block;
+  padding: 0px 20px;
+  color: #000;
+}
+
+ul.gridfilterList li a {
+  color: #000;
+}
+
+ul.gridfilterList {
+  margin-bottom: 30px;
+}
+
+ul.projects,
+ol.projects {
+  font-family: cdBook;
+  color: #000;
+  font-size: 20px;
+}
+
+ol.bottom-padding,
+ul.bottom-padding {
+  padding-bottom: 20px;
+}
+
+div#gallerygrid {
+  height: 100vh;
+  min-height: 100px;
+}
+
+.clearboth {
+  clear: both;
+}
+
+
+ul.gridfilterList li a:hover {
+  text-decoration: none;
+}
+
+.headercontainer {
+  position: fixed;
+  z-index: 99;
+}
+
+.headercontainer .row {
+  width: 95vw;
+  display: inline-block;
+}
+
+.headercontainer.Homeheader {
+  position: unset !important;
+}
+
+a.activeLink {
+  text-decoration: underline;
+}
+
+.video-caption {
+  font-family: csBookItalic;
+  font-size: 25px;
+  padding: 20px 0px;
+  text-align: center;
+}
+
+
+.media-inline-spaced {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0px 0px 20px 0px;
+  width: 100%;
+}
+
+.media-inline {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0px;
+  width: 100%;
+}
+
+.media-inline img {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.footer {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  z-index: 9999999;
+  text-align: center;
+  background: rgba(255, 255, 255, .97);
+  padding: 20px 0px 10px 0px;
+  transform: translate3d(0px, 0px, 0px);
+  transition: transform 0.3s ease 0s;
+}
+
+.footer.hide {
+  transform: translate3d(0px, 100%, 0px);
+  visibility: hidden;
+  transition: transform 0.3s ease 0s, visibility 0s linear 0.3s;
+}
+
+.footer.show {
+  transform: translate3d(0px, 0px, 0px);
+  visibility: visible !important;
+  transition: transform 0.3s ease 0s;
+}
+
+.footer p {
+  text-transform: capitalize;
+  font-size: 24px;
+  font-family: cdBook;
+}
+
+p.fleft {
+  text-align: left;
+  padding-left: 20px;
+  color: #ccc;
+  outline: none;
+  cursor: pointer;
+}
+
+p.fright {
+  text-align: right;
+  padding-right: 20px;
+  color: #ccc;
+  outline: none;
+  cursor: pointer;
+}
+
+.small-img-project {
+  max-width: 500px;
+}
+
+.caption-inline {
+  font-family: csBookItalic;
+  font-size: 18px;
+  padding: 12px 0px;
+  text-align: center;
+}
+
+.row.nomapa {
+  margin: 0px !important;
+  padding: 0px !important;
+}
+
+.nomapa .col-sm-12 {
+  padding: 0px;
+  margin: 0px 0px 20px 0px;
+}
+
+/* Media Query */
+
+/* mobile -- house-item -- add padding on bottom and top */
+
+@media screen and (max-width: 650px) {
+  p.fleft {
+    padding-left: 0px !important;
+  }
+  div#gallerygrid {
+    height: unset !important;
+  }
+  /* .full-screen{
+    background-image: url('https://cdn.pixabay.com/photo/2015/10/29/14/29/business-1012446_960_720.jpg') !important;
+  } */
+  .problem-statement {
+    font-family: sfuiboldSemiboldItalic;
+    font-size: 18px;
+    padding: 25px 25px 25px 25px;
+    text-align: center;
+  }
+
+  .dkpmenu {
+    margin-top: 0px;
+  }
+
+  .problem-container {
+    border: 2px solid #DC3155;
+    width: 75%;
+    margin: 0 auto;
+  }
+
+  .problem-container-ideo {
+    border: 2px solid #939AFA;
+    width: 75%;
+    margin: 0 auto;
+  }
+
+  img.colabteam {
+    padding: 2%;
+  }
+
+  img.ideoteam {
+    padding: 2%;
+  }
+
+  p.toolstitle {
+    margin: 10px 0;
+  }
+
+  .ab-poster {
+    padding: 3vw 0;
+  }
+
+  .home-text {
+    text-align: left;
+    margin: auto;
+    padding-bottom: 50px;
+    font-size: 2em
+  }
+
+  .home-text2 {
+    margin-left: 5%;
+    margin-top: 50px;
+    margin-bottom: 0
+  }
+
+  .view {
+    top: 0px
+  }
+
+  .logo {
+    position: absolute
+  }
+
+  #headerTitle h1 {
+    font-size: 35px
+  }
+
+  #overviewSec img {
+    max-height: 100%
+  }
+
+  .returnbackclose {
+    top: -15px !important;
+    right: -15px !important;
+    position: relative;
+    cursor: pointer
+  }
+
+  #headerTitle.headcontain {
+    margin-bottom: 25px !important;
+    margin-top: 50px !important
+  }
+
+  .row {
+    margin: 0 5px !important
+  }
+
+  video {
+    max-height: 500px
+  }
+
+  .grid-himage {
+    display: block !important
+  }
+
+  button.btn.btn-default {
+    font-size: 1em
+  }
+
+  .codrops-header {
+    display: block
+  }
+
+  #desktopmenu {
+    display: none
+  }
+
+  #visiblemobile.visiblemobile {
+    display: block !important;
+  }
+
+  .hiddenmobile {
+    display: none !IMPORTANT;
+  }
+
+  .container-fluid.headercontainer {
+    margin: 0px !important;
+  }
+
+  .col-md-10.col-sm-12.headername {
+    float: left;
+  }
+
+  .abtli:active,
+  .abtli:focus,
+  .abtli:hover {
+    background: #000 !important;
+    color: #fff !important;
+    outline: 0 !important;
+    border: 0 !important
+  }
+
+  h1.projectHeader_heading {
+    font-size: 40px;
+    margin-bottom: 0px;
+
+  }
+
+  p.projectHeader_role {
+    font-size: 14px;
+  }
+
+  h1.mainbodytitle {
+    font-size: 25px;
+    padding: 0px 30px;
+  }
+
+  p.projectHeader_tools {
+    font-size: 14px;
+    margin-bottom: 0px;
+  }
+
+
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px
+  }
+
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .headername {
+    padding-left: 10px;
+  }
+}
+
+@media screen and (max-width:600px) {
+
+  h1.maintitle {
+    font-size: 26px;
+  }
+
+  div#mobilemenu ul {
+    margin-left: 20px;
+    padding-top: 0px;
+  }
+
+  div#mobilemenu li button {
+    padding: 10px 0px;
+  }
+
+  .headername {
+    text-align: left;
+    padding-left: 0px;
+  }
+
+  p.maintit_caption {
+    font-size: 16px;
+  }
+
+  #mobilemenu .filterbtn {
+    font-family: csMedium !important;
+    font-size: 14px !IMPORTANT;
+  }
+
+  .grid-item {
+    padding: 0px !important;
+  }
+
+  li#visiblemobile i.fa.fa-bars {
+    position: absolute;
+    top: -63px;
+    right: 10%;
+  }
+
+  p.projectHeader_desc {
+    text-align: left !important;
+    font-size: 18px !important;
+    padding: 0px !important;
+  }
+
+  .videocontainer {
+    padding: 0px;
+  }
+
+  .videocontainer .row {
+    margin: 0px !important;
+  }
+
+}

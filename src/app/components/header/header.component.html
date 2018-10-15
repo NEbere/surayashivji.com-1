@@ -1,0 +1,88 @@
+
+<div id="keywords-input" class="overlay" #keywordsInput>
+    <!-- [style.top]="overlay== 'true' ? '0%' : '14%'" -->
+  <a href="javascript:void(0)" class="closebtn" id="closebtn"  #closebtn (click)="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <div id="mobilemenu">
+      <ul class="button-group filters-button-group btn-group btn-group-justified filter-button-group filterbtn-group" role="group" aria-label="filterImages">
+        <li><a href="" class="mainmobilehead">work</a>
+           <ul *ngIf="overlay == 'false'"> 
+            <li class="btn-group" role="group">
+              <button type="button" id="all"  class="btn btn-default filterbtn is-checked"
+              data-filter="*" (click)="checkroute('all')">All</button>
+            </li> 
+            <li class="btn-group" role="group">
+              <button type="button" id="ui"  class="btn filterbtn btn-default" 
+              data-filter=".ui" (click)="checkroute('ui')">UI/UX</button>
+            </li>
+            <li class="btn-group" role="group">
+              <button type="button" id="graphic" class="btn filterbtn btn-default"
+               data-filter=".graphic" (click)="checkroute()">Graphic Design</button>
+            </li>
+            <li class="btn-group" role="group">
+              <button type="button" id="3d" class="btn filterbtn btn-default" 
+              data-filter=".3d" (click)="checkroute('3d')">3D Design</button>
+            </li>
+            <li class="btn-group" role="group">
+              <button type="button" id="creativecode"  class="btn filterbtn btn-default" 
+              data-filter=".creativecode" (click)="checkroute('creativecode')">Creative Code</button>
+            </li>
+            <li class="btn-group" role="group">
+              <button type="button" id="development"  class="btn filterbtn btn-default"
+               data-filter=".development" (click)="checkroute('development')">Development</button>
+            </li>
+          </ul>
+          <ul *ngIf="overlay == 'true'">
+              <li class="btn-group" role="group">
+                <button type="button" id="all"  (click)="mobilevaigate('all')" class="btn btn-default filterbtn is-checked"
+                data-filter="*" >All</button>
+              </li> 
+              <li class="btn-group" role="group">
+                <button type="button" id="mobile" (click)="mobilevaigate('ui')"  class="btn filterbtn btn-default" 
+                data-filter=".ui">UI/UX</button>
+              </li>
+              <li class="btn-group" role="group">
+                <button type="button" id="mobile" (click)="mobilevaigate('graphic')"  class="btn filterbtn btn-default"
+                 data-filter=".graphic">Graphic Design</button>
+              </li>
+              <li class="btn-group" role="group">
+                <button type="button" id="ui" (click)="mobilevaigate('3d')"  class="btn filterbtn btn-default" 
+                data-filter=".3d">3D Design</button>
+              </li>
+              <li class="btn-group" role="group">
+                <button type="button" id="ar" (click)="mobilevaigate('creativecode')"  class="btn filterbtn btn-default" 
+                data-filter=".creativecode">Creative Code</button>
+              </li>
+              <li class="btn-group" role="group">
+                <button type="button" id="web" (click)="mobilevaigate('development')"  class="btn filterbtn btn-default"
+                 data-filter=".development">Development</button>
+              </li>
+            </ul>
+        </li>
+        <li><a href="/about" class="mainmobilehead">about</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+ 
+<div class="container-fluid headercontainer top" [ngClass]="{'Homeheader':Homeheader , 'Homeheader':overlay == 'false'}"  id="Homeheader">
+  <div class="row">
+    <div class="col-md-9 col-sm-12 headername">
+      <h1 (click)="reloadroute('/')" class="maintitle">Suraya Shivji</h1>
+      <p class="maintit_caption">design-technologist</p>
+    </div>
+    <div class="col-md-3 txtright dkpmenu">
+      <ul class="mainmenu">
+        <li class="hiddenmobile"><a [routerLink]="['/']"
+          [routerLinkActiveOptions]="{exact:true}"
+          routerLinkActive="activeLink">work</a></li>
+        <li class="hiddenmobile"><a href="/about" routerLinkActive="activeLink">about</a></li>
+        <li class="visiblemobile" id="visiblemobile">
+          <a (click)="openNav()" id="keywords-input1" #keywordsInput1>
+            <i class="fa fa-bars" aria-hidden="true"></i></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+ 

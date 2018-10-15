@@ -1,0 +1,17 @@
+.eventshead {
+    background-image: url(/assets/full_screen/desktop/events.png);
+}
+
+.eventsbody {
+    background-image: url(/assets/images/pages/events/flow_organizer.png);
+}
+
+p.hmw-events {
+    color: #DC3155;
+}
+
+@media screen and (max-width: 650px) {
+    .eventshead {
+        background-image: url(/assets/full_screen/mobile/events.png);
+      }
+}

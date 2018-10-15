@@ -1,0 +1,13 @@
+.rizikitotohead {
+    background-image: url(/assets/full_screen/desktop/rizikitoto.png);
+}
+
+.rizikitotobody {
+    background-image: url(/assets/images/photogram.jpg);
+}
+
+@media screen and (max-width: 650px) {
+    .rizikitotohead {
+        background-image: url(/assets/full_screen/mobile/rizikitoto.png);
+      }
+}

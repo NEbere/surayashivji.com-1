@@ -1,0 +1,13 @@
+.photogramhead {
+    background-image: url(/assets/full_screen/desktop/photogram.jpg);
+}
+
+.photogrambody {
+    background-image: url(/assets/images/photogram.jpg);
+}
+
+@media screen and (max-width: 650px) {
+    .photogramhead {
+        background-image: url(/assets/full_screen/mobile/photogram.png);
+      }
+}

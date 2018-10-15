@@ -1,0 +1,13 @@
+.blasterhead {
+    background-image: url(/assets/full_screen/desktop/blaster.png);
+}
+
+.blasterbody {
+    background-image: url(/assets/images/blaster.jpg);
+}
+
+@media screen and (max-width: 650px) {
+    .blasterhead {
+        background-image: url(/assets/full_screen/mobile/blaster.png);
+      }
+}

@@ -1,0 +1,13 @@
+.applehead {
+    background-image: url(/assets/full_screen/desktop/apple.png);
+}
+
+.applebody {
+    background-image: url(/assets/images/potter.jpg);
+}
+
+@media screen and (max-width: 650px) {
+    .applehead {
+        background-image: url(/assets/full_screen/mobile/apple.png);
+      }
+}

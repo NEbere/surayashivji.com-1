@@ -1,0 +1,51 @@
+<app-header [overlay]="'true'"></app-header>
+
+<ng-progress #progressBar [direction]="'ltr+'" [max]="100" [speed]="500" [trickleSpeed]="300" [spinner]="false"
+  [spinnerPosition]="'left'" [thick]="true" [meteor]="true" [color]="'#CCD2D9'" [ease]="'linear'"></ng-progress>
+
+<div class="container reveal-animation" (scroll)="scrollHandler($event)" #reveal>
+  <!-- Full Screen Image Section Start -->
+  <div class="parallax-screen rizikitotohead fade-in one" id="parallax">
+    <!-- Full Screen Image Section End -->
+  </div>
+
+  <div class="container custom-container">
+    <!-- Project Header Start -->
+    <div class="row projectHeader">
+      <div class="col-md-8 col-sm-12">
+        <h1 class="projectHeader_heading">Rizikitoto</h1>
+        <p class="projectHeader_role">CEO and Founder</p>
+        <p class="projectHeader_tools">Entrepreneurship, Development, Design</p>
+      </div>
+      <div class="col-md-4 col-sm-12">
+        <p class="projectHeader_desc">Nonprofit organization for East African orphanages.</p>
+      </div>
+    </div>
+    <!-- Project Header End -->
+
+    <!-- Overview Start -->
+    <div class="row projectbody">
+      <div class="col-md-12">
+        <h1 class="mainbodytitle">Overview</h1>
+        <div class="mainparagraph">
+          <p>Rizikitoto is the non-profit organization that I founded and ran from 2014 to 2017. Rizikitoto utilizes
+            mobile app revenue to fund initiatives that promote self-sustenance in East African orphanages.</p>
+        </div>
+        <h6 class="submaintitle">Background</h6>
+        <div class="mainparagraph">
+          <p>On trips to visit my parents’ hometowns in East Africa, my siblings and I would volunteer at Bright
+            Futures orphanage in Kampala, Uganda. We taught kids aged 6 to 17 reading, writing, and math skills and
+            learned about their personal interests and goals too. While spending time with the kids at Bright Futures,
+            I learned that their problems were not limited to need, but also self-sustenance. These children were
+            already incredibly bright, but they lacked the resources and guidance to pursue their dreams. After all,
+            how can a girl with no books for school someday become a teacher?</p>
+        </div>
+      </div>
+    </div>
+    <!-- Overview End -->
+
+
+  </div>
+
+</div>
+<app-footer [currentPage]="'rizikitoto'"></app-footer>

@@ -1,0 +1,69 @@
+<app-header [overlay]="'true'"></app-header>
+
+<ng-progress #progressBar [direction]="'ltr+'" [max]="100" [speed]="500" [trickleSpeed]="300" [spinner]="false"
+  [spinnerPosition]="'left'" [thick]="true" [meteor]="true" [color]="'#C28AFF'" [ease]="'linear'"></ng-progress>
+
+<div class="container reveal-animation" (scroll)="scrollHandler($event)" #reveal>
+  <!-- Full Screen Image Section Start -->
+  <div class="parallax-screen postershead fade-in one" id="parallax">
+    <!-- Full Screen Image Section End -->
+  </div>
+
+  <div class="container custom-container">
+    <!-- Project Header Start -->
+    <div class="row projectHeader">
+      <div class="col-md-8 col-sm-12">
+        <h1 class="projectHeader_heading">Posters</h1>
+        <p class="projectHeader_role">Role: Graphic Design</p>
+        <p class="projectHeader_tools">Tools: Illustrator, Photoshop</p>
+      </div>
+      <div class="col-md-4 col-sm-12">
+        <p class="projectHeader_desc">A series of fun, abstract posters.
+
+        </p>
+      </div>
+    </div>
+    <!-- Project Header End -->
+
+    <!-- Center Image Section Start -->
+    <div class="container videocontainer">
+      <div class="row">
+        <div class="video">
+          <img src="./assets/images/pages/posters/vapor.png" class="img-responsive posters" alt="description">
+        </div>
+      </div>
+    </div>
+    <!-- Center Image Section End -->
+
+    <!-- Center Image Section Start -->
+    <div class="container videocontainer">
+      <div class="row">
+        <div class="video">
+          <img src="./assets/images/pages/posters/black.png" class="img-responsive posters" alt="description">
+        </div>
+      </div>
+    </div>
+    <!-- Center Image Section End -->
+
+    <!-- Center Image Section Start -->
+    <div class="container videocontainer">
+      <div class="row">
+        <div class="video">
+          <img src="./assets/images/pages/posters/glitch.png" class="img-responsive posters" alt="description">
+        </div>
+      </div>
+    </div>
+    <!-- Center Image Section End -->
+
+    <!-- Center Image Section Start -->
+    <div class="container videocontainer">
+      <div class="row">
+        <div class="video">
+          <img src="./assets/images/pages/posters/pink.png" class="img-responsive posters" alt="description">
+        </div>
+      </div>
+    </div>
+    <!-- Center Image Section End -->
+  </div>
+
+  <app-footer [currentPage]="'posters'"></app-footer>

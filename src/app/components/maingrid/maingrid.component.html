@@ -1,0 +1,32 @@
+
+<div class="container-fluid grid-fluid unload" id="grid-fluid">
+  <div id="desktopmenu">
+    <div class="button-group filters-button-group">
+      <button class="filterbtn is-checked" data-filter="*">All</button>
+      <button class="filterbtn" data-filter=".ui">ui</button>
+      <button class="filterbtn" data-filter=".graphic">Graphic Design</button>
+      <button class="filterbtn" data-filter=".3d">3D Design</button>
+      <button class="filterbtn" data-filter=".creativecode">Creative Code</button>
+      <button class="filterbtn" data-filter=".development">Development</button>
+    </div>
+  </div>
+
+  <section id="grid-container" class="transitions-enabled fluid masonry js-masonry grid">
+      <article class="{{item.class}}" *ngFor="let item of masonryItems">
+        <a *ngIf="item.video == ''" href="javascript:void(0);" [routerLink]="[item.routerLink]">
+          <img src="{{imagePath}}{{item.img}}" style="width:100%">
+        </a>
+    
+        <a *ngIf="item.video !=''" href="javascript:void(0);" [routerLink]="[item.routerLink]">
+          <video preload="none" #video class="grid-hvideo" muted="" loop="" (mouseleave)="playPause(video)" (mouseenter)="Pauseplay(video)"
+            poster="{{imagePath}}{{item.img}}" auto="" #blaster>
+            <source src="{{imagePath}}{{item.video}}" type="video/mp4"> Your browser does not support HTML5 video.
+          </video>
+        </a>
+      </article>
+    </section>
+
+
+  </div>
+
+

@@ -1,0 +1,13 @@
+.vaporhead {
+    background-image: url(/assets/full_screen/desktop/vapor.png);
+}
+
+.vaporbody {
+    background-image: url(/assets/images/spotify.jpg);
+}
+
+@media screen and (max-width: 650px) {
+    .vaporhead {
+        background-image: url(/assets/full_screen/mobile/vapor.png);
+      }
+}
