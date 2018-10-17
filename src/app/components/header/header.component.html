@@ -4,7 +4,8 @@
   <a href="javascript:void(0)" class="closebtn" id="closebtn"  #closebtn (click)="closeNav()">&times;</a>
   <div class="overlay-content">
     <div id="mobilemenu">
-      <ul class="button-group filters-button-group btn-group btn-group-justified filter-button-group filterbtn-group" role="group" aria-label="filterImages">
+      <ul class="button-group filters-button-group btn-group btn-group-justified filter-button-group filterbtn-group" 
+      role="group" aria-label="filterImages">
         <li><a href="" class="mainmobilehead">work</a>
            <ul *ngIf="overlay == 'false'"> 
             <li class="btn-group" role="group">
@@ -73,7 +74,7 @@
     </div>
     <div class="col-md-3 txtright dkpmenu">
       <ul class="mainmenu">
-        <li class="hiddenmobile"><a [routerLink]="['/']"
+        <li class="hiddenmobile"><a (click)="reloadroute('/')"
           [routerLinkActiveOptions]="{exact:true}"
           routerLinkActive="activeLink">work</a></li>
         <li class="hiddenmobile"><a href="/about" routerLinkActive="activeLink">about</a></li>
@@ -84,5 +85,5 @@
       </ul>
     </div>
   </div>
-</div>
+</div> 
  

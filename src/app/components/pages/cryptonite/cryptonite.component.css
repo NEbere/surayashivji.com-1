@@ -10,6 +10,10 @@
     color: #939AFA;
 }
 
+.container.videocontainer .video {
+    margin-bottom: 0px !important;
+  }
+
 @media screen and (max-width: 650px) {
     .cryptonitehead {
         background-image: url(/assets/full_screen/mobile/cryptonite.png);

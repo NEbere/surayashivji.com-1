@@ -182,7 +182,7 @@ p.home-center.text {
 }
 
 .headername {
-  margin: 40px 0px 30px 0px;
+  margin: 40px 0px 10px 0px;
 }
 
 .row.projectHeader {
@@ -372,7 +372,7 @@ p.maintit_caption {
   font-size: 15px !important;
   font-family: cdBook;
   font-weight: normal !IMPORTANT;
-  border:none !important;
+  border: none !important;
   background: none !important;
   outline: none !important;
   padding: 0px 15px;
@@ -767,6 +767,17 @@ p.fright {
   margin: 0px 0px 20px 0px;
 }
 
+.fullcap {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  clear: both;
+}
+
+div#grid-fluid {
+  padding: 0px;
+}
+
 /* Media Query */
 
 /* mobile -- house-item -- add padding on bottom and top */
@@ -775,9 +786,15 @@ p.fright {
   p.fleft {
     padding-left: 0px !important;
   }
+
+  .nopad{
+    padding: 0px !important;
+  }
+  
   div#gallerygrid {
     height: unset !important;
   }
+
   /* .full-screen{
     background-image: url('https://cdn.pixabay.com/photo/2015/10/29/14/29/business-1012446_960_720.jpg') !important;
   } */
@@ -922,7 +939,18 @@ p.fright {
 
   h1.mainbodytitle {
     font-size: 25px;
-    padding: 0px 30px;
+  }
+
+  .maindivhead {
+    padding-left: 35px !IMPORTANT;
+  }
+
+  h1.mainbodytitle.expectpadding {
+    padding: 0px !important;
+  }
+
+  .outcomeimg {
+    padding: 15px 0px;
   }
 
   p.projectHeader_tools {
@@ -947,7 +975,7 @@ p.fright {
 
 @media screen and (min-width: 992px) {
   .headername {
-    padding-left: 10px;
+    padding-left: 40px;
   }
 }
 

@@ -25,7 +25,7 @@
   }
   
   .button-group {
-    margin: 20px 10px;
+    margin: 20px 10px 20px 60px;
   }
   
   .button-group:after {
@@ -54,7 +54,7 @@
   
   @media (max-width: 1024px) {
     .grid article {
-      width: 31.3%;
+      width: 31.6%;
     }
   }
   

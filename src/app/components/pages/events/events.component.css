@@ -15,3 +15,12 @@ p.hmw-events {
         background-image: url(/assets/full_screen/mobile/events.png);
       }
 }
+
+
+.mainparagraph {
+    padding: 10px 0px 0px 0px;
+}
+
+.outcomecontainer{
+    margin: 30px 0px;
+}
