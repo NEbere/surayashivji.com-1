@@ -591,6 +591,11 @@ h6.submaintitle {
   width: 100%;
 }
 
+.video-no-padding {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
 video {
   width: 100%;
 }
