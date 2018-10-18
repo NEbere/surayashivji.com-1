@@ -796,9 +796,29 @@ div#grid-fluid {
 
 /* Media Query */
 
-/* mobile -- house-item -- add padding on bottom and top */
-
 @media screen and (max-width: 650px) {
+
+  .video-caption {
+    font-family: csBookItalic;
+    font-size: 18px;
+    padding: 10px 0px;
+    text-align: center;
+  }
+
+  .mainparagraph p, ul.projects, ol.projects {
+    font-size: 18px;
+    line-height: 1.4;
+  }
+
+  .container.custom-container {
+    padding-right: 5px !important;
+    padding-left: 5px !important;
+  }
+
+  p.projectHeader_role, .projectHeader_tools {
+    line-height: 20px;
+  }
+
   p.fleft {
     padding-left: 0px !important;
   }
@@ -811,9 +831,6 @@ div#grid-fluid {
     height: unset !important;
   }
 
-  /* .full-screen{
-    background-image: url('https://cdn.pixabay.com/photo/2015/10/29/14/29/business-1012446_960_720.jpg') !important;
-  } */
   .problem-statement {
     font-family: sfuiboldSemiboldItalic;
     font-size: 18px;
@@ -945,8 +962,7 @@ div#grid-fluid {
 
   h1.projectHeader_heading {
     font-size: 40px;
-    margin-bottom: 0px;
-
+    margin-bottom: 20px;
   }
 
   p.projectHeader_role {
@@ -958,7 +974,7 @@ div#grid-fluid {
   }
 
   .maindivhead {
-    padding-left: 35px !IMPORTANT;
+    padding-left: 20px !important;
   }
 
   h1.mainbodytitle.expectpadding {
@@ -1019,7 +1035,7 @@ div#grid-fluid {
 
   #mobilemenu .filterbtn {
     font-family: csMedium !important;
-    font-size: 14px !IMPORTANT;
+    font-size: 14px !important;
   }
 
   .grid-item {
@@ -1036,6 +1052,7 @@ div#grid-fluid {
     text-align: left !important;
     font-size: 18px !important;
     padding: 0px !important;
+    margin-top: 20px !important;
   }
 
   .videocontainer {
