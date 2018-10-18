@@ -682,6 +682,17 @@ a.activeLink {
   text-align: center;
 }
 
+.outcomecontainer {
+  margin: 30px 0px;
+}
+
+.img-medium-size {
+  width: 75%;
+}
+
+.outcomecontainer-rt {
+  margin: 10px 0px 0px 0px;
+}
 
 .media-inline-spaced {
   position: relative;
@@ -962,8 +973,6 @@ div#grid-fluid {
     font-size: 14px;
     margin-bottom: 0px;
   }
-
-
 }
 
 @media screen and (max-height: 450px) {
