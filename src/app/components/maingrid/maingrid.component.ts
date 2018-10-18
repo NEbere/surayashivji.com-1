@@ -45,6 +45,7 @@ export class MaingridComponent implements OnInit, AfterViewInit {
         video: '/grid/photogram.mp4', routerLink: '/photogram', url: ''
       },
       { order: 6, name: 'apple', img: '/poster/apple.png', class: 'development', video: '', routerLink: '/apple', url: '' },
+      
       { order: 7, name: 'spotify', img: '/poster/spotify.png', class: 'ui graphic', video: '', routerLink: '/spotify', url: '' },
       {
         order: 8, name: 'rizikitoto', img: '/poster/rizikitoto.png', class: 'development ui', video: '',
