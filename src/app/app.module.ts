@@ -30,6 +30,7 @@ import { AppleComponent } from './components/pages/apple/apple.component';
 import { SpotifyComponent } from './components/pages/spotify/spotify.component';
 import { VaporrunComponent } from './components/pages/vaporrun/vaporrun.component';
 import { MelloComponent } from './components/pages/mello/mello.component';
+import { WklymotionComponent } from './components/pages/wklymotion/wklymotion.component';
 
 import { NgxMasonryModule } from 'ngx-masonry';
 import { MaingridComponent } from './components/maingrid/maingrid.component';
@@ -52,6 +53,7 @@ const appRoutes: Routes = [
   { path: 'vaporun', component: VaporrunComponent },
   { path: 'mello', component: MelloComponent },
   { path: 'synthesize', component: SynthesizeComponent },
+  { path: 'wklymotion', component: WklymotionComponent },
   { path: 'about', component: AboutComponent }
 ];
 
@@ -77,7 +79,9 @@ const appRoutes: Routes = [
     SpotifyComponent,
     VaporrunComponent,
     MelloComponent,
-    MaingridComponent  ],
+    MaingridComponent,
+    WklymotionComponent  
+  ],
   imports: [
     NgProgressModule.forRoot(), NgxMasonryModule, BrowserModule, BrowserAnimationsModule,
     RouterModule.forRoot(appRoutes, { scrollPositionRestoration: 'enabled' }), VgCoreModule, VgControlsModule,

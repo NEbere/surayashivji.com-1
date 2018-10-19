@@ -1,0 +1,13 @@
+.wklyhead {
+    background-image: url(/assets/full_screen/desktop/wklymotion.jpg);
+}
+
+.wklybody {
+    background-image: url(/assets/images/spotify.jpg);
+}
+
+@media screen and (max-width: 650px) {
+    .wklyhead {
+        background-image: url(/assets/full_screen/mobile/wklymotion.png);
+      }
+}

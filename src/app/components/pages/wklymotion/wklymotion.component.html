@@ -1,0 +1,121 @@
+<app-header [overlay]="'true'"></app-header>
+
+<ng-progress #progressBar [direction]="'ltr+'" [max]="100" [speed]="500" [trickleSpeed]="300" [spinner]="false"
+  [spinnerPosition]="'left'" [thick]="true" [meteor]="true" [color]="'#000000'" [ease]="'linear'"></ng-progress>
+
+<div class="container reveal-animation" (scroll)="scrollHandler($event)" #reveal>
+  <!-- Full Screen Image Section Start -->
+  <div class="parallax-screen wklyhead fade-in one" id="parallax">
+    <!-- Full Screen Image Section End -->
+  </div>
+
+  <div class="container custom-container">
+    <!-- Project Header Start -->
+    <div class="row projectHeader">
+      <div class="col-md-8 col-sm-12">
+        <h1 class="projectHeader_heading">Weekly Motion</h1>
+        <p class="projectHeader_role">Creative Coding</p>
+        <p class="projectHeader_tools"><a target="_blank" href="https://github.com/surayashivji/WeeklyGraphics">Source
+            Code</a></p>
+      </div>
+      <div class="col-md-4 col-sm-12">
+        <p class="projectHeader_desc">Weekly music visualizations.</p>
+      </div>
+    </div>
+    <!-- Project Header End -->
+
+    <!-- Body Pragraph Main Start -->
+    <div class="row projectbody">
+      <div class="col-md-12">
+        <h1 class="mainbodytitle">Overview</h1>
+        <div class="mainparagraph">
+          <p>In my spare time, I make music visualizations! It combines my two loves, generative art and music.
+            Checkout <a target="_blank" href="https://www.wklymotion.com">wklymotion.com</a> and follow
+            me <a target="_blank" href="https://www.instagram.com/surzpixels/">@surzpixels</a> to see more.</p>
+        </div>
+      </div>
+    </div>
+    <!-- Body Pragraph Main End -->
+    <!-- Two Centered Video Start -->
+    <div class="container videocontainer">
+      <div class="row">
+        <div class="col-md-6 col-sm-12">
+          <div class="video">
+            <video preload="auto" [controls]="true" [muted]="false">
+              <source src="./assets/images/pages/wklymotion/1pink.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <div class="video">
+            <video preload="auto" [controls]="true" [muted]="false">
+              <source src="./assets/images/pages/wklymotion/2black.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Two Centered Video End -->
+    <!-- Two Centered Video Start -->
+    <div class="container videocontainer">
+      <div class="row">
+        <div class="col-md-6 col-sm-12">
+          <div class="video">
+            <video preload="auto" [controls]="true" [muted]="false">
+              <source src="./assets/images/pages/wklymotion/3pink.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <div class="video">
+            <video preload="auto" [controls]="true" [muted]="false">
+              <source src="./assets/images/pages/wklymotion/4black.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Two Centered Video End -->
+    <!-- Two Centered Video Start -->
+    <div class="container videocontainer">
+      <div class="row">
+        <div class="col-md-6 col-sm-12">
+          <div class="video">
+            <video preload="auto" [controls]="true" [muted]="false">
+              <source src="./assets/images/pages/wklymotion/5.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <div class="video">
+            <video preload="auto" [controls]="true" [muted]="false">
+              <source src="./assets/images/pages/wklymotion/6.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Two Centered Video End -->
+    <!-- Two Centered Video Start -->
+    <div class="container videocontainer">
+      <div class="row">
+        <div class="col-md-6 col-sm-12">
+          <div class="video">
+            <video preload="auto" [controls]="true" [muted]="false">
+              <source src="./assets/images/pages/wklymotion/7.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <div class="video">
+            <video preload="auto" [controls]="true" [muted]="false">
+              <source src="./assets/images/pages/wklymotion/8.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Two Centered Video End -->
+  </div>
+
+  <app-footer [currentPage]="'wklymotion'"></app-footer>

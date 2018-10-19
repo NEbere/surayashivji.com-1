@@ -37,26 +37,26 @@ export class MaingridComponent implements OnInit, AfterViewInit {
         video: '', routerLink: '/cryptonite', url: ''
       },
       {
-        order: 4, name: 'wklymotion', img: '/poster/weeklymotion.png', class: 'development creativecode 3d', video: '',
-        routerLink: '', url: 'http://www.wklymotion.com/'
+        order: 4, name: 'rizikitoto', img: '/poster/rizikitoto.png', class: 'development ui', video: '',
+        routerLink: '/rizikitoto', url: ''
       },
       {
         order: 5, name: 'photogram', img: '/poster/photogram.png', class: 'ui 3d',
         video: '/grid/photogram.mp4', routerLink: '/photogram', url: ''
       },
       { order: 6, name: 'apple', img: '/poster/apple.png', class: 'development', video: '', routerLink: '/apple', url: '' },
-      
+
       { order: 7, name: 'spotify', img: '/poster/spotify.png', class: 'ui graphic', video: '', routerLink: '/spotify', url: '' },
       {
-        order: 8, name: 'rizikitoto', img: '/poster/rizikitoto.png', class: 'development ui', video: '',
-        routerLink: '/rizikitoto', url: ''
+        order: 8, name: 'wklymotion', img: '/poster/wklymotion.png', class: 'development creativecode 3d', video: '/grid/wklymotion.mp4',
+        routerLink: '/wklymotion', url: ''
       },
       { order: 9, name: 'posters', img: '/poster/posters.png', class: 'graphic', video: '', routerLink: '/posters', url: '' },
+      { order: 10, name: 'vapor', img: '/poster/vapor.png', class: 'web ui product', video: '/grid/vapor.mp4', routerLink: '/vaporun', url: '' },
       {
-        order: 10, name: 'blaster', img: '/poster/blaster.png', class: 'development ui', video: '/grid/blaster.mp4',
+        order: 11, name: 'blaster', img: '/poster/blaster.png', class: 'development ui', video: '/grid/blaster.mp4',
         routerLink: '/blaster', url: ''
-      },
-      { order: 11, name: 'vapor', img: '/poster/vapor.png', class: 'web ui product', video: '', routerLink: '/vaporun', url: '' }
+      }
     ];
     this.masonryItemsCopy = [...this.masonryItems];
     this.count = 0;
