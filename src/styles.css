@@ -54,6 +54,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: csLight;
+  src: url(./assets/fonts/CircularStd-Light.ttf);
+  font-weight: 400;
+  font-style: normal;
+}
+
 .parallax-screen {
   height: 100%;
   background-attachment: fixed;
@@ -356,14 +363,15 @@ ul.mainmenu li {
 }
 
 ul.mainmenu li a {
-  color: #fff;
-  /* color: #000; */
+  /* color: #fff; */
+  color: #000;
   font-size: 18px;
 }
 
 h1.maintitle {
   font-size: 30px;
-  color: #fff;
+  /* color: #fff; */
+  color: #000;
 }
 
 .txtright {
@@ -371,8 +379,9 @@ h1.maintitle {
 }
 
 p.maintit_caption {
-  /* color: #898989; */
-  color: #e3e3e3;
+  /* color: #000; */
+  color: #898989;
+  /* color: #e3e3e3; */
   font-size: 18px;
   font-family: cdBook;
   font-weight: 100;
@@ -383,7 +392,7 @@ p.maintit_caption {
   text-transform: uppercase;
   font-size: 15px !important;
   font-family: cdBook;
-  font-weight: normal !IMPORTANT;
+  font-weight: normal !important;
   border: none !important;
   background: none !important;
   outline: none !important;
