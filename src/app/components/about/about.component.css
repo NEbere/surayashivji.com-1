@@ -463,13 +463,47 @@ a.social-icon-about:hover {
 		margin: 0;
 		text-transform: lowercase;
 		z-index: 10;
-		padding: 30px 0px 0px 22px;
+		padding: 22px 0px 0px 22px;
 		cursor: default;
 	}
 
 	.content__desc {
 		padding: 0px 25px 0px 25px;
 	}
+
+	span.mobile-smaller-temp {
+		font-size: 0.79em !important;
+		line-height: 0em !important;
+	}
+
+
+	/* .content--layout {
+		grid-template-columns: 100px 40px 120px 100px; 
+		grid-template-rows: 100px 70px 110px;
+		grid-template-areas:	"... ... title title"
+								"... ... ... ..."
+								"desc desc desc desc";
+	}  // 360 row*/ 
+
+	/* layout-4 */
+.content--layout-4 {
+	grid-template-columns: 90px 90px 90px 90px;
+	grid-template-rows: 100px 70px 110px;
+	grid-template-areas:	"title title desc desc"
+							"... desc desc desc"
+							"... desc desc desc";
+}
+
+.content--layout-4 .content__img {
+	grid-column: 1 / 1;
+	grid-row: 1 / 2;
+}
+
+.content--layout-4 .content__author {
+	justify-self: start;
+	align-self: start;
+}
+
 }
 
 /* iphone 5 */
