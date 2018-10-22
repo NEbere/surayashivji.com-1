@@ -471,27 +471,26 @@ a.social-icon-about:hover {
 		padding: 0px 25px 0px 25px;
 	}
 
-	span.mobile-smaller-temp {
+	span.mobile-smaller-subtext {
 		font-size: 0.79em !important;
 		line-height: 0em !important;
 	}
 
-
-	/* .content--layout {
-		grid-template-columns: 100px 40px 120px 100px; 
-		grid-template-rows: 100px 70px 110px;
-		grid-template-areas:	"... ... title title"
-								"... ... ... ..."
-								"desc desc desc desc";
-	}  // 360 row*/ 
-
-	/* layout-4 */
+	/* layout-4 mobile */
 .content--layout-4 {
 	grid-template-columns: 90px 90px 90px 90px;
 	grid-template-rows: 100px 70px 110px;
-	grid-template-areas:	"title title desc desc"
-							"... desc desc desc"
-							"... desc desc desc";
+	grid-template-areas:	"title title title title"
+							"desc desc desc desc"
+							"desc desc desc desc";
+
+}
+
+.title-mobile-centered {
+	text-align: center;
+	align-content: center;
+	justify-content: center;
+	padding: 0px !important; 
 }
 
 .content--layout-4 .content__img {
