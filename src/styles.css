@@ -371,7 +371,17 @@ ul.mainmenu li a {
 h1.maintitle {
   font-size: 30px;
   /* color: #fff; */
+  /* color: #000; */
+}
+
+h1.maintitle-work {
+  font-size: 30px;
   color: #000;
+}
+
+h1.maintitle-about {
+  font-size: 30px;
+  color: #fff;
 }
 
 .txtright {

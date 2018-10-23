@@ -1,19 +1,4 @@
-/* .stickyTop {
-    background: rgba(255, 255, 255, .97);
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-    visibility: visible;
-    -webkit-transition: -webkit-transform .3s ease;
-    -o-transition: -o-transform .3s ease;
-    transition: transform .3s ease;
-    z-index: 800;
-    margin-left: 0px;
-    padding-left: 45px;
-} */
+
 .headercontainer {
     -webkit-transform: translate3d(0, -100%, 0);
     transform: translate3d(0, -100%, 0);
