@@ -1,6 +1,7 @@
 import { Component, OnInit, ViewChild, ElementRef, Input, Output, EventEmitter } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 declare var $: any;
+// declare var myTitleColor: any;
 
 @Component({
   selector: 'app-header',
@@ -15,6 +16,7 @@ export class HeaderComponent implements OnInit {
   @Input('Homeheader') Homeheader;
   @Input('overlay') overlay;
   @Output('mobileclick') mobileclick = new EventEmitter<any>();
+  headerColor: string;
   constructor(private router: Router, private activatedRoute: ActivatedRoute) { }
 
   ngOnInit() {
@@ -24,6 +26,12 @@ export class HeaderComponent implements OnInit {
     } else {
       this.Homeheader = false;
     }
+
+    // myTitleColor
+    this.activatedRoute.data.subscribe(routeData => {
+      this.headerColor = routeData.headerColor || '#000';
+      // console.log(this.headerColor);
+    })
   }
 
 

@@ -54,7 +54,13 @@ const appRoutes: Routes = [
   { path: 'mello', component: MelloComponent },
   { path: 'synthesize', component: SynthesizeComponent },
   { path: 'wklymotion', component: WklymotionComponent },
-  { path: 'about', component: AboutComponent }
+  { 
+    path: 'about', 
+    component: AboutComponent,
+    data: {
+      headerColor: '#FFF'
+    }
+  }
 ];
 
 @NgModule({

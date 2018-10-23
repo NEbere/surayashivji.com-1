@@ -29,7 +29,7 @@ export class MaingridComponent implements OnInit, AfterViewInit {
         video: '/grid/potter.mp4', routerLink: '/potter', url: ''
       },
       {
-        order: 2, name: 'imessage', img: '/poster/imessage.png', class: 'ui development',
+        order: 2, name: 'imessage', img: '/poster/imessage.png', class: 'ui',
         video: '/grid/events.mp4', routerLink: '/events', url: ''
       },
       {
@@ -41,7 +41,7 @@ export class MaingridComponent implements OnInit, AfterViewInit {
         routerLink: '/rizikitoto', url: ''
       },
       {
-        order: 5, name: 'photogram', img: '/poster/photogram.png', class: 'ui 3d',
+        order: 5, name: 'photogram', img: '/poster/photogram.png', class: '3d ui',
         video: '/grid/photogram.mp4', routerLink: '/photogram', url: ''
       },
       { order: 6, name: 'apple', img: '/poster/apple.png', class: 'development', video: '', routerLink: '/apple', url: '' },
@@ -52,7 +52,7 @@ export class MaingridComponent implements OnInit, AfterViewInit {
         routerLink: '/wklymotion', url: ''
       },
       { order: 9, name: 'posters', img: '/poster/posters.png', class: 'graphic', video: '', routerLink: '/posters', url: '' },
-      { order: 10, name: 'vapor', img: '/poster/vapor.png', class: 'web ui product', video: '/grid/vapor.mp4', routerLink: '/vaporun', url: '' },
+      { order: 10, name: 'vapor', img: '/poster/vapor.png', class: 'development', video: '/grid/vapor.mp4', routerLink: '/vaporun', url: '' },
       {
         order: 11, name: 'blaster', img: '/poster/blaster.png', class: 'development ui', video: '/grid/blaster.mp4',
         routerLink: '/blaster', url: ''

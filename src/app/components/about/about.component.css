@@ -21,11 +21,11 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
-h1.maintitle {
-	/* font-size: 30px; */
-	/* color: #fff; */
+/* h1.maintitle {
+	font-size: 30px;
+	color: #fff;
 	color: rgb(255, 0, 234) !important;
-  }
+  } */
 
 /* Page Loader */
 .js .loading::before {
