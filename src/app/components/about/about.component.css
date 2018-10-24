@@ -8,7 +8,6 @@
 .body {
 	--text-color: #fff;
 	--background-color: #000;
-	/* --link-color: #ffee00; */
 	--link-color: #03b9f1;
 	--link-hover-color: #fff;
 	font-family: csBold;
@@ -20,12 +19,6 @@
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
-
-/* h1.maintitle {
-	font-size: 30px;
-	color: #fff;
-	color: rgb(255, 0, 234) !important;
-  } */
 
 /* Page Loader */
 .js .loading::before {

@@ -27,7 +27,6 @@ export class HeaderComponent implements OnInit {
       this.Homeheader = false;
     }
 
-    // myTitleColor
     this.activatedRoute.data.subscribe(routeData => {
       this.headerColor = routeData.headerColor || '#000';
       // console.log(this.headerColor);
@@ -36,12 +35,10 @@ export class HeaderComponent implements OnInit {
 
 
   openNav() {
-    // $('#Homeheader').css('z-index', 'unset');
     this.keywordsInput.nativeElement.style.width = '100%';
     this.keywordsInput1.nativeElement.style.display = 'none';
     this.closebtn.nativeElement.style.display = 'block';
     $('#Homeheader').css('position', 'unset');
-    // document.getElementsByTagName('BODY')[0].style.overflow = 'hidden';
   }
 
   closeNav() {
@@ -49,7 +46,6 @@ export class HeaderComponent implements OnInit {
     this.keywordsInput1.nativeElement.style.display = 'block';
     this.closebtn.nativeElement.style.display = 'none';
     $('#Homeheader').removeAttr('style');
-    // document.getElementsByTagName('BODY')[0].style.overflow = 'unset';
   }
 
   closeNavTimer(item) {
@@ -73,6 +69,5 @@ export class HeaderComponent implements OnInit {
 
   reloadroute(item) {
     window.location.href = '/';
-    // location.reload('/');
   }
 } 
