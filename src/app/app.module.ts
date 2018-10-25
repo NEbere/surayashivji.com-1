@@ -54,8 +54,8 @@ const appRoutes: Routes = [
   { path: 'mello', component: MelloComponent },
   { path: 'synthesize', component: SynthesizeComponent },
   { path: 'wklymotion', component: WklymotionComponent },
-  { 
-    path: 'about', 
+  {
+    path: 'about',
     component: AboutComponent,
     data: {
       headerColor: '#FFF'
@@ -86,7 +86,7 @@ const appRoutes: Routes = [
     VaporrunComponent,
     MelloComponent,
     MaingridComponent,
-    WklymotionComponent  
+    WklymotionComponent
   ],
   imports: [
     NgProgressModule.forRoot(), NgxMasonryModule, BrowserModule, BrowserAnimationsModule,

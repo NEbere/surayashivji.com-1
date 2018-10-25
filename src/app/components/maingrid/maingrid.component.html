@@ -15,14 +15,22 @@
       <article class="{{item.class}}" *ngFor="let item of masonryItems">
         <a *ngIf="item.video == ''" href="javascript:void(0);" [routerLink]="[item.routerLink]">
           <img src="{{imagePath}}{{item.img}}" style="width:100%">
+          <!-- <p>{{this.mobileview}}</p> -->
         </a>
     
-        <a *ngIf="item.video !=''" href="javascript:void(0);" [routerLink]="[item.routerLink]">
+        <a *ngIf="item.video !='' && !this.mobileview" href="javascript:void(0);" [routerLink]="[item.routerLink]">
           <video preload="none" #video class="grid-hvideo" muted="" loop="" (mouseleave)="playPause(video)" (mouseenter)="Pauseplay(video)"
             poster="{{imagePath}}{{item.img}}" auto="" #blaster>
             <source src="{{imagePath}}{{item.video}}" type="video/mp4"> Your browser does not support HTML5 video.
           </video>
+          <!-- <p>{{this.mobileview}}</p> -->
         </a>
+
+        <a *ngIf="item.video !='' && this.mobileview" href="javascript:void(0);" [routerLink]="[item.routerLink]">
+            <img src="{{imagePath}}{{item.img}}" style="width:100%">
+            <!-- <p>{{this.mobileview}}</p> -->
+          </a>
+
       </article>
     </section>
 

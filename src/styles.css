@@ -62,7 +62,7 @@
 }
 
 .parallax-screen {
-  height: 100%;
+  height: 100vh;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -828,6 +828,10 @@ div#grid-fluid {
 /* Media Query */
 
 @media screen and (max-width: 650px) {
+
+  .parallax-screen {
+    background-attachment: scroll !important;
+  }
 
   .video-caption {
     font-family: csBookItalic;

@@ -13,7 +13,6 @@ export class ScrollService {
   @HostListener('window:scroll', ['$event'])
   scrollHandler(event) {
     const scrollPosition = event.currentTarget.pageYOffset;
-    console.log('sp--->' + scrollPosition);
     const fullSpace = event.srcElement.children[0].scrollHeight;
     const hasclass = $('#Homeheader').hasClass('stickyTop');
     const parallHeight = $('#parallax').height();
@@ -27,7 +26,6 @@ export class ScrollService {
     }
     if (scrollPosition > this.previousScroll) {
       $('#footer').addClass('show');
-      console.log('d');
       if (hasclass) {
         $('#Homeheader').removeClass('stickyTop');
         $('#Homeheader').removeClass('js--active');
@@ -38,7 +36,6 @@ export class ScrollService {
     } else if (scrollPosition > (event.currentTarget.outerHeight)) {
       $('#footer').removeClass('show');
 
-      console.log('u');
       if (!hasclass) {
         $('#Homeheader').addClass('stickyTop');
         $('#Homeheader').addClass('js--active');
@@ -46,7 +43,6 @@ export class ScrollService {
       }
     } else if ((event.currentTarget.outerHeight - 144) > scrollPosition) {
       $('#footer').removeClass('show');
-      console.log('uuu');
         $('#Homeheader').removeClass('stickyTop');
         $('#Homeheader').removeClass('js--active');
         $('#Homeheader').removeClass('stickyTopunset');

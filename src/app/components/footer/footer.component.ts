@@ -19,10 +19,9 @@ export class FooterComponent implements OnInit {
 
   ngOnInit() {
     this.collections = [
-      'potter', 'events', 'cryptonite', 'interaction', 'photogram', 'bilberry', 'stitch', 'rizikitoto', 'blaster', 'posters'
+      'potter', 'events', 'cryptonite', 'posters', 'apple', 'rizikitoto', 'wklymotion', 'photogram', 'spotify', 'blaster', 'vapor'
     ];
     this.ActivePage = this.collections.findIndex(x => x === this.currentPage);
-    console.log(this.ActivePage);
 
     const pagesCount = this.collections.length - 1;
 
@@ -36,11 +35,6 @@ export class FooterComponent implements OnInit {
       this.prevpage = this.collections[this.ActivePage - 1];
       this.nextpage = this.collections[this.ActivePage + 1];
     }
-
-    console.log('prevpage--->' + this.prevpage);
-    console.log('next ---->' + this.nextpage);
-    console.log('current--->' + this.currentPage);
-    console.log(this.collections);
   }
 
 

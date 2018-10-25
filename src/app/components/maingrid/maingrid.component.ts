@@ -40,10 +40,8 @@ export class MaingridComponent implements OnInit, AfterViewInit {
         order: 4, name: 'rizikitoto', img: '/poster/rizikitoto.png', class: 'development ui', video: '',
         routerLink: '/rizikitoto', url: ''
       },
-      {
-        order: 5, name: 'photogram', img: '/poster/photogram.png', class: '3d ui',
-        video: '/grid/photogram.mp4', routerLink: '/photogram', url: ''
-      },
+      { order: 5, name: 'posters', img: '/poster/posters.png', class: 'graphic', video: '', routerLink: '/posters', url: '' },
+
       { order: 6, name: 'apple', img: '/poster/apple.png', class: 'development', video: '', routerLink: '/apple', url: '' },
 
       { order: 7, name: 'spotify', img: '/poster/spotify.png', class: 'ui graphic', video: '', routerLink: '/spotify', url: '' },
@@ -51,7 +49,10 @@ export class MaingridComponent implements OnInit, AfterViewInit {
         order: 8, name: 'wklymotion', img: '/poster/wklymotion.png', class: 'development creativecode 3d', video: '/grid/wklymotion.mp4',
         routerLink: '/wklymotion', url: ''
       },
-      { order: 9, name: 'posters', img: '/poster/posters.png', class: 'graphic', video: '', routerLink: '/posters', url: '' },
+      {
+        order: 9, name: 'photogram', img: '/poster/photogram.png', class: '3d ui',
+        video: '/grid/photogram.mp4', routerLink: '/photogram', url: ''
+      },
       { order: 10, name: 'vapor', img: '/poster/vapor.png', class: 'development', video: '/grid/vapor.mp4', routerLink: '/vaporun', url: '' },
       {
         order: 11, name: 'blaster', img: '/poster/blaster.png', class: 'development ui', video: '/grid/blaster.mp4',
@@ -145,10 +146,6 @@ export class MaingridComponent implements OnInit, AfterViewInit {
         timeout = setTimeout(delayed, threshold || 100);
       };
     }
-
-    // $(window).bind('load', function () {
-    //   $('#all').click();
-    // });
   }
 
   @HostListener('window:resize', ['$event'])
@@ -190,13 +187,11 @@ export class MaingridComponent implements OnInit, AfterViewInit {
       setTimeout(() => {
         this.masonryItems = this.masonryItemsCopy.filter(items => items.class.includes(item));
         this.masonryItems = this.masonryItems.sort((a, b) => a.order - b.order);
-        console.log(this.masonryItems);
       }, 50);
     } else {
       this.masonryItems = [];
       setTimeout(() => {
         this.masonryItems = this.masonryItemsCopy.sort((a, b) => a.order - b.order);
-        console.log(this.masonryItems);
       }, 50);
     }
 
@@ -205,11 +200,9 @@ export class MaingridComponent implements OnInit, AfterViewInit {
     if (!checkroutes) {
       this.router.navigate(['/']);
     }
-    // this.router.navigate(['/']);
   }
 
   notify(item) {
-    console.log(item);
     this.mobileclick(item);
   }
 
