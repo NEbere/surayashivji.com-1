@@ -19,7 +19,7 @@ export class FooterComponent implements OnInit {
 
   ngOnInit() {
     this.collections = [
-      'potter', 'events', 'cryptonite', 'posters', 'apple', 'rizikitoto', 'wklymotion', 'photogram', 'spotify', 'blaster', 'vapor'
+      'events', 'cryptonite', 'wklymotion', 'apple', 'potter', 'posters', 'vapor', 'spotify', 'rizikitoto', 'photogram', 'blaster'
     ];
     this.ActivePage = this.collections.findIndex(x => x === this.currentPage);
 

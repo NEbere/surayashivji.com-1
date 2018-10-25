@@ -25,35 +25,43 @@ export class MaingridComponent implements OnInit, AfterViewInit {
   ngOnInit() {
     this.masonryItems = [
       {
-        order: 1, name: 'potter', img: '/poster/potter.png', class: 'development ui',
-        video: '/grid/potter.mp4', routerLink: '/potter', url: ''
-      },
-      {
-        order: 2, name: 'imessage', img: '/poster/imessage.png', class: 'ui',
+        order: 1, name: 'imessage', img: '/poster/imessage.png', class: 'ui',
         video: '/grid/events.mp4', routerLink: '/events', url: ''
       },
       {
-        order: 3, name: 'ideocolab', img: '/poster/ideocolab.png', class: 'development ui 3d creativecode ',
+        order: 2, name: 'ideocolab', img: '/poster/ideocolab.png', class: 'development ui 3d creativecode ',
         video: '', routerLink: '/cryptonite', url: ''
       },
       {
-        order: 4, name: 'rizikitoto', img: '/poster/rizikitoto.png', class: 'development ui', video: '',
-        routerLink: '/rizikitoto', url: ''
-      },
-      { order: 5, name: 'posters', img: '/poster/posters.png', class: 'graphic', video: '', routerLink: '/posters', url: '' },
-
-      { order: 6, name: 'apple', img: '/poster/apple.png', class: 'development', video: '', routerLink: '/apple', url: '' },
-
-      { order: 7, name: 'spotify', img: '/poster/spotify.png', class: 'ui graphic', video: '', routerLink: '/spotify', url: '' },
-      {
-        order: 8, name: 'wklymotion', img: '/poster/wklymotion.png', class: 'development creativecode 3d', video: '/grid/wklymotion.mp4',
+        order: 3, name: 'wklymotion', img: '/poster/wklymotion.png', class: 'development creativecode 3d', video: '/grid/wklymotion.mp4',
         routerLink: '/wklymotion', url: ''
       },
       {
-        order: 9, name: 'photogram', img: '/poster/photogram.png', class: '3d ui',
+        order: 4, name: 'potter', img: '/poster/potter.png', class: 'development ui',
+        video: '/grid/potter.mp4', routerLink: '/potter', url: ''
+      },
+      {
+        order: 5, name: 'posters', img: '/poster/posters.png', class: 'graphic', video: '', routerLink: '/posters', url: ''
+      },
+
+      {
+        order: 6, name: 'apple', img: '/poster/apple.png', class: 'development', video: '', routerLink: '/apple', url: ''
+      },
+
+      {
+        order: 7, name: 'spotify', img: '/poster/spotify.png', class: 'ui graphic', video: '', routerLink: '/spotify', url: ''
+      },
+      {
+        order: 8, name: 'rizikitoto', img: '/poster/rizikitoto.png', class: 'development ui', video: '',
+        routerLink: '/rizikitoto', url: ''
+      },
+      { 
+        order: 9, name: 'vapor', img: '/poster/vapor.png', class: 'development', video: '/grid/vapor.mp4', routerLink: '/vaporun', url: '' 
+      },
+      {
+        order: 10, name: 'photogram', img: '/poster/photogram.png', class: '3d ui',
         video: '/grid/photogram.mp4', routerLink: '/photogram', url: ''
       },
-      { order: 10, name: 'vapor', img: '/poster/vapor.png', class: 'development', video: '/grid/vapor.mp4', routerLink: '/vaporun', url: '' },
       {
         order: 11, name: 'blaster', img: '/poster/blaster.png', class: 'development ui', video: '/grid/blaster.mp4',
         routerLink: '/blaster', url: ''

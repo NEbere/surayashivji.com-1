@@ -14,12 +14,10 @@ export class AppComponent implements OnInit, AfterViewInit {
   constructor() {
   }
 
-
   ngOnInit() {
   }
 
   ngAfterViewInit() {
-    // console.log('completed--->1');
   }
 
   public getRouterOutletState(outlet) {
