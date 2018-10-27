@@ -1,0 +1,13 @@
+.mellohead {
+    background-image: url(/assets/full_screen/test1.png);
+}
+
+.mellobody {
+    background-image: url(/assets/images/mello.jpg);
+}
+
+@media screen and (max-width: 650px) {
+    .mellohead {
+        background-image: url(/assets/full_screen/mobile/cryptonite.png);
+      }
+}
