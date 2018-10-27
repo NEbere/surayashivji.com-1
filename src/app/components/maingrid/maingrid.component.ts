@@ -47,14 +47,14 @@ export class MaingridComponent implements OnInit, AfterViewInit {
         order: 6, name: 'apple', img: '/poster/apple.png', class: 'development', video: '', routerLink: '/apple', url: ''
       },
       {
-        order: 7, name: 'posters', img: '/poster/posters.png', class: 'graphic', video: '', routerLink: '/posters', url: ''
+        order: 7, name: 'rizikitoto', img: '/poster/rizikitoto.png', class: 'development ui', video: '',
+        routerLink: '/rizikitoto', url: ''
       },
       {
         order: 8, name: 'spotify', img: '/poster/spotify.png', class: 'ui graphic', video: '', routerLink: '/spotify', url: ''
       },
       {
-        order: 9, name: 'rizikitoto', img: '/poster/rizikitoto.png', class: 'development ui', video: '',
-        routerLink: '/rizikitoto', url: ''
+        order: 9, name: 'posters', img: '/poster/posters.png', class: 'graphic', video: '', routerLink: '/posters', url: ''
       },
       { 
         order: 10, name: 'vapor', img: '/poster/vapor.png', class: 'development', video: '/grid/vapor.mp4', routerLink: '/vaporun', url: '' 
