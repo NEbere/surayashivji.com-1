@@ -37,33 +37,34 @@ export class MaingridComponent implements OnInit, AfterViewInit {
         routerLink: '/wklymotion', url: ''
       },
       {
-        order: 4, name: 'potter', img: '/poster/potter.png', class: 'development ui',
+        order: 4, name: 'mello', img: '/poster/mello.jpeg', class: 'ui graphic development', video: '', routerLink: '/mello', url: ''
+      },
+      {
+        order: 5, name: 'potter', img: '/poster/potter.png', class: 'development ui',
         video: '/grid/potter.mp4', routerLink: '/potter', url: ''
       },
       {
-        order: 5, name: 'posters', img: '/poster/posters.png', class: 'graphic', video: '', routerLink: '/posters', url: ''
-      },
-
-      {
         order: 6, name: 'apple', img: '/poster/apple.png', class: 'development', video: '', routerLink: '/apple', url: ''
       },
-
       {
-        order: 7, name: 'spotify', img: '/poster/spotify.png', class: 'ui graphic', video: '', routerLink: '/spotify', url: ''
+        order: 7, name: 'posters', img: '/poster/posters.png', class: 'graphic', video: '', routerLink: '/posters', url: ''
       },
       {
-        order: 8, name: 'rizikitoto', img: '/poster/rizikitoto.png', class: 'development ui', video: '',
+        order: 8, name: 'spotify', img: '/poster/spotify.png', class: 'ui graphic', video: '', routerLink: '/spotify', url: ''
+      },
+      {
+        order: 9, name: 'rizikitoto', img: '/poster/rizikitoto.png', class: 'development ui', video: '',
         routerLink: '/rizikitoto', url: ''
       },
       { 
-        order: 9, name: 'vapor', img: '/poster/vapor.png', class: 'development', video: '/grid/vapor.mp4', routerLink: '/vaporun', url: '' 
+        order: 10, name: 'vapor', img: '/poster/vapor.png', class: 'development', video: '/grid/vapor.mp4', routerLink: '/vaporun', url: '' 
       },
       {
-        order: 10, name: 'photogram', img: '/poster/photogram.png', class: '3d ui',
+        order: 11, name: 'photogram', img: '/poster/photogram.png', class: '3d ui',
         video: '/grid/photogram.mp4', routerLink: '/photogram', url: ''
       },
       {
-        order: 11, name: 'blaster', img: '/poster/blaster.png', class: 'development ui', video: '/grid/blaster.mp4',
+        order: 12, name: 'blaster', img: '/poster/blaster.png', class: 'development ui', video: '/grid/blaster.mp4',
         routerLink: '/blaster', url: ''
       }
     ];
