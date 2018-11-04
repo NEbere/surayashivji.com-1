@@ -1,5 +1,5 @@
 .wklyhead {
-    background-image: url(/assets/full_screen/desktop/wklymotion.jpg);
+    background-image: url(/assets/full_screen/desktop/wklymotion.png);
 }
 
 .wklybody {
@@ -8,6 +8,6 @@
 
 @media screen and (max-width: 650px) {
     .wklyhead {
-        background-image: url(/assets/full_screen/desktop/wklymotion.jpg);
+        background-image: url(/assets/full_screen/mobile/wklymotion.png);
       }
 }

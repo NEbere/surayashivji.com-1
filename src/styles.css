@@ -455,12 +455,12 @@ div#container {
 }
 
 div#mobilemenu li {
-  display: flow-root;
+  display: table;
 }
 
 div#mobilemenu li .is-checked {
   font-family: csMedium !important;
-  font-size: 14px !IMPORTANT;
+  font-size: 14px !important;
 }
 
 .filterbtn.is-checked {

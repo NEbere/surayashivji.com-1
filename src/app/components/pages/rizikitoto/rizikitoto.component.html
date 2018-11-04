@@ -119,7 +119,9 @@
           <div class="row">
             <div class="col-md-6 col-sm-12 no-bottom">
               <div class="video video-no-padding">
-                <video preload="auto" [controls]="true" [muted]="true" [loop]="true">
+                <!-- <video preload="auto" [controls]="true" [muted]="true" [loop]="true"> -->
+                <video preload="auto" [autoplay]="true" [controls]="false" [loop]="true" onloadedmetadata="this.muted=true"
+                  playsinline="true">
                   <source src="./assets/images/pages/rizikitoto/bilberry.mp4" type="video/mp4">
                 </video>
                 <p class="video-caption">Bilberry</p>
@@ -127,7 +129,9 @@
             </div>
             <div class="col-md-6 col-sm-12 no-bottom">
               <div class="video video-no-padding">
-                <video preload="auto" [controls]="true" [muted]="true" [loop]="true">
+                <!-- <video preload="auto" [controls]="true" [muted]="true" [loop]="true"> -->
+                <video preload="auto" [autoplay]="true" [controls]="false" [loop]="true" onloadedmetadata="this.muted=true"
+                  playsinline="true">
                   <source src="./assets/images/pages/rizikitoto/barberry.mp4" type="video/mp4">
                 </video>
                 <p class="video-caption">Barberry</p>
@@ -141,7 +145,9 @@
           <div class="row">
             <div class="col-md-4 col-sm-12">
               <div class="video video-no-padding">
-                <video preload="auto" [controls]="true" [muted]="true" [loop]="true">
+                <!-- <video preload="auto" [controls]="true" [muted]="true" [loop]="true"> -->
+                <video preload="auto" [autoplay]="true" [controls]="false" [loop]="true" onloadedmetadata="this.muted=true"
+                  playsinline="true">
                   <source src="./assets/images/pages/rizikitoto/mares.mp4" type="video/mp4">
                 </video>
                 <p class="video-caption">Mares</p>
@@ -150,7 +156,9 @@
 
             <div class="col-md-4 col-sm-12">
               <div class="video video-no-padding">
-                <video preload="auto" [controls]="true" [muted]="true" [loop]="true">
+                <!-- <video preload="auto" [controls]="true" [muted]="true" [loop]="true"> -->
+                <video preload="auto" [autoplay]="true" [controls]="false" [loop]="true" onloadedmetadata="this.muted=true"
+                  playsinline="true">
                   <source src="./assets/images/pages/rizikitoto/loxe.mp4" type="video/mp4">
                 </video>
                 <p class="video-caption">Loxe</p>
@@ -159,7 +167,9 @@
 
             <div class="col-md-4 col-sm-12">
               <div class="video video-no-padding">
-                <video preload="auto" [controls]="true" [muted]="true" [loop]="true">
+                <!-- <video preload="auto" [controls]="true" [muted]="true" [loop]="true"> -->
+                <video preload="auto" [autoplay]="true" [controls]="false" [loop]="true" onloadedmetadata="this.muted=true"
+                  playsinline="true">
                   <source src="./assets/images/pages/rizikitoto/bayberry.mp4" type="video/mp4">
                 </video>
                 <p class="video-caption">Bayberry</p>
@@ -181,7 +191,8 @@
         <div class="container videocontainer">
           <div class="row">
             <div class="video">
-              <video class="vapor" preload="auto" [controls]="true" [muted]="true" [loop]="true">
+                <video class="vapor" preload="auto" [loop]="true" [autoplay]="true" [controls]="false" onloadedmetadata="this.muted=true" playsinline="true">
+              <!-- <video class="vapor" preload="auto" [controls]="true" [muted]="true" [loop]="true"> -->
                 <source src="./assets/images/pages/rizikitoto/home_cast.mp4" type="video/mp4">
               </video>
             </div>
