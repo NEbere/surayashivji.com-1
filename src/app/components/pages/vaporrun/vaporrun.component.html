@@ -40,7 +40,8 @@
     <div class="container videocontainer">
       <div class="row">
         <div class="video">
-          <video class="vapor" preload="auto" [controls]="true" [muted]="true">
+          <video class="vapor" preload="auto" [autoplay]="true" [controls]="true" onloadedmetadata="this.muted=true"
+            playsinline="true">
             <source src="./assets/images/pages/vapor/demo.mp4" type="video/mp4">
           </video>
         </div>

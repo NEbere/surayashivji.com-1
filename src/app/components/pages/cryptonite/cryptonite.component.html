@@ -313,21 +313,23 @@
             <p class="caption-inline">A wireframe of the game's flow.</p>
           </div>
         </div>
-      </div> 
+      </div>
       <!-- Center Image Section End -->
       <!-- Two Centered Video Start -->
       <div class="container videocontainer">
         <div class="row">
           <div class="col-md-6 col-sm-12">
             <div class="video">
-              <video width="600" preload="auto" [loop]="true" [controls]="true" [muted]="true">
+              <video width="600" preload="auto" [autoplay]="true" [controls]="false" [loop]="true" onloadedmetadata="this.muted=true"
+                playsinline="true">
                 <source src="./assets/images/pages/cryptonite/home1_prototype.mp4" type="video/mp4">
               </video>
             </div>
           </div>
           <div class="col-md-6 col-sm-12">
             <div class="video">
-              <video width="600" preload="auto" [loop]="true" [controls]="true" [muted]="true">
+              <video width="600" preload="auto" [autoplay]="true" [controls]="false" [loop]="true" onloadedmetadata="this.muted=true"
+                playsinline="true">
                 <source src="./assets/images/pages/cryptonite/home2_prototype.mp4" type="video/mp4">
               </video>
             </div>
@@ -341,21 +343,24 @@
         <div class="row">
           <div class="col-md-4 col-sm-12">
             <div class="video">
-              <video width="600" preload="auto" [loop]="true" [controls]="true" [muted]="true">
+              <video width="600" preload="auto" [autoplay]="true" [controls]="false" [loop]="true" onloadedmetadata="this.muted=true"
+                playsinline="true">
                 <source src="./assets/images/pages/cryptonite/planet_prototype.mp4" type="video/mp4">
               </video>
             </div>
           </div>
           <div class="col-md-4 col-sm-12">
             <div class="video">
-              <video width="600" preload="auto" [loop]="true" [controls]="true" [muted]="true">
+              <video width="600" preload="auto" [autoplay]="true" [controls]="false" [loop]="true" onloadedmetadata="this.muted=true"
+                playsinline="true">
                 <source src="./assets/images/pages/cryptonite/explosion.mp4" type="video/mp4">
               </video>
             </div>
           </div>
           <div class="col-md-4 col-sm-12">
             <div class="video">
-              <video width="600" preload="auto" [loop]="true" [controls]="true" [muted]="true">
+              <video width="600" preload="auto" [autoplay]="true" [controls]="false" [loop]="true" onloadedmetadata="this.muted=true"
+                playsinline="true">
                 <source src="./assets/images/pages/cryptonite/battle.mp4" type="video/mp4">
               </video>
             </div>
@@ -385,7 +390,7 @@
         <div class="container videocontainer">
           <div class="row">
             <div class="video">
-              <video preload="auto" [controls]="true" [muted]="true">
+              <video preload="auto" [controls]="true" [muted]="true" playsinline="true">
                 <source src="./assets/images/pages/cryptonite/demo.mp4" type="video/mp4">
               </video>
               <p class="video-caption">Functional Prototype of Cryptonites - built with HTML/CSS, JavaScript (Three.js,
@@ -395,8 +400,8 @@
         </div>
       </div>
     </div>
-
     <!-- Demo End -->
+
 
     <!-- Takeaways Start -->
     <div class="container custom-container">
@@ -404,7 +409,8 @@
         <div class="col-md-12">
           <h1 class="mainbodytitle">Takeaways</h1>
           <ul class="projects">
-            <li>To quote the CoLab, <b>"Prototype as if you are right, listen as if you are wrong."</b> It is important to not be married to
+            <li>To quote the CoLab, <b>"Prototype as if you are right, listen as if you are wrong."</b> It is important
+              to not be married to
               your ideas at any point in the process because openness enables quick iteration and improvement.</li>
             <li><b>Build to learn.</b> When things seem confusing, it is important to keep pushing. Embodying a
               question or unknown into a prototype helps you expand your understanding, even if it ends up not being
@@ -415,7 +421,8 @@
           </ul>
           <div class="mainparagraph">
             <p>I learned an incredible amount about human-centered design, user research, prototyping, and methods for
-              breaking down complex systems during this fellowship. Following the winter fellowship, I joined the CoLab as a freelance designer to continue Cryptonites.</p>
+              breaking down complex systems during this fellowship. Following the winter fellowship, I joined the CoLab
+              as a freelance designer to continue Cryptonites.</p>
           </div>
         </div>
       </div>

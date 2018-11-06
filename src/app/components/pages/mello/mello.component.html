@@ -137,15 +137,18 @@
         <div class="container videocontainer">
             <div class="row">
                 <div class="video mello-caption-padding">
-                    <video preload="auto" [controls]="true" [muted]="true">
+                    <video preload="auto" [autoplay]="true" [controls]="true" onloadedmetadata="this.muted=true"
+                        playsinline="true">
                         <source src="./assets/images/pages/mello/demo.mp4" type="video/mp4">
                     </video>
-                    <p class="mello-caption">The user connects their Mello to our app.<br><br>They onboard by answering
+                    <p class="mello-caption">The user connects their Mello to our app.<br><br>They onboard by
+                        answering
                         a few questions about their moods, stress levels, and needs at that moment. The intelligent
                         algorithm uses that information to curate personalized blends. We came up with the idea of
                         personalizing aromatherapy because many young adults in our research saw benefit in the
                         practice, but didn’t understand how it directly
-                        relates them.<br><br>The user can learn about why each oil was selected for them and Mello does
+                        relates them.<br><br>The user can learn about why each oil was selected for them and Mello
+                        does
                         all the work by blending and diffusing based on their schedule.</p>
                 </div>
             </div>
