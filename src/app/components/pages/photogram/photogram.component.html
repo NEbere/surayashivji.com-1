@@ -137,8 +137,7 @@
         <div class="container videocontainer">
           <div class="row">
             <div class="media-inline">
-              <video width="400" preload="auto" [autoplay]="true" [controls]="false" onloadedmetadata="this.muted=true"
-                playsinline="true" [loop]="true">
+              <video width="400" preload="auto" [controls]="true" [muted]="true" [loop]="true">
                 <source src="./assets/images/pages/photogram/dial.mp4" type="video/mp4">
               </video>
             </div>
@@ -147,8 +146,7 @@
         <div class="container videocontainer">
           <div class="row">
             <div class="video">
-              <video width="400" preload="auto" [autoplay]="true" [controls]="false" onloadedmetadata="this.muted=true"
-                playsinline="true" [loop]="true">
+              <video width="400" preload="auto" [controls]="true" [muted]="true" [loop]="true">
                 <source src="./assets/images/pages/photogram/gaze.mp4" type="video/mp4">
               </video>
             </div>
@@ -163,7 +161,7 @@
       <div class="row">
         <h1 class="mainbodytitle maindivhead">Demo Video</h1>
         <div class="video">
-          <video preload="auto" [controls]="true" playsinline="true">
+          <video preload="auto" [controls]="true">
             <source src="./assets/images/pages/photogram/demo.mp4" type="video/mp4">
           </video>
         </div>

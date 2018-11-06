@@ -35,6 +35,7 @@ import { WklymotionComponent } from './components/pages/wklymotion/wklymotion.co
 import { NgxMasonryModule } from 'ngx-masonry';
 import { MaingridComponent } from './components/maingrid/maingrid.component';
 
+import {GridImageServiceService} from './services/grid-image-service.service';
 
 const appRoutes: Routes = [
   { path: '', component: GridviewComponent },
@@ -94,7 +95,7 @@ const appRoutes: Routes = [
     VgOverlayPlayModule, VgBufferingModule
 
   ],
-  providers: [],
+  providers: [GridImageServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

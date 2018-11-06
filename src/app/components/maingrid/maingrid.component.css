@@ -70,3 +70,8 @@
       width: 100%;
     }
   }
+
+  .gridimg{
+    min-width: 200px;
+    min-height: 200px;
+  }

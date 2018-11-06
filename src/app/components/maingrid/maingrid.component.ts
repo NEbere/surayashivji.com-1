@@ -56,8 +56,8 @@ export class MaingridComponent implements OnInit, AfterViewInit {
       {
         order: 9, name: 'posters', img: '/poster/posters.png', class: 'graphic', video: '', routerLink: '/posters', url: ''
       },
-      { 
-        order: 10, name: 'vapor', img: '/poster/vapor.png', class: 'development', video: '/grid/vapor.mp4', routerLink: '/vaporun', url: '' 
+      {
+        order: 10, name: 'vapor', img: '/poster/vapor.png', class: 'development', video: '/grid/vapor.mp4', routerLink: '/vaporun', url: ''
       },
       {
         order: 11, name: 'photogram', img: '/poster/photogram.png', class: '3d ui',
@@ -106,55 +106,57 @@ export class MaingridComponent implements OnInit, AfterViewInit {
   }
 
   ngAfterViewInit() {
-    const currentRoutes = this.router.url;
-    const checkroutes = currentRoutes.includes('home');
-    if (checkroutes) {
-      this.mobileview = true;
-      const item = currentRoutes.split('/');
-      const citem = item[item.length - 1];
-      setTimeout(() => {
-        this.gridFilter(citem);
-        const filterbtn: any = $('.filterbtn');
-        const formatBtn: any = Array.from(filterbtn);
-        const colletions = formatBtn.filter(x => x.className.includes('is-checked'));
-        colletions.map(x => x.className = 'filterbtn');
+    setTimeout(() => {
+      const currentRoutes = this.router.url;
+      const checkroutes = currentRoutes.includes('home');
+      if (checkroutes) {
+        this.mobileview = true;
+        const item = currentRoutes.split('/');
+        const citem = item[item.length - 1];
+        setTimeout(() => {
+          this.gridFilter(citem);
+          const filterbtn: any = $('.filterbtn');
+          const formatBtn: any = Array.from(filterbtn);
+          const colletions = formatBtn.filter(x => x.className.includes('is-checked'));
+          colletions.map(x => x.className = 'filterbtn');
 
-        $('#' + citem).addClass('is-checked');
-      }, 50);
-    }
-    $(function () {
-      var $grid = $('.grid').isotope({
-        itemSelector: 'article'
-      });
+          $('#' + citem).addClass('is-checked');
+        }, 50);
+      }
+      $(function () {
+        var $grid = $('.grid').isotope({
+          itemSelector: 'article'
+        });
 
-      // filter buttons
-      $('.filters-button-group').on('click', 'button', function () {
-        var filterValue = $(this).attr('data-filter');
-        $grid.isotope({ filter: filterValue });
-      });
-      $('.button-group').each(function (i, buttonGroup) {
-        var $buttonGroup = $(buttonGroup);
-        $buttonGroup.on('click', 'button', function () {
-          $buttonGroup.find('.is-checked').removeClass('is-checked');
-          $(this).addClass('is-checked');
+        // filter buttons
+        $('.filters-button-group').on('click', 'button', function () {
+          var filterValue = $(this).attr('data-filter');
+          $grid.isotope({ filter: filterValue });
+        });
+        $('.button-group').each(function (i, buttonGroup) {
+          var $buttonGroup = $(buttonGroup);
+          $buttonGroup.on('click', 'button', function () {
+            $buttonGroup.find('.is-checked').removeClass('is-checked');
+            $(this).addClass('is-checked');
+          });
         });
       });
-    });
 
-    // debounce so filtering doesn't happen every millisecond
-    function debounce(fn, threshold) {
-      let timeout;
-      return function debounced() {
-        if (timeout) {
-          clearTimeout(timeout);
-        }
-        function delayed() {
-          fn();
-          timeout = null;
-        }
-        timeout = setTimeout(delayed, threshold || 100);
-      };
-    }
+      // debounce so filtering doesn't happen every millisecond
+      function debounce(fn, threshold) {
+        let timeout;
+        return function debounced() {
+          if (timeout) {
+            clearTimeout(timeout);
+          }
+          function delayed() {
+            fn();
+            timeout = null;
+          }
+          timeout = setTimeout(delayed, threshold || 100);
+        };
+      }
+    }, 500);
   }
 
   @HostListener('window:resize', ['$event'])

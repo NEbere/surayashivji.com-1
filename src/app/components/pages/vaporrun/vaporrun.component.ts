@@ -19,6 +19,7 @@ export class VaporrunComponent implements OnInit, AfterViewInit {
   @ViewChild('reveal') reveal: ElementRef;
   // @ViewChild('vaporvideo', { read: ElementRef }) vaporvideo: ElementRef;
 
+  
   previousScroll = 0;
 
   imagePath: string;
@@ -29,12 +30,9 @@ export class VaporrunComponent implements OnInit, AfterViewInit {
   ngOnInit() {
     this.imagePath = '../../../../assets/images/';
     console.log(this.router.url);
-    // window.addEventListener('scroll', this.handleScroll, true)
+
   }
 
-  // handleScroll() {
-  //   console.log()
-  // }
   ngAfterViewInit() {
     this.progressBar.start();
     setTimeout(() => {
