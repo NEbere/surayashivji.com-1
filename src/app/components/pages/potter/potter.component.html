@@ -1,9 +1,26 @@
-<app-header [overlay]="'true'"></app-header>
+<!-- <app-header [overlay]="'true'"></app-header> -->
 
-<ng-progress #progressBar [direction]="'ltr+'" [max]="100" [speed]="500" [trickleSpeed]="300" [spinner]="false"
-  [spinnerPosition]="'left'" [thick]="true" [meteor]="true" [color]="'#10282A'" [ease]="'linear'"></ng-progress>
+<ng-progress
+  #progressBar
+  [direction]="'ltr+'"
+  [max]="100"
+  [speed]="500"
+  [trickleSpeed]="300"
+  [spinner]="false"
+  [spinnerPosition]="'left'"
+  [thick]="true"
+  [meteor]="true"
+  [color]="'#10282A'"
+  [ease]="'linear'"
+></ng-progress>
 
-<div class="container reveal-animation" (scroll)="scrollHandler($event)" #reveal>
+<div
+  class="container reveal-animation"
+  (scroll)="scrollHandler($event)"
+  #reveal
+>
+  <sticky> <app-new-header></app-new-header> </sticky>
+
   <!-- Full Screen Image Section Start -->
   <div class="parallax-screen potterhead fade-in one" id="parallax"></div>
   <!-- Full Screen Image Section End -->
@@ -15,9 +32,14 @@
         <div class="col-md-8 col-sm-12">
           <h1 class="projectHeader_heading">Potter Pics</h1>
           <p class="projectHeader_role">Role: UI/UX Design, iOS Development</p>
-          <p class="projectHeader_role">Tools: Sketch, AfterEffects, Illustrator, Swift</p>
-          <p class="projectHeader_tools"><a target="_blank" href="https://github.com/surayashivji/PotterPics">Source
-              Code</a></p>
+          <p class="projectHeader_role">
+            Tools: Sketch, AfterEffects, Illustrator, Swift
+          </p>
+          <p class="projectHeader_tools">
+            <a target="_blank" href="https://github.com/surayashivji/PotterPics"
+              >Source Code</a
+            >
+          </p>
         </div>
         <div class="col-md-4 col-sm-12">
           <p class="projectHeader_desc">Harry Potter themed social network.</p>
@@ -30,13 +52,17 @@
         <div class="col-md-12">
           <h1 class="mainbodytitle">Overview</h1>
           <div class="mainparagraph">
-            <p>Ever wonder what Harry, Ron, and Hermione post on social media? Me too! Potter Pics was an experiment
-              that
-              allowed
-              me to explore two of my favorite worlds: Harry Potter and iOS. Simply enter the app with The Unlocking
-              Charm
-              to be sorted into a house and start interacting with the rest of the magical world.</p>
-            <p>Featured in Natasha Murashev’s iOS newsletter reaching 10,000+ people.</p>
+            <p>
+              Ever wonder what Harry, Ron, and Hermione post on social media? Me
+              too! Potter Pics was an experiment that allowed me to explore two
+              of my favorite worlds: Harry Potter and iOS. Simply enter the app
+              with The Unlocking Charm to be sorted into a house and start
+              interacting with the rest of the magical world.
+            </p>
+            <p>
+              Featured in Natasha Murashev’s iOS newsletter reaching 10,000+
+              people.
+            </p>
           </div>
         </div>
       </div>
@@ -47,77 +73,113 @@
         <div class="col-md-12">
           <h1 class="mainbodytitle">Process</h1>
           <div class="mainparagraph">
-            <p>There are countless aspects of the Harry Potter world that could translate to engaging, digital
-              experiences. Because
-              I created this app for fun, there were few feature constraints that I had to work around. As such, I
-              juggled
-              multiple ideas throughout my design process. I experimented with a sorting house quiz for the user’s
-              onboarding,
-              having an interactive map similar to Marauder’s Map for users to see their friends’ locations, using
-              spells
-              to
-              unlock features, and more.</p>
-            <p>I ultimately decided to integrate three subtle, visual Harry Potter references.</p>
+            <p>
+              There are countless aspects of the Harry Potter world that could
+              translate to engaging, digital experiences. Because I created this
+              app for fun, there were few feature constraints that I had to work
+              around. As such, I juggled multiple ideas throughout my design
+              process. I experimented with a sorting house quiz for the user’s
+              onboarding, having an interactive map similar to Marauder’s Map
+              for users to see their friends’ locations, using spells to unlock
+              features, and more.
+            </p>
+            <p>
+              I ultimately decided to integrate three subtle, visual Harry
+              Potter references.
+            </p>
           </div>
           <h6 class="submaintitle">House Based Navigation</h6>
           <div class="mainparagraph">
-            <p>The user’s navigation and secondary font’s color changes based on his/her Hogwarts house. This allows
-              the
-              user
-              to have a more personalized experience while not getting distracting from the core functionality.</p>
+            <p>
+              The user’s navigation and secondary font’s color changes based on
+              his/her Hogwarts house. This allows the user to have a more
+              personalized experience while not getting distracting from the
+              core functionality.
+            </p>
           </div>
-          <!-- Navigation Images Start-->
+          <!-- Navigation Images Start -->
           <div class="row imagesblock">
             <div class="col-md-3 house-item">
               <p class="text-center">Slytherin</p>
-              <img src="{{imagePath}}/pages/potter/nav_green.png" class="img-responsive center-block" alt="Slytherin Navigation">
+              <img
+                src="{{imagePath}}/pages/potter/nav_green.png"
+                class="img-responsive center-block"
+                alt="Slytherin Navigation"
+              />
             </div>
             <div class="col-md-3 house-item">
               <p class="text-center">Gryffindor</p>
-              <img src="{{imagePath}}/pages/potter/nav_red.png" class="img-responsive center-block" alt="Gryffindor Navigation">
+              <img
+                src="{{imagePath}}/pages/potter/nav_red.png"
+                class="img-responsive center-block"
+                alt="Gryffindor Navigation"
+              />
             </div>
             <div class="col-md-3 house-item">
               <p class="text-center">Ravenclaw</p>
-              <img src="{{imagePath}}/pages/potter/nav_blue.png" class="img-responsive center-block" alt="Ravenclaw Navigation">
+              <img
+                src="{{imagePath}}/pages/potter/nav_blue.png"
+                class="img-responsive center-block"
+                alt="Ravenclaw Navigation"
+              />
             </div>
             <div class="col-md-3 house-item">
               <p class="text-center">Hufflepuff</p>
-              <img src="{{imagePath}}/pages/potter/nav_yellow.png" class="img-responsive center-block" alt="Hufflepuff Navigation">
+              <img
+                src="{{imagePath}}/pages/potter/nav_yellow.png"
+                class="img-responsive center-block"
+                alt="Hufflepuff Navigation"
+              />
             </div>
           </div>
           <!-- Navigation Images End -->
           <h6 class="submaintitle">Home Intro</h6>
           <div class="mainparagraph">
-            <p>The home page resembles the Harry Potter movie introductions. The music, moving clouds, and iconic text
-              provide
-              a familiar feel for the user as he/she enters the app. The user taps “Alohamora,” also known as The
-              Unlocking
-              Charm, to login or sign up. It makes sense to have obvious, familiar Harry Potter elements for the
-              onboarding
-              so that the user is immediately engaged. I animated the clouds in After Effects and created the text in
-              Photoshop.</p>
+            <p>
+              The home page resembles the Harry Potter movie introductions. The
+              music, moving clouds, and iconic text provide a familiar feel for
+              the user as he/she enters the app. The user taps “Alohamora,” also
+              known as The Unlocking Charm, to login or sign up. It makes sense
+              to have obvious, familiar Harry Potter elements for the onboarding
+              so that the user is immediately engaged. I animated the clouds in
+              After Effects and created the text in Photoshop.
+            </p>
           </div>
           <!-- Intro Images Start -->
           <div class="row imagesblock">
             <div class="col-md-6">
               <p class="text-center imagetitle">Title Text</p>
-              <img src="{{imagePath}}/pages/potter/text.png" class="img-responsive center-block" alt="Icons">
+              <img
+                src="{{imagePath}}/pages/potter/text.png"
+                class="img-responsive center-block"
+                alt="Icons"
+              />
             </div>
             <div class="col-md-6">
               <p class="text-center imagetitle">Enter</p>
-              <img src="{{imagePath}}/pages/potter/menu.png" class="img-responsive center-block" alt="Menu">
+              <img
+                src="{{imagePath}}/pages/potter/menu.png"
+                class="img-responsive center-block"
+                alt="Menu"
+              />
             </div>
           </div>
           <!-- Intro Images End -->
           <h6 class="submaintitle">Icons</h6>
           <div class="mainparagraph">
-            <p>The icons used are well-known aspects from the Harry Potter world.</p>
+            <p>
+              The icons used are well-known aspects from the Harry Potter world.
+            </p>
           </div>
           <!-- Icons Image Start -->
           <div class="row imagesblock">
             <div class="col-md-12">
               <p class="text-center imagetitle">Icons</p>
-              <img src="{{imagePath}}/pages/potter/icons.png" class="img-responsive center-block" alt="Icons">
+              <img
+                src="{{imagePath}}/pages/potter/icons.png"
+                class="img-responsive center-block"
+                alt="Icons"
+              />
             </div>
           </div>
           <!-- Icons Image End -->
@@ -131,54 +193,120 @@
       <div class="row">
         <h1 class="mainbodytitle maindivhead">Walkthrough</h1>
         <div class="video">
-          <video width="450" height="650" preload="auto" [autoplay]="true" [controls]="true" onloadedmetadata="this.muted=true"
-            playsinline="true" [loop]="true">
-            <source src="{{imagePath}}/pages/potter/1-home.mp4" type="video/mp4">
+          <video
+            width="450"
+            height="650"
+            preload="auto"
+            [autoplay]="true"
+            [controls]="true"
+            onloadedmetadata="this.muted=true"
+            playsinline="true"
+            [loop]="true"
+          >
+            <source
+              src="{{imagePath}}/pages/potter/1-home.mp4"
+              type="video/mp4"
+            />
           </video>
           <p class="video-caption">Home</p>
         </div>
       </div>
       <div class="row">
         <div class="video">
-          <video width="450" height="650" preload="auto" [autoplay]="true" [controls]="true" onloadedmetadata="this.muted=true"
-            playsinline="true" [loop]="true">
-            <source src="{{imagePath}}/pages/potter/2-feed.mp4" type="video/mp4">
+          <video
+            width="450"
+            height="650"
+            preload="auto"
+            [autoplay]="true"
+            [controls]="true"
+            onloadedmetadata="this.muted=true"
+            playsinline="true"
+            [loop]="true"
+          >
+            <source
+              src="{{imagePath}}/pages/potter/2-feed.mp4"
+              type="video/mp4"
+            />
           </video>
           <p class="video-caption">Feed</p>
         </div>
       </div>
       <div class="row">
         <div class="video">
-          <video width="450" height="650" preload="auto" [autoplay]="true" [controls]="true" onloadedmetadata="this.muted=true"
-            playsinline="true" [loop]="true">
-            <source src="{{imagePath}}/pages/potter/3-search.mp4" type="video/mp4">
+          <video
+            width="450"
+            height="650"
+            preload="auto"
+            [autoplay]="true"
+            [controls]="true"
+            onloadedmetadata="this.muted=true"
+            playsinline="true"
+            [loop]="true"
+          >
+            <source
+              src="{{imagePath}}/pages/potter/3-search.mp4"
+              type="video/mp4"
+            />
           </video>
           <p class="video-caption">Search</p>
         </div>
       </div>
       <div class="row">
         <div class="video">
-          <video width="450" height="650" preload="auto" [autoplay]="true" [controls]="true" onloadedmetadata="this.muted=true"
-            playsinline="true" [loop]="true">
-            <source src="{{imagePath}}/pages/potter/4-profile.mp4" type="video/mp4">
+          <video
+            width="450"
+            height="650"
+            preload="auto"
+            [autoplay]="true"
+            [controls]="true"
+            onloadedmetadata="this.muted=true"
+            playsinline="true"
+            [loop]="true"
+          >
+            <source
+              src="{{imagePath}}/pages/potter/4-profile.mp4"
+              type="video/mp4"
+            />
           </video>
           <p class="video-caption">Profile</p>
         </div>
       </div>
       <div class="row">
         <div class="video">
-          <video width="450" height="650" preload="auto" [autoplay]="true" [controls]="true" onloadedmetadata="this.muted=true"
-            playsinline="true" [loop]="true">
-            <source src="{{imagePath}}/pages/potter/5-capture.mp4" type="video/mp4">
+          <video
+            width="450"
+            height="650"
+            preload="auto"
+            [autoplay]="true"
+            [controls]="true"
+            onloadedmetadata="this.muted=true"
+            playsinline="true"
+            [loop]="true"
+          >
+            <source
+              src="{{imagePath}}/pages/potter/5-capture.mp4"
+              type="video/mp4"
+            />
           </video>
           <p class="video-caption">Capture</p>
         </div>
       </div>
       <div class="row">
         <div class="video">
-          <video width="450" height="650" preload="auto" [autoplay]="true" [controls]="true" onloadedmetadata="this.muted=true"
-            playsinline="true" [loop]="true">
-            <source src="{{imagePath}}/pages/potter/6-post.mp4" type="video/mp4">
+          <video
+            width="450"
+            height="650"
+            preload="auto"
+            [autoplay]="true"
+            [controls]="true"
+            onloadedmetadata="this.muted=true"
+            playsinline="true"
+            [loop]="true"
+          >
+            <source
+              src="{{imagePath}}/pages/potter/6-post.mp4"
+              type="video/mp4"
+            />
           </video>
           <p class="video-caption">Post</p>
         </div>
@@ -186,16 +314,17 @@
     </div>
     <!-- Walkthrough Center End -->
 
-
     <!-- Takeaways Start -->
     <div class="container custom-container">
       <div class="row projectbody">
         <div class="col-md-12">
           <h1 class="mainbodytitle">Takeaways</h1>
           <ul class="projects">
-            <li>Create and use custom icons if and only if it is abundantly clear what they represent. This is an area
-              of
-              the app I could have definitely improved upon by conducting user tests.</li>
+            <li>
+              Create and use custom icons if and only if it is abundantly clear
+              what they represent. This is an area of the app I could have
+              definitely improved upon by conducting user tests.
+            </li>
           </ul>
         </div>
       </div>
