@@ -1,13 +1,31 @@
-<app-header [overlay]="'true'"></app-header>
+<app-new-header [targetTransparentLimiter]="parallax"></app-new-header>
 
-<ng-progress #progressBar [direction]="'ltr+'" [max]="100" [speed]="500" [trickleSpeed]="300" [spinner]="false"
-  [spinnerPosition]="'left'" [thick]="true" [meteor]="true" [color]="'#1672B1'" [ease]="'linear'"></ng-progress>
+<ng-progress
+  #progressBar
+  [color]="'#1672B1'"
+  [direction]="'ltr+'"
+  [ease]="'linear'"
+  [max]="100"
+  [meteor]="true"
+  [speed]="500"
+  [spinner]="false"
+  [spinnerPosition]="'left'"
+  [thick]="true"
+  [trickleSpeed]="300"
+></ng-progress>
 
-<div class="container reveal-animation" (scroll)="scrollHandler($event)" #reveal>
+<div
+  class="container reveal-animation"
+  (scroll)="scrollHandler($event)"
+  #reveal
+>
   <!-- Full Screen Image Section Start -->
-  <div class="parallax-screen blasterhead fade-in one" id="parallax">
-    <!-- Full Screen Image Section End -->
-  </div>
+  <div
+    #parallax
+    id="parallax"
+    class="parallax-screen blasterhead fade-in one"
+  ></div>
+  <!-- Full Screen Image Section End -->
 
   <div class="container custom-container">
     <!-- Project Header Start -->
@@ -15,11 +33,19 @@
       <div class="col-md-8 col-sm-12">
         <h1 class="projectHeader_heading">Blaster</h1>
         <p class="projectHeader_role">Role: UI/UX Design, iOS Development</p>
-        <p class="projectHeader_tools">Tools: Sketch, AfterEffects, Illustrator, Swift</p>
-        <p class="projectHeader_tools"><a target="_blank" href="https://github.com/surayashivji/Blaster">Source Code</a></p>
+        <p class="projectHeader_tools">
+          Tools: Sketch, AfterEffects, Illustrator, Swift
+        </p>
+        <p class="projectHeader_tools">
+          <a target="_blank" href="https://github.com/surayashivji/Blaster"
+            >Source Code</a
+          >
+        </p>
       </div>
       <div class="col-md-4 col-sm-12">
-        <p class="projectHeader_desc">Augmented Reality First Person Shooter game.</p>
+        <p class="projectHeader_desc">
+          Augmented Reality First Person Shooter game.
+        </p>
       </div>
     </div>
     <!-- Project Header End -->
@@ -29,8 +55,11 @@
       <div class="col-md-12">
         <h1 class="mainbodytitle">Overview</h1>
         <div class="mainparagraph">
-          <p>Blaster is an AR mobile game that I designed and developed for fun. I programmed the game in C# using
-            Unity and Vuforia. Check out a demo below.</p>
+          <p>
+            Blaster is an AR mobile game that I designed and developed for fun.
+            I programmed the game in C# using Unity and Vuforia. Check out a
+            demo below.
+          </p>
         </div>
       </div>
     </div>
@@ -41,34 +70,66 @@
       <div class="row">
         <h1 class="mainbodytitle maindivhead">Demo</h1>
         <div class="video">
-          <video width="450" height="500" preload="auto" [autoplay]="true" [controls]="true" onloadedmetadata="this.muted=true"
-            playsinline="true" [loop]="true">
-            <source src="./assets/images/pages/blaster/home.mp4" type="video/mp4">
+          <video
+            width="450"
+            height="500"
+            preload="auto"
+            [autoplay]="true"
+            [controls]="true"
+            onloadedmetadata="this.muted=true"
+            playsinline="true"
+            [loop]="true"
+          >
+            <source
+              src="./assets/images/pages/blaster/home.mp4"
+              type="video/mp4"
+            />
           </video>
           <p class="video-caption">Home</p>
         </div>
       </div>
       <div class="row">
         <div class="video">
-          <video width="450" height="500" preload="auto" [autoplay]="true" [controls]="true" onloadedmetadata="this.muted=true"
-            playsinline="true" [loop]="true">
-            <source src="./assets/images/pages/blaster/targets.mp4" type="video/mp4">
+          <video
+            width="450"
+            height="500"
+            preload="auto"
+            [autoplay]="true"
+            [controls]="true"
+            onloadedmetadata="this.muted=true"
+            playsinline="true"
+            [loop]="true"
+          >
+            <source
+              src="./assets/images/pages/blaster/targets.mp4"
+              type="video/mp4"
+            />
           </video>
           <p class="video-caption">AR Targets</p>
         </div>
       </div>
       <div class="row">
         <div class="video">
-          <video width="450" height="500" preload="auto" [autoplay]="true" [controls]="true" onloadedmetadata="this.muted=true"
-            playsinline="true" [loop]="true">
-            <source src="./assets/images/pages/blaster/ducks.mp4" type="video/mp4">
+          <video
+            width="450"
+            height="500"
+            preload="auto"
+            [autoplay]="true"
+            [controls]="true"
+            onloadedmetadata="this.muted=true"
+            playsinline="true"
+            [loop]="true"
+          >
+            <source
+              src="./assets/images/pages/blaster/ducks.mp4"
+              type="video/mp4"
+            />
           </video>
           <p class="video-caption">AR Ducks</p>
         </div>
       </div>
     </div>
     <!-- Demo Center End -->
-
-
   </div>
   <app-footer [currentPage]="'blaster'"></app-footer>
+</div>

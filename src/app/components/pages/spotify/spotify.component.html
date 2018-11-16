@@ -1,23 +1,45 @@
-<app-header [overlay]="'true'"></app-header>
+<app-new-header [targetTransparentLimiter]="parallax"></app-new-header>
 
-<ng-progress #progressBar [direction]="'ltr+'" [max]="100" [speed]="500" [trickleSpeed]="300" [spinner]="false"
-  [spinnerPosition]="'left'" [thick]="true" [meteor]="true" [color]="'#1ED760'" [ease]="'linear'"></ng-progress>
-  
-<div class="container reveal-animation" (scroll)="scrollHandler($event)" #reveal>
+<ng-progress
+  #progressBar
+  [color]="'#1ED760'"
+  [direction]="'ltr+'"
+  [ease]="'linear'"
+  [max]="100"
+  [meteor]="true"
+  [speed]="500"
+  [spinner]="false"
+  [spinnerPosition]="'left'"
+  [thick]="true"
+  [trickleSpeed]="300"
+></ng-progress>
+
+<div
+  class="container reveal-animation"
+  (scroll)="scrollHandler($event)"
+  #reveal
+>
   <!-- Full Screen Image Section Start -->
-  <div class="parallax-screen spotifyhead fade-in one" id="parallax">
-    <!-- Full Screen Image Section End -->
-  </div>
+  <div
+    #parallax
+    id="parallax"
+    class="parallax-screen spotifyhead fade-in one"
+  ></div>
+  <!-- Full Screen Image Section End -->
   <div class="container custom-container">
     <!-- Project Header Start -->
     <div class="row projectHeader">
       <div class="col-md-8 col-sm-12">
         <h1 class="projectHeader_heading">Product Design Intern</h1>
         <p class="projectHeader_role">Team: App Integrations</p>
-        <p class="projectHeader_tools">Tools: Sketch, Framer, Illustrator, Photoshop</p>
+        <p class="projectHeader_tools">
+          Tools: Sketch, Framer, Illustrator, Photoshop
+        </p>
       </div>
       <div class="col-md-4 col-sm-12">
-        <p class="projectHeader_desc">App Integrations in Platform & Partner Experience</p>
+        <p class="projectHeader_desc">
+          App Integrations in Platform & Partner Experience
+        </p>
       </div>
     </div>
     <!-- Project Header End -->
@@ -26,15 +48,21 @@
       <div class="col-md-12">
         <h1 class="mainbodytitle">Summary</h1>
         <div class="mainparagraph">
-          <p>In summer 2018, I joined Spotify as a Product Design Intern in San Francisco. I worked on projects
-            involving mobile gaming, messaging, and commuting with an incredible team of designers on the App
-            Integrations Squad. In collaboration with designers, product managers, and engineers, I conducted UX
-            research studies, designed mockups, animated prototypes, and helped lead a design sprint on mobile gaming.
-            Though I can’t share mockups, process shots, prototypes, or other details publicly, please email me if
-            you’d like to hear more about my experience!</p>
+          <p>
+            In summer 2018, I joined Spotify as a Product Design Intern in San
+            Francisco. I worked on projects involving mobile gaming, messaging,
+            and commuting with an incredible team of designers on the App
+            Integrations Squad. In collaboration with designers, product
+            managers, and engineers, I conducted UX research studies, designed
+            mockups, animated prototypes, and helped lead a design sprint on
+            mobile gaming. Though I can’t share mockups, process shots,
+            prototypes, or other details publicly, please email me if you’d like
+            to hear more about my experience!
+          </p>
         </div>
       </div>
     </div>
     <!-- Body Pragraph Main End -->
   </div>
   <app-footer [currentPage]="'spotify'"></app-footer>
+</div>

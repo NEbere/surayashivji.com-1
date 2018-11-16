@@ -1,13 +1,31 @@
-<app-header [overlay]="'true'"></app-header>
+<app-new-header [targetTransparentLimiter]="parallax"></app-new-header>
 
-<ng-progress #progressBar [direction]="'ltr+'" [max]="100" [speed]="500" [trickleSpeed]="300" [spinner]="false"
-  [spinnerPosition]="'left'" [thick]="true" [meteor]="true" [color]="'#CCD2D9'" [ease]="'linear'"></ng-progress>
+<ng-progress
+  #progressBar
+  [color]="'#CCD2D9'"
+  [direction]="'ltr+'"
+  [ease]="'linear'"
+  [max]="100"
+  [meteor]="true"
+  [speed]="500"
+  [spinner]="false"
+  [spinnerPosition]="'left'"
+  [thick]="true"
+  [trickleSpeed]="300"
+></ng-progress>
 
-<div class="container reveal-animation" (scroll)="scrollHandler($event)" #reveal>
+<div
+  class="container reveal-animation"
+  (scroll)="scrollHandler($event)"
+  #reveal
+>
   <!-- Full Screen Image Section Start -->
-  <div class="parallax-screen rizikitotohead fade-in one" id="parallax">
-    <!-- Full Screen Image Section End -->
-  </div>
+  <div
+    #parallax
+    id="parallax"
+    class="parallax-screen rizikitotohead fade-in one"
+  ></div>
+  <!-- Full Screen Image Section End -->
 
   <div class="container custom-container">
     <!-- Project Header Start -->
@@ -18,7 +36,9 @@
         <p class="projectHeader_tools">Entrepreneurship, Development, Design</p>
       </div>
       <div class="col-md-4 col-sm-12">
-        <p class="projectHeader_desc">Nonprofit organization for East African orphanages.</p>
+        <p class="projectHeader_desc">
+          Nonprofit organization for East African orphanages.
+        </p>
       </div>
     </div>
     <!-- Project Header End -->
@@ -28,32 +48,50 @@
       <div class="col-md-12">
         <h1 class="mainbodytitle">Overview</h1>
         <div class="mainparagraph">
-          <p>Rizikitoto is the non-profit organization that I founded and ran from 2014 to 2017. Rizikitoto utilizes
-            mobile app revenue to fund initiatives that promote self-sustenance in East African orphanages.</p>
+          <p>
+            Rizikitoto is the non-profit organization that I founded and ran
+            from 2014 to 2017. Rizikitoto utilizes mobile app revenue to fund
+            initiatives that promote self-sustenance in East African orphanages.
+          </p>
         </div>
         <h6 class="submaintitle">Background</h6>
         <div class="mainparagraph">
-          <p>On trips to visit my parents’ hometowns in East Africa, my siblings and I would volunteer at Bright
-            Futures orphanage in Kampala, Uganda. We taught kids aged 6 to 17 reading, writing, and math skills and
-            learned about their personal interests and goals too. While spending time with the kids at Bright Futures,
-            I learned that their problems were not limited to need, but also self-sustenance. These children were
-            already incredibly bright, but they lacked the resources and guidance to pursue their dreams. After all,
-            how can a girl with no books for school someday become a teacher?</p>
+          <p>
+            On trips to visit my parents’ hometowns in East Africa, my siblings
+            and I would volunteer at Bright Futures orphanage in Kampala,
+            Uganda. We taught kids aged 6 to 17 reading, writing, and math
+            skills and learned about their personal interests and goals too.
+            While spending time with the kids at Bright Futures, I learned that
+            their problems were not limited to need, but also self-sustenance.
+            These children were already incredibly bright, but they lacked the
+            resources and guidance to pursue their dreams. After all, how can a
+            girl with no books for school someday become a teacher?
+          </p>
         </div>
         <h6 class="submaintitle">Mission</h6>
         <div class="row inset outcomecontainer-rt">
           <div class="col-md-2 inset">
             <div class="media-inline">
-              <img src="./assets/images/pages/rizikitoto/logo.png" class="img-responsive outcomeimg" alt="description"
-                width="100">
+              <img
+                src="./assets/images/pages/rizikitoto/logo.png"
+                class="img-responsive outcomeimg"
+                alt="description"
+                width="100"
+              />
             </div>
           </div>
           <div class="col-md-10 inset">
             <div class="mainparagraph">
-              <p><i>Rizikitoto works to help East African orphans become self-sufficient. We have a network of mobile
-                  apps where the revenue of each is spent on resources that support the talents, interests, and
-                  aspirations of the children. Our goal is to empower these children to have confidence in their
-                  capabilities.</i></p>
+              <p>
+                <i
+                  >Rizikitoto works to help East African orphans become
+                  self-sufficient. We have a network of mobile apps where the
+                  revenue of each is spent on resources that support the
+                  talents, interests, and aspirations of the children. Our goal
+                  is to empower these children to have confidence in their
+                  capabilities.</i
+                >
+              </p>
             </div>
           </div>
         </div>
@@ -61,51 +99,70 @@
     </div>
     <!-- Overview End -->
 
-
     <!-- Impact Start -->
     <!-- Body Paragraph Main Start -->
     <div class="row projectbody">
       <div class="col-md-12">
         <h1 class="mainbodytitle">Impact</h1>
         <div class="mainparagraph">
-          <p>I developed and designed five iOS games that generated money for the kids at Bright Futures Orphanage.
-            Rizikitoto funded initiatives for approximately 50 children through the games and crowdfunding campaigns.
+          <p>
+            I developed and designed five iOS games that generated money for the
+            kids at Bright Futures Orphanage. Rizikitoto funded initiatives for
+            approximately 50 children through the games and crowdfunding
+            campaigns.
           </p>
         </div>
         <!-- Kids Pics -->
         <div class="container videocontainer">
           <div class="row">
             <div class="media-inline-spaced">
-              <img src="./assets/images/pages/rizikitoto/kids1.png" class="img-responsive" alt="description">
+              <img
+                src="./assets/images/pages/rizikitoto/kids1.png"
+                class="img-responsive"
+                alt="description"
+              />
             </div>
           </div>
         </div>
         <div class="container videocontainer">
           <div class="row">
             <div class="media-inline-spaced">
-              <img src="./assets/images/pages/rizikitoto/kids2.png" class="img-responsive" alt="description">
+              <img
+                src="./assets/images/pages/rizikitoto/kids2.png"
+                class="img-responsive"
+                alt="description"
+              />
             </div>
           </div>
         </div>
-        <!-- <div class="container videocontainer">
-          <div class="row">
-            <div class="media-inline-spaced">
-              <img src="./assets/images/pages/rizikitoto/kids3.png" class="img-responsive" alt="description">
+        <!--
+          <div class="container videocontainer">
+            <div class="row">
+              <div class="media-inline-spaced">
+                <img src="./assets/images/pages/rizikitoto/kids3.png" class="img-responsive" alt="description">
+              </div>
             </div>
           </div>
-        </div> -->
+        -->
         <!-- Pics End -->
         <!-- Apps Begin -->
         <h6 class="submaintitle">Apps</h6>
         <div class="mainparagraph">
-          <p>I designed and developed the games in Objective-C and put them on the app store. The revenue that each
-            game generated was used to fund initiatives in Bright Futures Orphanage.</p>
+          <p>
+            I designed and developed the games in Objective-C and put them on
+            the app store. The revenue that each game generated was used to fund
+            initiatives in Bright Futures Orphanage.
+          </p>
         </div>
         <!-- Center Image Section Start -->
         <div class="container videocontainer">
           <div class="row">
             <div class="media-inline">
-              <img src="./assets/images/pages/rizikitoto/apps.png" class="img-responsive" alt="description">
+              <img
+                src="./assets/images/pages/rizikitoto/apps.png"
+                class="img-responsive"
+                alt="description"
+              />
             </div>
           </div>
         </div>
@@ -119,20 +176,42 @@
           <div class="row">
             <div class="col-md-6 col-sm-12 no-bottom">
               <div class="video video-no-padding">
-                <!-- <video preload="auto" [controls]="true" [muted]="true" [loop]="true"> -->
-                <video preload="auto" [autoplay]="true" [controls]="false" [loop]="true" onloadedmetadata="this.muted=true"
-                  playsinline="true">
-                  <source src="./assets/images/pages/rizikitoto/bilberry.mp4" type="video/mp4">
+                <!--
+                  <video preload="auto" [controls]="true" [muted]="true" [loop]="true">
+                -->
+                <video
+                  preload="auto"
+                  [autoplay]="true"
+                  [controls]="false"
+                  [loop]="true"
+                  onloadedmetadata="this.muted=true"
+                  playsinline="true"
+                >
+                  <source
+                    src="./assets/images/pages/rizikitoto/bilberry.mp4"
+                    type="video/mp4"
+                  />
                 </video>
                 <p class="video-caption">Bilberry</p>
               </div>
             </div>
             <div class="col-md-6 col-sm-12 no-bottom">
               <div class="video video-no-padding">
-                <!-- <video preload="auto" [controls]="true" [muted]="true" [loop]="true"> -->
-                <video preload="auto" [autoplay]="true" [controls]="false" [loop]="true" onloadedmetadata="this.muted=true"
-                  playsinline="true">
-                  <source src="./assets/images/pages/rizikitoto/barberry.mp4" type="video/mp4">
+                <!--
+                  <video preload="auto" [controls]="true" [muted]="true" [loop]="true">
+                -->
+                <video
+                  preload="auto"
+                  [autoplay]="true"
+                  [controls]="false"
+                  [loop]="true"
+                  onloadedmetadata="this.muted=true"
+                  playsinline="true"
+                >
+                  <source
+                    src="./assets/images/pages/rizikitoto/barberry.mp4"
+                    type="video/mp4"
+                  />
                 </video>
                 <p class="video-caption">Barberry</p>
               </div>
@@ -145,9 +224,18 @@
           <div class="row">
             <div class="col-md-4 col-sm-12">
               <div class="video video-no-padding">
-                <video preload="auto" [autoplay]="true" [controls]="false" [loop]="true" onloadedmetadata="this.muted=true"
-                  playsinline="true">
-                  <source src="./assets/images/pages/rizikitoto/mares.mp4" type="video/mp4">
+                <video
+                  preload="auto"
+                  [autoplay]="true"
+                  [controls]="false"
+                  [loop]="true"
+                  onloadedmetadata="this.muted=true"
+                  playsinline="true"
+                >
+                  <source
+                    src="./assets/images/pages/rizikitoto/mares.mp4"
+                    type="video/mp4"
+                  />
                 </video>
                 <p class="video-caption">Mares</p>
               </div>
@@ -155,9 +243,18 @@
 
             <div class="col-md-4 col-sm-12">
               <div class="video video-no-padding">
-                <video preload="auto" [autoplay]="true" [controls]="false" [loop]="true" onloadedmetadata="this.muted=true"
-                  playsinline="true">
-                  <source src="./assets/images/pages/rizikitoto/loxe.mp4" type="video/mp4">
+                <video
+                  preload="auto"
+                  [autoplay]="true"
+                  [controls]="false"
+                  [loop]="true"
+                  onloadedmetadata="this.muted=true"
+                  playsinline="true"
+                >
+                  <source
+                    src="./assets/images/pages/rizikitoto/loxe.mp4"
+                    type="video/mp4"
+                  />
                 </video>
                 <p class="video-caption">Loxe</p>
               </div>
@@ -165,9 +262,18 @@
 
             <div class="col-md-4 col-sm-12">
               <div class="video video-no-padding">
-                <video preload="auto" [autoplay]="true" [controls]="false" [loop]="true" onloadedmetadata="this.muted=true"
-                  playsinline="true">
-                  <source src="./assets/images/pages/rizikitoto/bayberry.mp4" type="video/mp4">
+                <video
+                  preload="auto"
+                  [autoplay]="true"
+                  [controls]="false"
+                  [loop]="true"
+                  onloadedmetadata="this.muted=true"
+                  playsinline="true"
+                >
+                  <source
+                    src="./assets/images/pages/rizikitoto/bayberry.mp4"
+                    type="video/mp4"
+                  />
                 </video>
                 <p class="video-caption">Bayberry</p>
               </div>
@@ -179,8 +285,10 @@
         <!-- Apps End -->
         <h6 class="submaintitle">Website</h6>
         <div class="mainparagraph">
-          <p>From 2014 to 2018, <i>rizikitoto.org</i> detailed the organization's ongoing efforts, applications, and
-            crowdfunding campaigns.</p>
+          <p>
+            From 2014 to 2018, <i>rizikitoto.org</i> detailed the organization's
+            ongoing efforts, applications, and crowdfunding campaigns.
+          </p>
         </div>
         <!-- Website Images Start -->
         <!-- Large Video -->
@@ -189,9 +297,19 @@
           <div class="row">
             <div class="video">
               <div class="video">
-                <video class="vapor" preload="auto" [loop]="true" [autoplay]="true" [controls]="false" onloadedmetadata="this.muted=true"
-                  playsinline="true">
-                  <source src="./assets/images/pages/rizikitoto/home_cast.mp4" type="video/mp4">
+                <video
+                  class="vapor"
+                  preload="auto"
+                  [loop]="true"
+                  [autoplay]="true"
+                  [controls]="false"
+                  onloadedmetadata="this.muted=true"
+                  playsinline="true"
+                >
+                  <source
+                    src="./assets/images/pages/rizikitoto/home_cast.mp4"
+                    type="video/mp4"
+                  />
                 </video>
               </div>
             </div>
@@ -203,12 +321,20 @@
           <div class="row">
             <div class="col-md-6 col-sm-12">
               <div class="video">
-                <img src="./assets/images/pages/rizikitoto/2.png" class="img-responsive" alt="description">
+                <img
+                  src="./assets/images/pages/rizikitoto/2.png"
+                  class="img-responsive"
+                  alt="description"
+                />
               </div>
             </div>
             <div class="col-md-6 col-sm-12">
               <div class="video">
-                <img src="./assets/images/pages/rizikitoto/3.png" class="img-responsive" alt="description">
+                <img
+                  src="./assets/images/pages/rizikitoto/3.png"
+                  class="img-responsive"
+                  alt="description"
+                />
               </div>
             </div>
           </div>
@@ -218,12 +344,20 @@
           <div class="row">
             <div class="col-md-6 col-sm-12">
               <div class="video">
-                <img src="./assets/images/pages/rizikitoto/5.png" class="img-responsive" alt="description">
+                <img
+                  src="./assets/images/pages/rizikitoto/5.png"
+                  class="img-responsive"
+                  alt="description"
+                />
               </div>
             </div>
             <div class="col-md-6 col-sm-12">
               <div class="video">
-                <img src="./assets/images/pages/rizikitoto/6.png" class="img-responsive" alt="description">
+                <img
+                  src="./assets/images/pages/rizikitoto/6.png"
+                  class="img-responsive"
+                  alt="description"
+                />
               </div>
             </div>
           </div>
@@ -241,17 +375,26 @@
         <h6 class="submaintitle">Digital</h6>
         <ul class="projects">
           <li>
-            <a target="_blank" href="http://www.mercurynews.com/2014/12/18/qa-rizikitotos-suraya-shivji-17-crowd-funds-for-african-orphans/">
+            <a
+              target="_blank"
+              href="http://www.mercurynews.com/2014/12/18/qa-rizikitotos-suraya-shivji-17-crowd-funds-for-african-orphans/"
+            >
               The Mercury News (December 18, 2014)
             </a>
           </li>
           <li>
-            <a target="_blank" href="http://news.harker.org/senior-creates-website-to-raise-money-for-african-orphans/">
+            <a
+              target="_blank"
+              href="http://news.harker.org/senior-creates-website-to-raise-money-for-african-orphans/"
+            >
               Harker News (January 7, 2015)
             </a>
           </li>
           <li>
-            <a target="_blank" href="https://ismailimail.wordpress.com/2014/12/23/suraya-shivji-17-crowd-funds-for-african-orphans/">
+            <a
+              target="_blank"
+              href="https://ismailimail.wordpress.com/2014/12/23/suraya-shivji-17-crowd-funds-for-african-orphans/"
+            >
               Ismailimail (December 23, 2014)
             </a>
           </li>
@@ -270,19 +413,22 @@
       <div class="col-md-12">
         <h1 class="mainbodytitle">Takeaways</h1>
         <div class="mainparagraph">
-          <p>Through Rizikitoto, I became obsessed with entrepreneurship, software engineering, design, education,
-            self-sustenance, and so much more. When I was building the games in high school for fun, I had no idea that
-            tech was even an industry. It was the first time I took an idea and made it into a reality. I am still
-            incredibly passionate about self-sustenance and social entrepreneurship. My three years of work on
-            Rizikitoto led me to the Iovine and Young Academy where I study design, technology, and
-            business, so I am excited to see how my newfound knowledge will allow me to further impact these
-            communities in the future. </p>
+          <p>
+            Through Rizikitoto, I became obsessed with entrepreneurship,
+            software engineering, design, education, self-sustenance, and so
+            much more. When I was building the games in high school for fun, I
+            had no idea that tech was even an industry. It was the first time I
+            took an idea and made it into a reality. I am still incredibly
+            passionate about self-sustenance and social entrepreneurship. My
+            three years of work on Rizikitoto led me to the Iovine and Young
+            Academy where I study design, technology, and business, so I am
+            excited to see how my newfound knowledge will allow me to further
+            impact these communities in the future.
+          </p>
         </div>
       </div>
     </div>
     <!-- Takeaways Sub End -->
-
   </div>
-
 </div>
 <app-footer [currentPage]="'rizikitoto'"></app-footer>

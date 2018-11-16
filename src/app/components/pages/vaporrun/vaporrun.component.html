@@ -1,21 +1,45 @@
-<app-header [overlay]="'true'"></app-header>
+<app-new-header [targetTransparentLimiter]="parallax"></app-new-header>
 
-<ng-progress #progressBar [direction]="'ltr+'" [max]="100" [speed]="500" [trickleSpeed]="300" [spinner]="false"
-  [spinnerPosition]="'left'" [thick]="true" [meteor]="true" [color]="'#FF3AFF'" [ease]="'linear'"></ng-progress>
+<ng-progress
+  #progressBar
+  [color]="'#FF3AFF'"
+  [direction]="'ltr+'"
+  [ease]="'linear'"
+  [max]="100"
+  [meteor]="true"
+  [speed]="500"
+  [spinner]="false"
+  [spinnerPosition]="'left'"
+  [thick]="true"
+  [trickleSpeed]="300"
+></ng-progress>
 
-<div class="container reveal-animation" (scroll)="scrollHandler($event)" #reveal>
+<div
+  class="container reveal-animation"
+  (scroll)="scrollHandler($event)"
+  #reveal
+>
   <!-- Full Screen Image Section Start -->
-  <div class="parallax-screen vaporhead fade-in one" id="parallax">
-    <!-- Full Screen Image Section End -->
-  </div>
+  <div
+    #parallax
+    id="parallax"
+    class="parallax-screen vaporhead fade-in one"
+  ></div>
+  <!-- Full Screen Image Section End -->
 
   <div class="container custom-container">
     <!-- Project Header Start -->
     <div class="row projectHeader">
       <div class="col-md-8 col-sm-12">
         <h1 class="projectHeader_heading">Vapor Run</h1>
-        <p class="projectHeader_role">Role: Game Development (C++), Game Design</p>
-        <p class="projectHeader_tools"><a target="_blank" href="https://github.com/surayashivji/VaporRun">Source Code</a></p>
+        <p class="projectHeader_role">
+          Role: Game Development (C++), Game Design
+        </p>
+        <p class="projectHeader_tools">
+          <a target="_blank" href="https://github.com/surayashivji/VaporRun"
+            >Source Code</a
+          >
+        </p>
       </div>
       <div class="col-md-4 col-sm-12">
         <p class="projectHeader_desc">First-person Vaporwave Parkour game.</p>
@@ -28,10 +52,14 @@
       <div class="col-md-12">
         <h1 class="mainbodytitle">Overview</h1>
         <div class="mainparagraph">
-          <p>Vapor Run is a Vaporwave style game I designed and developed for fun. I programmed the game in C++ using
-            SDL and explored a variety of topics including pathfinding, collision, physics, graphics, cameras, and
-            OpenGL. You can download the source code to play the game for yourself, but if you don’t have Xcode
-            installed, check out a demo below!</p>
+          <p>
+            Vapor Run is a Vaporwave style game I designed and developed for
+            fun. I programmed the game in C++ using SDL and explored a variety
+            of topics including pathfinding, collision, physics, graphics,
+            cameras, and OpenGL. You can download the source code to play the
+            game for yourself, but if you don’t have Xcode installed, check out
+            a demo below!
+          </p>
         </div>
       </div>
     </div>
@@ -40,9 +68,18 @@
     <div class="container videocontainer">
       <div class="row">
         <div class="video">
-          <video class="vapor" preload="auto" [autoplay]="true" [controls]="true" onloadedmetadata="this.muted=true"
-            playsinline="true">
-            <source src="./assets/images/pages/vapor/demo.mp4" type="video/mp4">
+          <video
+            class="vapor"
+            preload="auto"
+            [autoplay]="true"
+            [controls]="true"
+            onloadedmetadata="this.muted=true"
+            playsinline="true"
+          >
+            <source
+              src="./assets/images/pages/vapor/demo.mp4"
+              type="video/mp4"
+            />
           </video>
         </div>
       </div>
@@ -51,3 +88,4 @@
   </div>
 
   <app-footer [currentPage]="'vapor'"></app-footer>
+</div>

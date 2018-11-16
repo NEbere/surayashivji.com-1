@@ -1,13 +1,31 @@
-<app-header [overlay]="'true'"></app-header>
+<app-new-header [targetTransparentLimiter]="parallax"></app-new-header>
 
-<ng-progress #progressBar [direction]="'ltr+'" [max]="100" [speed]="500" [trickleSpeed]="300" [spinner]="false"
-  [spinnerPosition]="'left'" [thick]="true" [meteor]="true" [color]="'#A5ACB8'" [ease]="'linear'"></ng-progress>
+<ng-progress
+  #progressBar
+  [color]="'#A5ACB8'"
+  [direction]="'ltr+'"
+  [ease]="'linear'"
+  [max]="100"
+  [meteor]="true"
+  [speed]="500"
+  [spinner]="false"
+  [spinnerPosition]="'left'"
+  [thick]="true"
+  [trickleSpeed]="300"
+></ng-progress>
 
-<div class="container reveal-animation" (scroll)="scrollHandler($event)" #reveal>
+<div
+  class="container reveal-animation"
+  (scroll)="scrollHandler($event)"
+  #reveal
+>
   <!-- Full Screen Image Section Start -->
-  <div class="parallax-screen applehead fade-in one" id="parallax">
-    <!-- Full Screen Image Section End -->
-  </div>
+  <div
+    #parallax
+    id="parallax"
+    class="parallax-screen applehead fade-in one"
+  ></div>
+  <!-- Full Screen Image Section End -->
 
   <div class="container custom-container">
     <!-- Project Header Start -->
@@ -18,7 +36,9 @@
         <p class="projectHeader_tools">Tech: Objective-C, C++, C</p>
       </div>
       <div class="col-md-4 col-sm-12">
-        <p class="projectHeader_desc">Software Engineering Internships at Apple.</p>
+        <p class="projectHeader_desc">
+          Software Engineering Internships at Apple.
+        </p>
       </div>
     </div>
     <!-- Project Header End -->
@@ -28,11 +48,16 @@
       <div class="col-md-12">
         <h1 class="mainbodytitle">Overview</h1>
         <div class="mainparagraph">
-          <p>In 2016 and 2017, I was a software engineering intern at Apple. In 2016, I worked with the wonderful people in
-            Worldwide Developer Relations in the marketing department. As someone who found her love for technology
-            and design by making iPhone and iPad apps in high school, working at the company who builds these products
-            was a dream come true. In 2017, I worked on the Core Bluetooth Team where I built an accessibility feature
-            for AirPods. I’m excited to be able to share this feature here, since it shipped with iOS 12!</p>
+          <p>
+            In 2016 and 2017, I was a software engineering intern at Apple. In
+            2016, I worked with the wonderful people in Worldwide Developer
+            Relations in the marketing department. As someone who found her love
+            for technology and design by making iPhone and iPad apps in high
+            school, working at the company who builds these products was a dream
+            come true. In 2017, I worked on the Core Bluetooth Team where I
+            built an accessibility feature for AirPods. I’m excited to be able
+            to share this feature here, since it shipped with iOS 12!
+          </p>
         </div>
       </div>
     </div>
@@ -43,12 +68,17 @@
       <div class="col-md-12">
         <h1 class="mainbodytitle">Live Listen</h1>
         <div class="mainparagraph">
-          <p>Live listens turns your iOS device into a directional microphone by seeding the sound to your AirPods. By
-            placing your iOS device closer to a sound source, you will be better able to listen to a conversation in a
-            noisy environment or even hear someone speaking across the room. Though Live Listen is not a full
-            replacement for hearing aids, there are 48 million adults in the US who report hearing loss, but only 26%
-            actually own hearing aids (partly because of cost). This feature is an affordable and accessible solution
-            to a growing problem.</p>
+          <p>
+            Live listens turns your iOS device into a directional microphone by
+            seeding the sound to your AirPods. By placing your iOS device closer
+            to a sound source, you will be better able to listen to a
+            conversation in a noisy environment or even hear someone speaking
+            across the room. Though Live Listen is not a full replacement for
+            hearing aids, there are 48 million adults in the US who report
+            hearing loss, but only 26% actually own hearing aids (partly because
+            of cost). This feature is an affordable and accessible solution to a
+            growing problem.
+          </p>
         </div>
       </div>
     </div>
@@ -66,16 +96,28 @@
           <div class="row quotesContainer">
             <div class="col-md-6 col-sm-12 quotesImage">
               <div class="video">
-                  <a target="_blank" href="https://techcrunch.com/2018/06/05/airpods-to-get-live-listen-feature-in-ios-12/">
-                    <img src="{{imagePath}}/pages/apple/press1.png" class="img-responsive" alt="TechCrunch">
-                  </a>
+                <a
+                  target="_blank"
+                  href="https://techcrunch.com/2018/06/05/airpods-to-get-live-listen-feature-in-ios-12/"
+                >
+                  <img
+                    src="{{imagePath}}/pages/apple/press1.png"
+                    class="img-responsive"
+                    alt="TechCrunch"
+                  />
+                </a>
               </div>
             </div>
             <div class="col-md-6 col-sm-12 quotesText">
               <div class="mainparagraph">
-                <p><i>“The inclusion of this feature makes AirPods more capable and more alluring…Soon, anyone —
-                    particularly someone with limited hearing — will have access to this feature without needing to buy
-                    dedicated hardware to get it.”</i></p>
+                <p>
+                  <i
+                    >“The inclusion of this feature makes AirPods more capable
+                    and more alluring…Soon, anyone — particularly someone with
+                    limited hearing — will have access to this feature without
+                    needing to buy dedicated hardware to get it.”</i
+                  >
+                </p>
                 <p><b>TechCrunch</b></p>
               </div>
             </div>
@@ -83,16 +125,29 @@
           <div class="row quotesContainer">
             <div class="col-md-6 col-sm-12 quotesImage">
               <div class="video">
-                <a target="_blank" href="https://forbes.com/sites/davidphelan/2018/06/13/apple-airpods-to-gain-brilliant-new-feature-in-ios-12-upgrade-ears-on-release-date/#6513299522d1">
-                  <img src="{{imagePath}}/pages/apple/press2.png" class="img-responsive" alt="TechCrunch">
+                <a
+                  target="_blank"
+                  href="https://forbes.com/sites/davidphelan/2018/06/13/apple-airpods-to-gain-brilliant-new-feature-in-ios-12-upgrade-ears-on-release-date/#6513299522d1"
+                >
+                  <img
+                    src="{{imagePath}}/pages/apple/press2.png"
+                    class="img-responsive"
+                    alt="TechCrunch"
+                  />
                 </a>
               </div>
             </div>
             <div class="col-md-6 col-sm-12 quotesText">
               <div class="mainparagraph">
-                <p><i>“I’ve tried it and it works sensationally…So powerful it takes a little getting used to. The
-                    conversation I simply couldn’t hear became completely audible and my endless polite nodding and
-                    smiling actually took on some sensible meaning now I had logged back into the conversation.”</i></p>
+                <p>
+                  <i
+                    >“I’ve tried it and it works sensationally…So powerful it
+                    takes a little getting used to. The conversation I simply
+                    couldn’t hear became completely audible and my endless
+                    polite nodding and smiling actually took on some sensible
+                    meaning now I had logged back into the conversation.”</i
+                  >
+                </p>
                 <p><b>Forbes</b></p>
               </div>
             </div>
@@ -108,16 +163,20 @@
       <div class="col-md-12">
         <h1 class="mainbodytitle">Takeaways</h1>
         <div class="mainparagraph">
-          <p>I learned so much from my software engineering internships. With the help of the Core Bluetooth Team, I
-            presented the project to the VP of Wireless Engineering and Interactive Media Group and collaborated with
-            the Bluetooth, Accessibility, and Audio Teams throughout the summer. I learned that no matter your role on
-            a project, gaining a deep understanding for its intended audience and implications is what will allow you to 
-            build the most holistic product.</p>
+          <p>
+            I learned so much from my software engineering internships. With the
+            help of the Core Bluetooth Team, I presented the project to the VP
+            of Wireless Engineering and Interactive Media Group and collaborated
+            with the Bluetooth, Accessibility, and Audio Teams throughout the
+            summer. I learned that no matter your role on a project, gaining a
+            deep understanding for its intended audience and implications is
+            what will allow you to build the most holistic product.
+          </p>
         </div>
       </div>
     </div>
     <!-- Takeaways Sub End -->
-
   </div>
 
   <app-footer [currentPage]="'apple'"></app-footer>
+</div>

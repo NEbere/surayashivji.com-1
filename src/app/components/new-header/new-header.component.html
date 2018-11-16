@@ -1,0 +1,156 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-9 col-sm-12 headername">
+      <h1
+        class="maintitle"
+        [ngStyle]="{ color: headerColor }"
+        (click)="goToReload('/')"
+      >
+        Suraya Shivji
+      </h1>
+      <p class="maintit_caption">design-technologist</p>
+    </div>
+    <div class="col-md-3 txtright dkpmenu">
+      <ul class="mainmenu">
+        <li class="hiddenmobile">
+          <a
+            routerLinkActive="activeLink"
+            [routerLinkActiveOptions]="{ exact: true }"
+            [ngStyle]="{ color: headerColor }"
+            (click)="goToReload('/')"
+            >work</a
+          >
+        </li>
+        <li class="hiddenmobile">
+          <a
+            routerLinkActive="activeLink"
+            [ngStyle]="{ color: headerColor }"
+            (click)="goToReload('/about')"
+            >about</a
+          >
+        </li>
+        <li class="visiblemobile" id="visiblemobile">
+          <a role="button" (click)="toggleMenu()">
+            <i
+              *ngIf="!isMenuOpen; else: closeIcon"
+              class="fa fa-bars"
+              aria-hidden="true"
+            ></i>
+            <ng-template #closeIcon>
+              <i class="fa fa-times" aria-hidden="true"></i>
+            </ng-template>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- TODO: Need to hide this with Angular animations instead -->
+<div [@menuFolding]="menuFolding" id="mobilemenu">
+  <ul
+    class="button-group filters-button-group btn-group btn-group-justified filter-button-group filterbtn-group"
+    aria-label="filterImages"
+    role="group"
+  >
+    <li>
+      <!-- id="work" -->
+      <button
+        class="btn btn-default filterbtn mainmobilehead"
+        data-filter="*"
+        routerLinkActive="activeLink"
+        type="button"
+        (click)="goToReload('/')"
+      >
+        work
+      </button>
+
+      <ul>
+        <li class="btn-group" role="group">
+          <!-- id="all" -->
+          <button
+            class="btn btn-default filterbtn"
+            data-filter="*"
+            (click)="goToReload('/home/all')"
+            routerLinkActive="activeLink"
+            type="button"
+          >
+            All
+          </button>
+        </li>
+        <li class="btn-group" role="group">
+          <!-- id="ui" -->
+          <button
+            class="btn filterbtn btn-default"
+            data-filter=".ui"
+            routerLinkActive="activeLink"
+            type="button"
+            (click)="goToReload('/home/ui')"
+          >
+            UI/UX
+          </button>
+        </li>
+        <li class="btn-group" role="group">
+          <!-- id="graphic" -->
+          <button
+            class="btn filterbtn btn-default"
+            data-filter=".graphic"
+            routerLinkActive="activeLink"
+            type="button"
+            (click)="goToReload('/home/graphic')"
+          >
+            Graphic Design
+          </button>
+        </li>
+        <li class="btn-group" role="group">
+          <!-- id="3d" -->
+          <button
+            class="btn filterbtn btn-default"
+            data-filter=".3d"
+            routerLinkActive="activeLink"
+            type="button"
+            (click)="goToReload('/home/3d')"
+          >
+            3D Design
+          </button>
+        </li>
+        <li class="btn-group" role="group">
+          <!-- id="creativecode" -->
+          <button
+            class="btn filterbtn btn-default"
+            data-filter=".creativecode"
+            routerLinkActive="activeLink"
+            type="button"
+            (click)="goToReload('/home/creativecode')"
+          >
+            Creative Code
+          </button>
+        </li>
+        <li class="btn-group" role="group">
+          <!-- id="development" -->
+          <button
+            class="btn filterbtn btn-default"
+            data-filter=".development"
+            routerLinkActive="activeLink"
+            type="button"
+            (click)="goToReload('/home/development')"
+          >
+            Development
+          </button>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <button
+        id="all"
+        class="btn btn-default filterbtn mainmobilehead"
+        data-filter="*"
+        routerLinkActive="activeLink"
+        type="button"
+        (click)="goToReload('/about')"
+      >
+        about
+      </button>
+    </li>
+  </ul>
+</div>
