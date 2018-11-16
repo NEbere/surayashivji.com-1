@@ -544,7 +544,8 @@ a.mainmobilehead {
   display: block;
 }
 
-li#visiblemobile i.fa.fa-bars {
+li#visiblemobile i.fa.fa-bars,
+li#visiblemobile i.fa.fa-times {
   color: #9b9898;
   font-size: 16px;
 }
@@ -1088,7 +1089,8 @@ div#grid-fluid {
     padding: 0px !important;
   }
 
-  li#visiblemobile i.fa.fa-bars {
+  li#visiblemobile i.fa.fa-bars,
+  li#visiblemobile i.fa.fa-times {
     position: absolute;
     top: -63px;
     right: 10%;

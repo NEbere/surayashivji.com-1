@@ -31,8 +31,15 @@
         </li>
         <li class="visiblemobile" id="visiblemobile">
           <a role="button" (click)="toggleMenu()">
-            <i class="fa fa-bars" aria-hidden="true"></i
-          ></a>
+            <i
+              *ngIf="!isMenuOpen; else: closeIcon"
+              class="fa fa-bars"
+              aria-hidden="true"
+            ></i>
+            <ng-template #closeIcon>
+              <i class="fa fa-times" aria-hidden="true"></i>
+            </ng-template>
+          </a>
         </li>
       </ul>
     </div>
