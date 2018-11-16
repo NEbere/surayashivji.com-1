@@ -1,21 +1,43 @@
-<app-header [overlay]="'true'"></app-header>
+<app-new-header [targetTransparentLimiter]="parallax"></app-new-header>
 
-<ng-progress #progressBar [direction]="'ltr+'" [max]="100" [speed]="500" [trickleSpeed]="300" [spinner]="false"
-  [spinnerPosition]="'left'" [thick]="true" [meteor]="true" [color]="'#F1F1F1'" [ease]="'linear'"></ng-progress>
+<ng-progress
+  #progressBar
+  [color]="'#F1F1F1'"
+  [direction]="'ltr+'"
+  [ease]="'linear'"
+  [max]="100"
+  [meteor]="true"
+  [speed]="500"
+  [spinner]="false"
+  [spinnerPosition]="'left'"
+  [thick]="true"
+  [trickleSpeed]="300"
+></ng-progress>
 
-<div class="container reveal-animation" (scroll)="scrollHandler($event)" #reveal>
+<div
+  class="container reveal-animation"
+  (scroll)="scrollHandler($event)"
+  #reveal
+>
   <!-- Full Screen Image Section Start -->
-  <div class="parallax-screen photogramhead fade-in one" id="parallax">
-    <!-- Full Screen Image Section End -->
-  </div>
+  <div
+    #parallax
+    id="parallax"
+    class="parallax-screen photogramhead fade-in one"
+  ></div>
+  <!-- Full Screen Image Section End -->
 
   <div class="container custom-container">
     <!-- Project Header Start -->
     <div class="row projectHeader">
       <div class="col-md-8 col-sm-12">
         <h1 class="projectHeader_heading">Photogram</h1>
-        <p class="projectHeader_role">Role: Interaction Design, Research, Video Production</p>
-        <p class="projectHeader_tools">Tools: Illustrator, Maya, AfterEffects</p>
+        <p class="projectHeader_role">
+          Role: Interaction Design, Research, Video Production
+        </p>
+        <p class="projectHeader_tools">
+          Tools: Illustrator, Maya, AfterEffects
+        </p>
       </div>
       <div class="col-md-4 col-sm-12">
         <p class="projectHeader_desc">AR experience for photography.</p>
@@ -32,24 +54,36 @@
         </div>
         <h6 class="submaintitle">Distance</h6>
         <div class="mainparagraph">
-          <p>2D photography has three problems that are integrated into society.</p>
+          <p>
+            2D photography has three problems that are integrated into society.
+          </p>
           <ol class="projects bottom-padding">
-            <li><b>Distance from memories.</b> A picture doesn’t fully represent a memory because a memory is dynamic.
-              The environment, movements, feelings, and changing emotions, are all key aspects of a memory that a
-              picture
-              can’t capture.</li>
-            <li><b>Distance from the truth.</b> Fake news! Social media pictures obscure reality. We must look towards
-              more accurate methods of capturing moments in time in order to have an accurate understanding for the
-              world around us.</li>
-            <li><b>Distance from the friends.</b> Photoshop and similar tools create inaccurate representations of the
-              world.</li>
+            <li>
+              <b>Distance from memories.</b> A picture doesn’t fully represent a
+              memory because a memory is dynamic. The environment, movements,
+              feelings, and changing emotions, are all key aspects of a memory
+              that a picture can’t capture.
+            </li>
+            <li>
+              <b>Distance from the truth.</b> Fake news! Social media pictures
+              obscure reality. We must look towards more accurate methods of
+              capturing moments in time in order to have an accurate
+              understanding for the world around us.
+            </li>
+            <li>
+              <b>Distance from the friends.</b> Photoshop and similar tools
+              create inaccurate representations of the world.
+            </li>
           </ol>
         </div>
         <h6 class="submaintitle">Location</h6>
         <div class="mainparagraph">
-          <p>Currently, media isn’t associated to the location that it’s created in. Sure, we can see a pin on a map
-            for where we took a picture on a smartphone, but we need to fully feel the environment to get a real
-            understanding of the media’s context.</p>
+          <p>
+            Currently, media isn’t associated to the location that it’s created
+            in. Sure, we can see a pin on a map for where we took a picture on a
+            smartphone, but we need to fully feel the environment to get a real
+            understanding of the media’s context.
+          </p>
         </div>
       </div>
     </div>
@@ -63,32 +97,51 @@
         <div class="row inset">
           <div class="col-md-2 inset">
             <div class="media-inline">
-              <img src="./assets/images/pages/photogram/logo.png" class="img-responsive photogram-logo" alt="description">
+              <img
+                src="./assets/images/pages/photogram/logo.png"
+                class="img-responsive photogram-logo"
+                alt="description"
+              />
             </div>
           </div>
           <div class="col-md-10 inset">
             <div class="mainparagraph">
-              <p><i>Photogram is the photography app of the future. Photogram allows people to relive their memories in
-                  the locations where they happened. By seamlessly combining 3D scanning, audio, video, and location,
-                  Photogram captures your environment with the Microsoft HoloLens for playback, bringing the digital
-                  world one step closer to the physical world.</i></p>
+              <p>
+                <i
+                  >Photogram is the photography app of the future. Photogram
+                  allows people to relive their memories in the locations where
+                  they happened. By seamlessly combining 3D scanning, audio,
+                  video, and location, Photogram captures your environment with
+                  the Microsoft HoloLens for playback, bringing the digital
+                  world one step closer to the physical world.</i
+                >
+              </p>
             </div>
           </div>
         </div>
         <!-- Logo + Description End -->
         <h6 class="submaintitle">How do we represent memories?</h6>
         <div class="mainparagraph">
-          <p>We started with drawings, then pictures, audio, video, and now Photogram. Photogram represents the next
-            step in this progression. It answers the question: What will memories look like in mixed reality? Does this
-            medium bring us one step closer to their memories?</p>
+          <p>
+            We started with drawings, then pictures, audio, video, and now
+            Photogram. Photogram represents the next step in this progression.
+            It answers the question: What will memories look like in mixed
+            reality? Does this medium bring us one step closer to their
+            memories?
+          </p>
         </div>
         <h6 class="submaintitle">AR Log Line</h6>
         <div class="mainparagraph">
-          <p><i>"A participant puts on the Hololens and has the ability to capture a memory in a 3D space (a
-              “Photogram”),
-              where they are able to play back their own past Photograms, connect with the Photograms of others, and
-              explore the Photograms of that location. The experience goal is to redefine memory retention, recall, and
-              development while capitalizing on empathy."</i></p>
+          <p>
+            <i
+              >"A participant puts on the Hololens and has the ability to
+              capture a memory in a 3D space (a “Photogram”), where they are
+              able to play back their own past Photograms, connect with the
+              Photograms of others, and explore the Photograms of that location.
+              The experience goal is to redefine memory retention, recall, and
+              development while capitalizing on empathy."</i
+            >
+          </p>
         </div>
       </div>
     </div>
@@ -103,7 +156,11 @@
         <div class="container videocontainer">
           <div class="row">
             <div class="video">
-              <img src="./assets/images/pages/photogram/logoiterations.png" class="img-responsive" alt="description">
+              <img
+                src="./assets/images/pages/photogram/logoiterations.png"
+                class="img-responsive"
+                alt="description"
+              />
             </div>
           </div>
         </div>
@@ -113,7 +170,11 @@
         <div class="container videocontainer">
           <div class="row">
             <div class="video">
-              <img src="./assets/images/pages/photogram/interactioninspo.png" class="img-responsive" alt="description">
+              <img
+                src="./assets/images/pages/photogram/interactioninspo.png"
+                class="img-responsive"
+                alt="description"
+              />
             </div>
           </div>
         </div>
@@ -123,7 +184,11 @@
         <div class="container videocontainer">
           <div class="row">
             <div class="video">
-              <img src="./assets/images/pages/photogram/icons.png" class="img-responsive photogram-short" alt="description">
+              <img
+                src="./assets/images/pages/photogram/icons.png"
+                class="img-responsive photogram-short"
+                alt="description"
+              />
             </div>
           </div>
         </div>
@@ -131,15 +196,27 @@
         <!-- Gaze Start -->
         <h6 class="submaintitle">Gaze Interaction</h6>
         <div class="mainparagraph">
-          <p>Users gaze at the menu item they would like to select. The selected menu item animates in the middle of
-            the dial.</p>
+          <p>
+            Users gaze at the menu item they would like to select. The selected
+            menu item animates in the middle of the dial.
+          </p>
         </div>
         <div class="container videocontainer">
           <div class="row">
             <div class="media-inline">
-              <video width="400" preload="auto" [autoplay]="true" [controls]="false" onloadedmetadata="this.muted=true"
-                playsinline="true" [loop]="true">
-                <source src="./assets/images/pages/photogram/dial.mp4" type="video/mp4">
+              <video
+                width="400"
+                preload="auto"
+                [autoplay]="true"
+                [controls]="false"
+                onloadedmetadata="this.muted=true"
+                playsinline="true"
+                [loop]="true"
+              >
+                <source
+                  src="./assets/images/pages/photogram/dial.mp4"
+                  type="video/mp4"
+                />
               </video>
             </div>
           </div>
@@ -147,9 +224,19 @@
         <div class="container videocontainer">
           <div class="row">
             <div class="video">
-              <video width="400" preload="auto" [autoplay]="true" [controls]="false" onloadedmetadata="this.muted=true"
-                playsinline="true" [loop]="true">
-                <source src="./assets/images/pages/photogram/gaze.mp4" type="video/mp4">
+              <video
+                width="400"
+                preload="auto"
+                [autoplay]="true"
+                [controls]="false"
+                onloadedmetadata="this.muted=true"
+                playsinline="true"
+                [loop]="true"
+              >
+                <source
+                  src="./assets/images/pages/photogram/gaze.mp4"
+                  type="video/mp4"
+                />
               </video>
             </div>
           </div>
@@ -164,7 +251,10 @@
         <h1 class="mainbodytitle maindivhead">Demo Video</h1>
         <div class="video">
           <video preload="auto" [controls]="true" playsinline="true">
-            <source src="./assets/images/pages/photogram/demo.mp4" type="video/mp4">
+            <source
+              src="./assets/images/pages/photogram/demo.mp4"
+              type="video/mp4"
+            />
           </video>
         </div>
       </div>
@@ -178,58 +268,85 @@
         <div class="row">
           <div class="col-md-8 col-sm-12">
             <div class="mainparagraph">
-              <p>Our team pitched Photogram to Microsoft executives in May of 2017. This research was conducted
-                under
-                the USC School of Cinematic Arts in the MxR lab.</p>
+              <p>
+                Our team pitched Photogram to Microsoft executives in May of
+                2017. This research was conducted under the USC School of
+                Cinematic Arts in the MxR lab.
+              </p>
             </div>
           </div>
           <div class="col-md-4 col-sm-12">
             <div class="media-inline-spaced">
-              <img src="./assets/images/pages/photogram/title.png" class="img-responsive" alt="description">
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4 col-sm-12">
-            <div class="media-inline-spaced">
-              <img src="./assets/images/pages/photogram/problem.png" class="img-responsive" alt="description">
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-12">
-            <div class="media-inline-spaced">
-              <img src="./assets/images/pages/photogram/research.png" class="img-responsive" alt="description">
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-12">
-            <div class="media-inline-spaced">
-              <img src="./assets/images/pages/photogram/how.png" class="img-responsive" alt="description">
+              <img
+                src="./assets/images/pages/photogram/title.png"
+                class="img-responsive"
+                alt="description"
+              />
             </div>
           </div>
         </div>
         <div class="row">
           <div class="col-md-4 col-sm-12">
             <div class="media-inline-spaced">
-              <img src="./assets/images/pages/photogram/app.png" class="img-responsive" alt="description">
+              <img
+                src="./assets/images/pages/photogram/problem.png"
+                class="img-responsive"
+                alt="description"
+              />
             </div>
           </div>
           <div class="col-md-4 col-sm-12">
             <div class="media-inline-spaced">
-              <img src="./assets/images/pages/photogram/design.png" class="img-responsive" alt="description">
+              <img
+                src="./assets/images/pages/photogram/research.png"
+                class="img-responsive"
+                alt="description"
+              />
             </div>
           </div>
           <div class="col-md-4 col-sm-12">
             <div class="media-inline-spaced">
-              <img src="./assets/images/pages/photogram/end.png" class="img-responsive" alt="description">
+              <img
+                src="./assets/images/pages/photogram/how.png"
+                class="img-responsive"
+                alt="description"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 col-sm-12">
+            <div class="media-inline-spaced">
+              <img
+                src="./assets/images/pages/photogram/app.png"
+                class="img-responsive"
+                alt="description"
+              />
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-12">
+            <div class="media-inline-spaced">
+              <img
+                src="./assets/images/pages/photogram/design.png"
+                class="img-responsive"
+                alt="description"
+              />
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-12">
+            <div class="media-inline-spaced">
+              <img
+                src="./assets/images/pages/photogram/end.png"
+                class="img-responsive"
+                alt="description"
+              />
             </div>
           </div>
         </div>
       </div>
     </div>
     <!-- Slide Deck End -->
-
-
   </div>
-
 </div>
 
 <app-footer [currentPage]="'photogram'"></app-footer>

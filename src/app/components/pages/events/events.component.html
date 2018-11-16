@@ -1,12 +1,30 @@
-<app-header [overlay]="'true'"></app-header>
+<app-new-header [targetTransparentLimiter]="parallax"></app-new-header>
 
-<ng-progress #progressBar [direction]="'ltr+'" [max]="100" [speed]="500" [trickleSpeed]="300" [spinner]="false"
-  [spinnerPosition]="'left'" [thick]="true" [meteor]="true" [color]="'#B4BEDF'" [ease]="'linear'"></ng-progress>
+<ng-progress
+  #progressBar
+  [color]="'#B4BEDF'"
+  [direction]="'ltr+'"
+  [ease]="'linear'"
+  [max]="100"
+  [meteor]="true"
+  [speed]="500"
+  [spinner]="false"
+  [spinnerPosition]="'left'"
+  [thick]="true"
+  [trickleSpeed]="300"
+></ng-progress>
 
-<div class="container reveal-animation" (scroll)="scrollHandler($event)" #reveal>
-
+<div
+  class="container reveal-animation"
+  (scroll)="scrollHandler($event)"
+  #reveal
+>
   <!-- Full Screen Image Section Start -->
-  <div class="parallax-screen eventshead fade-in one" id="parallax"> </div>
+  <div
+    #parallax
+    id="parallax"
+    class="parallax-screen eventshead fade-in one"
+  ></div>
   <!-- Full Screen Image Section End -->
 
   <div class="container custom-container">
@@ -18,7 +36,9 @@
         <p class="projectHeader_role">Tools: Sketch, Principle, Swift</p>
       </div>
       <div class="col-md-4 col-sm-12">
-        <p class="projectHeader_desc">Find mutually available times from iMessage.</p>
+        <p class="projectHeader_desc">
+          Find mutually available times from iMessage.
+        </p>
       </div>
     </div>
     <!-- Project Header End -->
@@ -35,17 +55,29 @@
           <div class="row">
             <div class="col-md-4 col-sm-12">
               <div class="media-inline-spaced">
-                <img src="./assets/images/pages/events/chat1.png" class="img-responsive" alt="description">
+                <img
+                  src="./assets/images/pages/events/chat1.png"
+                  class="img-responsive"
+                  alt="description"
+                />
               </div>
             </div>
             <div class="col-md-4 col-sm-12">
               <div class="media-inline-spaced">
-                <img src="./assets/images/pages/events/chat2.png" class="img-responsive" alt="description">
+                <img
+                  src="./assets/images/pages/events/chat2.png"
+                  class="img-responsive"
+                  alt="description"
+                />
               </div>
             </div>
             <div class="col-md-4 col-sm-12">
               <div class="media-inline-spaced">
-                <img src="./assets/images/pages/events/chat3.png" class="img-responsive" alt="description">
+                <img
+                  src="./assets/images/pages/events/chat3.png"
+                  class="img-responsive"
+                  alt="description"
+                />
               </div>
             </div>
           </div>
@@ -53,14 +85,20 @@
         <!-- Three Centered Image End -->
         <h6 class="submaintitle">How do friends communicate?</h6>
         <div class="mainparagraph">
-          <p>Group messaging. You have the freedom to communicate what you want, when you want, and to multiple people
-            at once. Group messages, however, are an archive of thoughts and are not optimized for finding a mutual
-            time to get together. Alternate scheduling services such as WhenIsGood or Doodle are used for meetings and
-            interviews but feel out of place in a social context.</p>
+          <p>
+            Group messaging. You have the freedom to communicate what you want,
+            when you want, and to multiple people at once. Group messages,
+            however, are an archive of thoughts and are not optimized for
+            finding a mutual time to get together. Alternate scheduling services
+            such as WhenIsGood or Doodle are used for meetings and interviews
+            but feel out of place in a social context.
+          </p>
         </div>
         <div class="mainparagraph">
-          <p class="hmw hmw-events">How might we help people schedule casual events with their friends in a
-            frictionless way?</p>
+          <p class="hmw hmw-events">
+            How might we help people schedule casual events with their friends
+            in a frictionless way?
+          </p>
         </div>
       </div>
     </div>
@@ -71,45 +109,67 @@
       <div class="col-md-12">
         <h1 class="mainbodytitle">Research</h1>
         <div class="mainparagraph">
-          <p>I began by conducting secondary research on the usage of mobile group messaging, the ecosystem of
-            messaging apps, and the demographic clusters within these apps. Pew Research Center reported
-            that 42% of smartphone owners ages 18 to 29 uses messaging apps such as WhatsApp, iMessage, Kik or
-            Messenger. As such, I chose to focus on people aged 15 to 30 as the demographic for this project. This
-            chart displays users of any age who use a messaging app via mobile phone at least once per month.</p>
-        </div>
-        <!-- Center Image Section Start -->
-        <div class="container videocontainer">
-          <div class="row">
-            <div class="media-inline">
-              <img src="./assets/images/pages/events/research1.png" class="img-responsive" alt="description">
-            </div>
-          </div>
-        </div>
-        <!-- Center Image Section End -->
-        <div class="mainparagraph">
-          <p>I conducted 12 casual, in-person interviews in order to gain insight on the ways in which different friend
-            groups use group messaging, whether or not people put in the effort to spend time with their friends, and
-            the roadblocks people face in trying to do so.</p>
-        </div>
-        <!-- Center Image Section Start -->
-        <div class="container videocontainer">
-          <div class="row">
-            <div class="media-inline">
-              <img src="./assets/images/pages/events/research2.png" class="img-responsive" alt="description">
-            </div>
-          </div>
-        </div>
-        <!-- Center Image Section End -->
-        <div class="mainparagraph">
-          <p>The user interviews allowed me to identify patterns within my demographic, which I synthesized into three
-            key insights that set up a clear journey of evidence for the remainder of my design process.
+          <p>
+            I began by conducting secondary research on the usage of mobile
+            group messaging, the ecosystem of messaging apps, and the
+            demographic clusters within these apps. Pew Research Center reported
+            that 42% of smartphone owners ages 18 to 29 uses messaging apps such
+            as WhatsApp, iMessage, Kik or Messenger. As such, I chose to focus
+            on people aged 15 to 30 as the demographic for this project. This
+            chart displays users of any age who use a messaging app via mobile
+            phone at least once per month.
           </p>
         </div>
         <!-- Center Image Section Start -->
         <div class="container videocontainer">
           <div class="row">
             <div class="media-inline">
-              <img src="./assets/images/pages/events/research3.png" class="img-responsive" alt="description">
+              <img
+                src="./assets/images/pages/events/research1.png"
+                class="img-responsive"
+                alt="description"
+              />
+            </div>
+          </div>
+        </div>
+        <!-- Center Image Section End -->
+        <div class="mainparagraph">
+          <p>
+            I conducted 12 casual, in-person interviews in order to gain insight
+            on the ways in which different friend groups use group messaging,
+            whether or not people put in the effort to spend time with their
+            friends, and the roadblocks people face in trying to do so.
+          </p>
+        </div>
+        <!-- Center Image Section Start -->
+        <div class="container videocontainer">
+          <div class="row">
+            <div class="media-inline">
+              <img
+                src="./assets/images/pages/events/research2.png"
+                class="img-responsive"
+                alt="description"
+              />
+            </div>
+          </div>
+        </div>
+        <!-- Center Image Section End -->
+        <div class="mainparagraph">
+          <p>
+            The user interviews allowed me to identify patterns within my
+            demographic, which I synthesized into three key insights that set up
+            a clear journey of evidence for the remainder of my design process.
+          </p>
+        </div>
+        <!-- Center Image Section Start -->
+        <div class="container videocontainer">
+          <div class="row">
+            <div class="media-inline">
+              <img
+                src="./assets/images/pages/events/research3.png"
+                class="img-responsive"
+                alt="description"
+              />
             </div>
           </div>
         </div>
@@ -127,160 +187,267 @@
           <div class="col-md-9 no-gutters">
             <div class="col-md-12 no-gutters nopad">
               <div class="mainparagraph">
-                <p>The user research insights showed that people love using group messages to chat, but find them
-                  tedious
-                  to
-                  plan events in due to their back and forth nature. At the same time, creating events should feel
-                  casual,
-                  simple, and easy. For these reasons, I decided that using an iMessage extension would be the best
-                  form
-                  as
-                  opposed to a stand-alone, external app. An iMessage app feels casual, convenient, and requires less
-                  work
-                  from the users, supporting the insights that were gleaned from my interviews.</p>
+                <p>
+                  The user research insights showed that people love using group
+                  messages to chat, but find them tedious to plan events in due
+                  to their back and forth nature. At the same time, creating
+                  events should feel casual, simple, and easy. For these
+                  reasons, I decided that using an iMessage extension would be
+                  the best form as opposed to a stand-alone, external app. An
+                  iMessage app feels casual, convenient, and requires less work
+                  from the users, supporting the insights that were gleaned from
+                  my interviews.
+                </p>
               </div>
             </div>
             <div class="col-md-6 no-gutters nopad">
-              <img src="./assets/images/pages/events/shazam1.png" class="img-responsive center-block img-inline img-medium-size"
-                alt="description">
+              <img
+                src="./assets/images/pages/events/shazam1.png"
+                class="img-responsive center-block img-inline img-medium-size"
+                alt="description"
+              />
               <p class="caption-inline">The app drawer is easily accessible.</p>
             </div>
             <div class="col-md-6 no-gutters nopad">
-              <img src="./assets/images/pages/events/shazam2.png" class="img-responsive center-block img-inline img-medium-size"
-                alt="description">
-              <p class="caption-inline">Apps are integrated into conversation.</p>
+              <img
+                src="./assets/images/pages/events/shazam2.png"
+                class="img-responsive center-block img-inline img-medium-size"
+                alt="description"
+              />
+              <p class="caption-inline">
+                Apps are integrated into conversation.
+              </p>
             </div>
           </div>
           <div class="col-md-3">
-            <img src="./assets/images/pages/events/doodle.png" class="img-responsive" alt="description">
-            <p class="caption-inline">Doodle's onboarding adds unnecessary steps and friction.</p>
+            <img
+              src="./assets/images/pages/events/doodle.png"
+              class="img-responsive"
+              alt="description"
+            />
+            <p class="caption-inline">
+              Doodle's onboarding adds unnecessary steps and friction.
+            </p>
           </div>
         </div>
         <h6 class="submaintitle">Interaction Design</h6>
         <div class="mainparagraph">
-          <p>The user interviews validated my assumption that existing scheduling apps feel out of context in a
-            casual setting; more importantly, they suggested that the process for a user to actually fill out his/her
-            availability is what is currently most tedious. So, the first challenge was creating a simple, minimal
-            input interaction for the user to enter his/her availability.
+          <p>
+            The user interviews validated my assumption that existing scheduling
+            apps feel out of context in a casual setting; more importantly, they
+            suggested that the process for a user to actually fill out his/her
+            availability is what is currently most tedious. So, the first
+            challenge was creating a simple, minimal input interaction for the
+            user to enter his/her availability.
           </p>
         </div>
         <div class="row">
           <div class="col-md-6 no-gutters">
             <div class="mainparagraph">
-              <p>I explored input interactions such as automated suggestions, manual suggestions, as well as grid-based
-                date and time selections. I ultimately decided to use a 'painting' touch gesture so that users can
-                easily paint their availability on the calendar. Though it is sometimes necessary to create custom
-                controls, using a pre-established interaction is favorable in this case as the unique value in this app
-                does not lie in the calendar by itself.</p>
+              <p>
+                I explored input interactions such as automated suggestions,
+                manual suggestions, as well as grid-based date and time
+                selections. I ultimately decided to use a 'painting' touch
+                gesture so that users can easily paint their availability on the
+                calendar. Though it is sometimes necessary to create custom
+                controls, using a pre-established interaction is favorable in
+                this case as the unique value in this app does not lie in the
+                calendar by itself.
+              </p>
             </div>
           </div>
           <div class="col-md-6 no-gutters">
-            <img src="./assets/images/pages/events/pros.png" class="img-responsive" alt="description">
+            <img
+              src="./assets/images/pages/events/pros.png"
+              class="img-responsive"
+              alt="description"
+            />
           </div>
         </div>
         <!-- Three Centered Image Start -->
         <div class="row">
           <div class="col-md-4 col-sm-12">
             <div class="video">
-              <img src="./assets/images/pages/events/paint.png" class="img-responsive" alt="description">
-              <p class="caption-inline">The 'painting' gesture matches the fluid flow of a group chat.</p>
+              <img
+                src="./assets/images/pages/events/paint.png"
+                class="img-responsive"
+                alt="description"
+              />
+              <p class="caption-inline">
+                The 'painting' gesture matches the fluid flow of a group chat.
+              </p>
             </div>
           </div>
           <div class="col-md-4 col-sm-12">
             <div class="video">
-              <img src="./assets/images/pages/events/paint2.png" class="img-responsive" alt="description">
-              <p class="caption-inline">Upon release, the circle cursor morphs into a square to solidify the user’s
-                selection.</p>
+              <img
+                src="./assets/images/pages/events/paint2.png"
+                class="img-responsive"
+                alt="description"
+              />
+              <p class="caption-inline">
+                Upon release, the circle cursor morphs into a square to solidify
+                the user’s selection.
+              </p>
             </div>
           </div>
           <div class="col-md-4 col-sm-12">
             <div class="video">
-              <img src="./assets/images/pages/events/paint3.png" class="img-responsive" alt="description">
-              <p class="caption-inline">The user can quickly view iCal events by using 3D Touch.</p>
+              <img
+                src="./assets/images/pages/events/paint3.png"
+                class="img-responsive"
+                alt="description"
+              />
+              <p class="caption-inline">
+                The user can quickly view iCal events by using 3D Touch.
+              </p>
             </div>
           </div>
         </div>
         <!-- Three Centered Image End -->
         <h6 class="submaintitle">Constraints</h6>
         <div class="mainparagraph">
-          <p>Creating an app that lives within the context of a Messages conversation introduces unique design
-            constraints. I had to work around the lack of screen real estate and use Apple’s HIG to think about the
-            existing visual elements that users expect to see within iMessage. In order to balance visual appeal and
-            usability, I decided to have the person initiating the event select a time frame from which the rest of
-            the group can respond to as opposed to displaying all possible hours. This tradeoff sacrifices the
-            flexibility that other scheduling services provide but makes sense for the light-weight, casual events
-            that this app is designed to create.</p>
+          <p>
+            Creating an app that lives within the context of a Messages
+            conversation introduces unique design constraints. I had to work
+            around the lack of screen real estate and use Apple’s HIG to think
+            about the existing visual elements that users expect to see within
+            iMessage. In order to balance visual appeal and usability, I decided
+            to have the person initiating the event select a time frame from
+            which the rest of the group can respond to as opposed to displaying
+            all possible hours. This tradeoff sacrifices the flexibility that
+            other scheduling services provide but makes sense for the
+            light-weight, casual events that this app is designed to create.
+          </p>
         </div>
         <!-- Three Centered Image Start -->
         <div class="row">
           <div class="col-md-4 col-sm-12">
             <div class="video">
-              <img src="./assets/images/pages/events/time1.png" class="img-responsive" alt="description">
+              <img
+                src="./assets/images/pages/events/time1.png"
+                class="img-responsive"
+                alt="description"
+              />
               <p class="caption-inline">Sketch of time frame configuration.</p>
             </div>
           </div>
           <div class="col-md-4 col-sm-12">
             <div class="video">
-              <img src="./assets/images/pages/events/time2.png" class="img-responsive" alt="description">
-              <p class="caption-inline">The inviter selects a time frame for the event.
-
+              <img
+                src="./assets/images/pages/events/time2.png"
+                class="img-responsive"
+                alt="description"
+              />
+              <p class="caption-inline">
+                The inviter selects a time frame for the event.
               </p>
             </div>
           </div>
           <div class="col-md-4 col-sm-12">
             <div class="video">
-              <img src="./assets/images/pages/events/time3.png" class="img-responsive" alt="description">
-              <p class="caption-inline">The respondent(s) paint their availability within that time frame.</p>
+              <img
+                src="./assets/images/pages/events/time3.png"
+                class="img-responsive"
+                alt="description"
+              />
+              <p class="caption-inline">
+                The respondent(s) paint their availability within that time
+                frame.
+              </p>
             </div>
           </div>
         </div>
         <!-- Three Centered Image End -->
         <h6 class="submaintitle">Visual Design</h6>
         <div class="mainparagraph">
-          <p>I used a step-by-step flow for the availability and event creation in order to keep things simple. Some
-            other questions that I tackled were:</p>
+          <p>
+            I used a step-by-step flow for the availability and event creation
+            in order to keep things simple. Some other questions that I tackled
+            were:
+          </p>
           <ul class="projects">
-            <li>Will the inviter’s view look different than the invitee’s view? (only where necessary).</li>
-            <li>Should people “paint” when they are available, or when they are busy? (available).</li>
-            <li>Will overlaying existing calendar events (iCal) feel out of place for a casual, friends-based event
-              app? (No, it’s important to see all obligations to have an accurate schedule).</li>
-            <li>How should people’s responses be visually differentiated? (Stacked opacities of different colors).</li>
-            <li>Should we display the hours before or after the event is created? (Before, as the time of day is
-              important for any get together).</li>
+            <li>
+              Will the inviter’s view look different than the invitee’s view?
+              (only where necessary).
+            </li>
+            <li>
+              Should people “paint” when they are available, or when they are
+              busy? (available).
+            </li>
+            <li>
+              Will overlaying existing calendar events (iCal) feel out of place
+              for a casual, friends-based event app? (No, it’s important to see
+              all obligations to have an accurate schedule).
+            </li>
+            <li>
+              How should people’s responses be visually differentiated? (Stacked
+              opacities of different colors).
+            </li>
+            <li>
+              Should we display the hours before or after the event is created?
+              (Before, as the time of day is important for any get together).
+            </li>
           </ul>
         </div>
         <!-- Two Centered Image Start -->
         <div class="row">
           <div class="col-md-8 col-sm-12">
             <div class="video">
-              <img src="./assets/images/pages/events/sketch.png" class="img-responsive" alt="description">
+              <img
+                src="./assets/images/pages/events/sketch.png"
+                class="img-responsive"
+                alt="description"
+              />
             </div>
           </div>
           <div class="col-md-4 col-sm-12">
             <div class="video">
-              <img src="./assets/images/pages/events/visual.png" class="img-responsive" alt="description">
+              <img
+                src="./assets/images/pages/events/visual.png"
+                class="img-responsive"
+                alt="description"
+              />
             </div>
           </div>
         </div>
         <!-- Two Centered Image End -->
         <div class="mainparagraph">
-          <p>Once the “inviter” sends his/her availability, the event is created. Now, all participants have the option
-            of adding integrations to the event. Though I experimented with multiple 3rd party integrations that make
-            sense for events, I narrowed it down to the following 4 for simplicity and clarity:</p>
+          <p>
+            Once the “inviter” sends his/her availability, the event is created.
+            Now, all participants have the option of adding integrations to the
+            event. Though I experimented with multiple 3rd party integrations
+            that make sense for events, I narrowed it down to the following 4
+            for simplicity and clarity:
+          </p>
         </div>
         <div class="row">
           <div class="col-md-7 no-gutters">
             <ol class="projects">
-              <li>Location: Suggest and vote for the eventʼs location with Maps.</li>
-              <li>Music: Add a shared music playlist through either Apple Music or Spotify with your friendsʼ
-                preferences in the mix.</li>
-              <li>Photos: Create and be automatically subscribed to a shared album with iCloud Photo Sharing.</li>
-              <li>Money: Send or receive money from individuals through Apple Pay in iOS 11.</li>
+              <li>
+                Location: Suggest and vote for the eventʼs location with Maps.
+              </li>
+              <li>
+                Music: Add a shared music playlist through either Apple Music or
+                Spotify with your friendsʼ preferences in the mix.
+              </li>
+              <li>
+                Photos: Create and be automatically subscribed to a shared album
+                with iCloud Photo Sharing.
+              </li>
+              <li>
+                Money: Send or receive money from individuals through Apple Pay
+                in iOS 11.
+              </li>
             </ol>
           </div>
           <div class="col-md-5 no-gutters">
             <div class="media-inline">
-              <img src="./assets/images/pages/events/features.png" class="img-responsive" alt="description">
+              <img
+                src="./assets/images/pages/events/features.png"
+                class="img-responsive"
+                alt="description"
+              />
             </div>
           </div>
         </div>
@@ -289,7 +456,11 @@
         <div class="container videocontainer">
           <div class="row">
             <div class="video">
-              <img src="./assets/images/pages/events/flow_organizer.png" class="img-responsive" alt="description">
+              <img
+                src="./assets/images/pages/events/flow_organizer.png"
+                class="img-responsive"
+                alt="description"
+              />
             </div>
           </div>
         </div>
@@ -299,7 +470,11 @@
         <div class="container videocontainer">
           <div class="row">
             <div class="video">
-              <img src="./assets/images/pages/events/flow_respondent.png" class="img-responsive" alt="description">
+              <img
+                src="./assets/images/pages/events/flow_respondent.png"
+                class="img-responsive"
+                alt="description"
+              />
             </div>
           </div>
         </div>
@@ -317,51 +492,88 @@
         <div class="row inset outcomecontainer">
           <div class="col-md-2 inset">
             <div class="media-inline">
-              <img src="./assets/images/pages/events/logo.png" class="img-responsive outcomeimg" alt="description"
-                width="100">
+              <img
+                src="./assets/images/pages/events/logo.png"
+                class="img-responsive outcomeimg"
+                alt="description"
+                width="100"
+              />
             </div>
           </div>
           <div class="col-md-10 inset">
             <div class="mainparagraph">
-              <p><i>Events for iMessage allows friends to find mutually available times and organize integrated events
-                  all
-                  from iMessage.</i></p>
+              <p>
+                <i
+                  >Events for iMessage allows friends to find mutually available
+                  times and organize integrated events all from iMessage.</i
+                >
+              </p>
             </div>
           </div>
         </div>
         <h6 class="submaintitle">Start the conversation.</h6>
         <div class="mainparagraph">
-          <p>Checking availability and planning events have always been a conversation. From the simple "I miss you,
-            let's hang out" text to sharing availabilities and creating a Calendar linked event, Events for iMessage
-            makes this conversation digital.</p>
+          <p>
+            Checking availability and planning events have always been a
+            conversation. From the simple "I miss you, let's hang out" text to
+            sharing availabilities and creating a Calendar linked event, Events
+            for iMessage makes this conversation digital.
+          </p>
         </div>
         <h6 class="submaintitle">Make it an event.</h6>
         <div class="mainparagraph">
-          <p>Events for iMessage brings both casual and professional event planning directly to iMessage. Want to set
-            up a mutually available interview time? Meet up with old friends for dinner? Suggest events as an organizer
-            and send your own availability as an attendee. Share the event to Calendar with just a few swipes.</p>
+          <p>
+            Events for iMessage brings both casual and professional event
+            planning directly to iMessage. Want to set up a mutually available
+            interview time? Meet up with old friends for dinner? Suggest events
+            as an organizer and send your own availability as an attendee. Share
+            the event to Calendar with just a few swipes.
+          </p>
         </div>
         <h6 class="submaintitle">Walkthrough</h6>
         <div class="mainparagraph">
-          <p>On the left, is the inviter's view, while the right is the responder's view.</p>
+          <p>
+            On the left, is the inviter's view, while the right is the
+            responder's view.
+          </p>
         </div>
         <!-- Two Centered Video Start -->
         <div class="container videocontainer">
           <div class="row">
             <div class="col-md-6 col-sm-12">
               <div class="video">
-                <video width="450" height="650" preload="auto" [autoplay]="true" [controls]="true" onloadedmetadata="this.muted=true"
-                  playsinline="true">
-                  <source src="./assets/images/pages/events/walkthrough_inviter.mp4" type="video/mp4">
+                <video
+                  width="450"
+                  height="650"
+                  preload="auto"
+                  [autoplay]="true"
+                  [controls]="true"
+                  onloadedmetadata="this.muted=true"
+                  playsinline="true"
+                >
+                  <source
+                    src="./assets/images/pages/events/walkthrough_inviter.mp4"
+                    type="video/mp4"
+                  />
                 </video>
                 <p class="video-caption">Inviter</p>
               </div>
             </div>
             <div class="col-md-6 col-sm-12">
               <div class="video">
-                <video width="450" height="650" preload="auto" [autoplay]="true" [controls]="true" onloadedmetadata="this.muted=true"
-                  playsinline="true">
-                  <source src="./assets/images/pages/events/walkthrough_responder.mp4" type="video/mp4">
+                <video
+                  width="450"
+                  height="650"
+                  preload="auto"
+                  [autoplay]="true"
+                  [controls]="true"
+                  onloadedmetadata="this.muted=true"
+                  playsinline="true"
+                >
+                  <source
+                    src="./assets/images/pages/events/walkthrough_responder.mp4"
+                    type="video/mp4"
+                  />
                 </video>
                 <p class="video-caption">Responder</p>
               </div>
@@ -374,8 +586,16 @@
         <div class="container videocontainer">
           <div class="row">
             <div class="video">
-              <video preload="auto" [muted]="true" [controls]="true" playsinline="true">
-                <source src="./assets/images/pages/events/landingpage.mp4" type="video/mp4">
+              <video
+                preload="auto"
+                [muted]="true"
+                [controls]="true"
+                playsinline="true"
+              >
+                <source
+                  src="./assets/images/pages/events/landingpage.mp4"
+                  type="video/mp4"
+                />
               </video>
             </div>
           </div>
@@ -387,27 +607,60 @@
           <div class="row">
             <div class="col-md-4 col-sm-12">
               <div class="video">
-                <video width="400" height="500" preload="auto" [autoplay]="true" [controls]="true" onloadedmetadata="this.muted=true"
-                  [loop]="true" playsinline="true">
-                  <source src="./assets/images/pages/events/insta_ad.mp4" type="video/mp4">
+                <video
+                  width="400"
+                  height="500"
+                  preload="auto"
+                  [autoplay]="true"
+                  [controls]="true"
+                  onloadedmetadata="this.muted=true"
+                  [loop]="true"
+                  playsinline="true"
+                >
+                  <source
+                    src="./assets/images/pages/events/insta_ad.mp4"
+                    type="video/mp4"
+                  />
                 </video>
                 <p class="video-caption">Instagram</p>
               </div>
             </div>
             <div class="col-md-4 col-sm-12">
               <div class="video">
-                <video width="400" height="500" preload="auto" [autoplay]="true" [controls]="true" onloadedmetadata="this.muted=true"
-                  [loop]="true" playsinline="true">
-                  <source src="./assets/images/pages/events/snap_ad_1.mp4" type="video/mp4">
+                <video
+                  width="400"
+                  height="500"
+                  preload="auto"
+                  [autoplay]="true"
+                  [controls]="true"
+                  onloadedmetadata="this.muted=true"
+                  [loop]="true"
+                  playsinline="true"
+                >
+                  <source
+                    src="./assets/images/pages/events/snap_ad_1.mp4"
+                    type="video/mp4"
+                  />
                 </video>
                 <p class="video-caption">Snapchat Quiz</p>
               </div>
             </div>
             <div class="col-md-4 col-sm-12">
               <div class="video">
-                <video width="400" height="500" preload="auto" [autoplay]="true" [controls]="true" onloadedmetadata="this.muted=true"
-                  [loop]="true" playsinline="true">
-                  <source src="./assets/images/pages/events/snap_ad_2.mp4" type="video/mp4">
+                <video
+                  width="400"
+                  height="500"
+                  preload="auto"
+                  [autoplay]="true"
+                  [controls]="true"
+                  onloadedmetadata="this.muted=true"
+                  [loop]="true"
+                  playsinline="true"
+                >
+                  <source
+                    src="./assets/images/pages/events/snap_ad_2.mp4"
+                    type="video/mp4"
+                  />
                 </video>
                 <p class="video-caption">Snapchat</p>
               </div>
@@ -427,19 +680,26 @@
         <div class="col-md-12">
           <h1 class="mainbodytitle">Takeaways</h1>
           <ul class="projects">
-            <li><b>Respect the platform that you're designing for.</b> It's important to understand the user's
-              expectations and use established interaction patterns in order to design an experience that can live
-              within the context of a Messages conversation.</li>
-            <li><b>Provide focused content.</b> Messaging extensions should have a single focus. For example, there are
-              countless potential integrations for an events app such as music playlists, payment services, social
-              media, reminders, etc. However, for clarity and ease of use, such integrations should either be optional,
-              limited, or eliminated all together. This is an area of the app I could definitely improve upon through
-              additional user research.</li>
+            <li>
+              <b>Respect the platform that you're designing for.</b> It's
+              important to understand the user's expectations and use
+              established interaction patterns in order to design an experience
+              that can live within the context of a Messages conversation.
+            </li>
+            <li>
+              <b>Provide focused content.</b> Messaging extensions should have a
+              single focus. For example, there are countless potential
+              integrations for an events app such as music playlists, payment
+              services, social media, reminders, etc. However, for clarity and
+              ease of use, such integrations should either be optional, limited,
+              or eliminated all together. This is an area of the app I could
+              definitely improve upon through additional user research.
+            </li>
           </ul>
         </div>
       </div>
     </div>
     <!-- Takeaways End -->
-
   </div>
   <app-footer [currentPage]="'events'"></app-footer>
+</div>

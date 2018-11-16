@@ -1,13 +1,31 @@
-<app-header [overlay]="'true'"></app-header>
+<app-new-header [targetTransparentLimiter]="parallax"></app-new-header>
 
-<ng-progress #progressBar [direction]="'ltr+'" [max]="100" [speed]="500" [trickleSpeed]="300" [spinner]="false"
-  [spinnerPosition]="'left'" [thick]="true" [meteor]="true" [color]="'#C28AFF'" [ease]="'linear'"></ng-progress>
+<ng-progress
+  #progressBar
+  [color]="'#C28AFF'"
+  [direction]="'ltr+'"
+  [ease]="'linear'"
+  [max]="100"
+  [meteor]="true"
+  [speed]="500"
+  [spinner]="false"
+  [spinnerPosition]="'left'"
+  [thick]="true"
+  [trickleSpeed]="300"
+></ng-progress>
 
-<div class="container reveal-animation" (scroll)="scrollHandler($event)" #reveal>
+<div
+  class="container reveal-animation"
+  (scroll)="scrollHandler($event)"
+  #reveal
+>
   <!-- Full Screen Image Section Start -->
-  <div class="parallax-screen postershead fade-in one" id="parallax">
-    <!-- Full Screen Image Section End -->
-  </div>
+  <div
+    #parallax
+    id="parallax"
+    class="parallax-screen postershead fade-in one"
+  ></div>
+  <!-- Full Screen Image Section End -->
 
   <div class="container custom-container">
     <!-- Project Header Start -->
@@ -18,9 +36,7 @@
         <p class="projectHeader_tools">Tools: Illustrator, Photoshop</p>
       </div>
       <div class="col-md-4 col-sm-12">
-        <p class="projectHeader_desc">A series of fun, abstract posters.
-
-        </p>
+        <p class="projectHeader_desc">A series of fun, abstract posters.</p>
       </div>
     </div>
     <!-- Project Header End -->
@@ -29,7 +45,11 @@
     <div class="container videocontainer">
       <div class="row">
         <div class="video">
-          <img src="./assets/images/pages/posters/vapor.png" class="img-responsive posters" alt="description">
+          <img
+            src="./assets/images/pages/posters/vapor.png"
+            class="img-responsive posters"
+            alt="description"
+          />
         </div>
       </div>
     </div>
@@ -39,7 +59,11 @@
     <div class="container videocontainer">
       <div class="row">
         <div class="video">
-          <img src="./assets/images/pages/posters/black.png" class="img-responsive posters" alt="description">
+          <img
+            src="./assets/images/pages/posters/black.png"
+            class="img-responsive posters"
+            alt="description"
+          />
         </div>
       </div>
     </div>
@@ -49,7 +73,11 @@
     <div class="container videocontainer">
       <div class="row">
         <div class="video">
-          <img src="./assets/images/pages/posters/glitch.png" class="img-responsive posters" alt="description">
+          <img
+            src="./assets/images/pages/posters/glitch.png"
+            class="img-responsive posters"
+            alt="description"
+          />
         </div>
       </div>
     </div>
@@ -59,7 +87,11 @@
     <div class="container videocontainer">
       <div class="row">
         <div class="video">
-          <img src="./assets/images/pages/posters/pink.png" class="img-responsive posters" alt="description">
+          <img
+            src="./assets/images/pages/posters/pink.png"
+            class="img-responsive posters"
+            alt="description"
+          />
         </div>
       </div>
     </div>
@@ -67,3 +99,4 @@
   </div>
 
   <app-footer [currentPage]="'posters'"></app-footer>
+</div>

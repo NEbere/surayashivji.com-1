@@ -1,13 +1,31 @@
-<app-header [overlay]="'true'"></app-header>
+<app-new-header [targetTransparentLimiter]="parallax"></app-new-header>
 
-<ng-progress #progressBar [direction]="'ltr+'" [max]="100" [speed]="500" [trickleSpeed]="300" [spinner]="false"
-  [spinnerPosition]="'left'" [thick]="true" [meteor]="true" [color]="'#F6C7F1'" [ease]="'linear'"></ng-progress>
+<ng-progress
+  #progressBar
+  [color]="'#F6C7F1'"
+  [direction]="'ltr+'"
+  [ease]="'linear'"
+  [max]="100"
+  [meteor]="true"
+  [speed]="500"
+  [spinner]="false"
+  [spinnerPosition]="'left'"
+  [thick]="true"
+  [trickleSpeed]="300"
+></ng-progress>
 
-<div class="container reveal-animation" (scroll)="scrollHandler($event)" #reveal>
+<div
+  class="container reveal-animation"
+  (scroll)="scrollHandler($event)"
+  #reveal
+>
   <!-- Full Screen Image Section Start -->
-  <div class="parallax-screen wklyhead fade-in one" id="parallax">
-    <!-- Full Screen Image Section End -->
-  </div>
+  <div
+    #parallax
+    id="parallax"
+    class="parallax-screen wklyhead fade-in one"
+  ></div>
+  <!-- Full Screen Image Section End -->
 
   <div class="container custom-container">
     <!-- Project Header Start -->
@@ -15,9 +33,18 @@
       <div class="col-md-8 col-sm-12">
         <h1 class="projectHeader_heading">Weekly Motion</h1>
         <p class="projectHeader_role">Creative Coding</p>
-        <p class="projectHeader_role"><a target="_blank" href="https://github.com/surayashivji/WeeklyGraphics">Source
-            Code</a></p>
-        <p class="projectHeader_tools"><a target="_blank" href="https://instagram.com/surzpixels">Generative Art Instagram</a></p>
+        <p class="projectHeader_role">
+          <a
+            target="_blank"
+            href="https://github.com/surayashivji/WeeklyGraphics"
+            >Source Code</a
+          >
+        </p>
+        <p class="projectHeader_tools">
+          <a target="_blank" href="https://instagram.com/surzpixels"
+            >Generative Art Instagram</a
+          >
+        </p>
       </div>
       <div class="col-md-4 col-sm-12">
         <p class="projectHeader_desc">Weekly music visualizations.</p>
@@ -30,9 +57,18 @@
       <div class="col-md-12">
         <h1 class="mainbodytitle">Overview</h1>
         <div class="mainparagraph">
-          <p>In my spare time, I make music visualizations! It combines my two loves, generative art and music.
-            Checkout <a target="_blank" href="https://www.wklymotion.com">wklymotion.com</a> and follow
-            me <a target="_blank" href="https://www.instagram.com/surzpixels/">@surzpixels</a> to see more.</p>
+          <p>
+            In my spare time, I make music visualizations! It combines my two
+            loves, generative art and music. Checkout
+            <a target="_blank" href="https://www.wklymotion.com"
+              >wklymotion.com</a
+            >
+            and follow me
+            <a target="_blank" href="https://www.instagram.com/surzpixels/"
+              >@surzpixels</a
+            >
+            to see more.
+          </p>
         </div>
       </div>
     </div>
@@ -43,34 +79,20 @@
         <div class="col-md-6 col-sm-12">
           <div class="video">
             <video preload="auto" [controls]="true" [muted]="false">
-              <source src="./assets/images/pages/wklymotion/1_drive.mp4" type="video/mp4">
+              <source
+                src="./assets/images/pages/wklymotion/1_drive.mp4"
+                type="video/mp4"
+              />
             </video>
           </div>
         </div>
         <div class="col-md-6 col-sm-12">
           <div class="video">
             <video preload="auto" [controls]="true" [muted]="false">
-              <source src="./assets/images/pages/wklymotion/2_benhoward.mp4" type="video/mp4">
-            </video>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Two Centered Video End -->
-    <!-- Two Centered Video Start -->
-    <div class="container videocontainer">
-      <div class="row">
-        <div class="col-md-6 col-sm-12">
-          <div class="video">
-            <video preload="auto" [controls]="true" [muted]="false">
-              <source src="./assets/images/pages/wklymotion/3_pink.mp4" type="video/mp4">
-            </video>
-          </div>
-        </div>
-        <div class="col-md-6 col-sm-12">
-          <div class="video">
-            <video preload="auto" [controls]="true" [muted]="false">
-              <source src="./assets/images/pages/wklymotion/4_rainbow.mp4" type="video/mp4">
+              <source
+                src="./assets/images/pages/wklymotion/2_benhoward.mp4"
+                type="video/mp4"
+              />
             </video>
           </div>
         </div>
@@ -83,14 +105,20 @@
         <div class="col-md-6 col-sm-12">
           <div class="video">
             <video preload="auto" [controls]="true" [muted]="false">
-              <source src="./assets/images/pages/wklymotion/5_elhae.mp4" type="video/mp4">
+              <source
+                src="./assets/images/pages/wklymotion/3_pink.mp4"
+                type="video/mp4"
+              />
             </video>
           </div>
         </div>
         <div class="col-md-6 col-sm-12">
           <div class="video">
             <video preload="auto" [controls]="true" [muted]="false">
-              <source src="./assets/images/pages/wklymotion/6_alina.mp4" type="video/mp4">
+              <source
+                src="./assets/images/pages/wklymotion/4_rainbow.mp4"
+                type="video/mp4"
+              />
             </video>
           </div>
         </div>
@@ -103,14 +131,46 @@
         <div class="col-md-6 col-sm-12">
           <div class="video">
             <video preload="auto" [controls]="true" [muted]="false">
-              <source src="./assets/images/pages/wklymotion/7_gambino.mp4" type="video/mp4">
+              <source
+                src="./assets/images/pages/wklymotion/5_elhae.mp4"
+                type="video/mp4"
+              />
             </video>
           </div>
         </div>
         <div class="col-md-6 col-sm-12">
           <div class="video">
             <video preload="auto" [controls]="true" [muted]="false">
-              <source src="./assets/images/pages/wklymotion/8_coldplay.mp4" type="video/mp4">
+              <source
+                src="./assets/images/pages/wklymotion/6_alina.mp4"
+                type="video/mp4"
+              />
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Two Centered Video End -->
+    <!-- Two Centered Video Start -->
+    <div class="container videocontainer">
+      <div class="row">
+        <div class="col-md-6 col-sm-12">
+          <div class="video">
+            <video preload="auto" [controls]="true" [muted]="false">
+              <source
+                src="./assets/images/pages/wklymotion/7_gambino.mp4"
+                type="video/mp4"
+              />
+            </video>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <div class="video">
+            <video preload="auto" [controls]="true" [muted]="false">
+              <source
+                src="./assets/images/pages/wklymotion/8_coldplay.mp4"
+                type="video/mp4"
+              />
             </video>
           </div>
         </div>
@@ -120,3 +180,4 @@
   </div>
 
   <app-footer [currentPage]="'wklymotion'"></app-footer>
+</div>

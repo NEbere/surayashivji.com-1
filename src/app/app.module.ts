@@ -61,6 +61,7 @@ const appRoutes: Routes = [
       headerColor: '#FFF',
     },
   },
+  { path: '**', redirectTo: '' },
 ];
 
 @NgModule({
@@ -95,7 +96,9 @@ const appRoutes: Routes = [
     NgxMasonryModule,
     BrowserModule,
     BrowserAnimationsModule,
-    RouterModule.forRoot(appRoutes, { scrollPositionRestoration: 'enabled' }),
+    RouterModule.forRoot(appRoutes, {
+      scrollPositionRestoration: 'enabled',
+    }),
     VgCoreModule,
     VgControlsModule,
     VgOverlayPlayModule,

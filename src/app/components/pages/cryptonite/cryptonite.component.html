@@ -1,24 +1,46 @@
-<app-header [overlay]="'true'"></app-header>
+<app-new-header [targetTransparentLimiter]="parallax"></app-new-header>
 
-<ng-progress #progressBar [direction]="'ltr+'" [max]="100" [speed]="500" [trickleSpeed]="300" [spinner]="false"
-  [spinnerPosition]="'left'" [thick]="true" [meteor]="true" [color]="'#7980D0'" [ease]="'linear'"></ng-progress>
+<ng-progress
+  #progressBar
+  [color]="'#7980D0'"
+  [direction]="'ltr+'"
+  [ease]="'linear'"
+  [max]="100"
+  [meteor]="true"
+  [speed]="500"
+  [spinner]="false"
+  [spinnerPosition]="'left'"
+  [thick]="true"
+  [trickleSpeed]="300"
+></ng-progress>
 
-<div class="container reveal-animation" (scroll)="scrollHandler($event)" #reveal>
+<div
+  class="container reveal-animation"
+  (scroll)="scrollHandler($event)"
+  #reveal
+>
   <!-- Full Screen Image Section Start -->
-  <div class="parallax-screen cryptonitehead fade-in one" id="parallax">
-    <!-- Full Screen Image Section End -->
-  </div>
+  <div
+    #parallax
+    id="parallax"
+    class="parallax-screen cryptonitehead fade-in one"
+  ></div>
+  <!-- Full Screen Image Section End -->
 
   <div class="container custom-container">
     <!-- Project Header Start -->
     <div class="row projectHeader">
       <div class="col-md-8 col-sm-12">
         <h1 class="projectHeader_heading">Cryptonite</h1>
-        <p class="projectHeader_role">Role: UI/UX Design, Creative Code (Three.js, WebGL), Web Development</p>
+        <p class="projectHeader_role">
+          Role: UI/UX Design, Creative Code (Three.js, WebGL), Web Development
+        </p>
         <p class="projectHeader_tools">Tools: HTML/CSS, JavaScript, Sketch</p>
       </div>
       <div class="col-md-4 col-sm-12">
-        <p class="projectHeader_desc">A human-centered design fellowship with IDEO.</p>
+        <p class="projectHeader_desc">
+          A human-centered design fellowship with IDEO.
+        </p>
       </div>
     </div>
     <!-- Project Header End -->
@@ -28,37 +50,55 @@
       <div class="col-md-12">
         <h1 class="mainbodytitle">Background</h1>
         <div class="mainparagraph">
-          <p>In Winter 2018, I joined IDEO as a CoLab fellow focused on using human-centered design to explore how
-            emerging technologies will affect major societal systems. In this fellowship, I was placed in a
-            multidisciplinary team and collaborated on designing provocations and prototypes for two consecutive design
-            sprints.</p>
+          <p>
+            In Winter 2018, I joined IDEO as a CoLab fellow focused on using
+            human-centered design to explore how emerging technologies will
+            affect major societal systems. In this fellowship, I was placed in a
+            multidisciplinary team and collaborated on designing provocations
+            and prototypes for two consecutive design sprints.
+          </p>
         </div>
         <h6 class="submaintitle">Team</h6>
         <div class="mainparagraph">
-          <p>With backgrounds spanning energy, design thinking, mechatronics research, product management, and venture
-            design, my amazing teammates and I were assigned to work with the blockchain and gamifying unique digital
-            objects. On the team, I was a strategist, designer, and developer. I designed and programmed the web
-            application of the prototype, conducted user interviews, and helped lead venture strategy.</p>
+          <p>
+            With backgrounds spanning energy, design thinking, mechatronics
+            research, product management, and venture design, my amazing
+            teammates and I were assigned to work with the blockchain and
+            gamifying unique digital objects. On the team, I was a strategist,
+            designer, and developer. I designed and programmed the web
+            application of the prototype, conducted user interviews, and helped
+            lead venture strategy.
+          </p>
         </div>
         <!-- Team Center Image Section Start -->
         <div class="container videocontainer">
           <div class="row">
             <div class="video small-img-project">
-              <img src="./assets/images/pages/cryptonite/team.png" class="img-responsive " alt="description">
+              <img
+                src="./assets/images/pages/cryptonite/team.png"
+                class="img-responsive "
+                alt="description"
+              />
             </div>
           </div>
         </div>
         <!-- Team Center Image Section End -->
         <h6 class="submaintitle">Prompt</h6>
         <div class="mainparagraph">
-          <p>Our team’s prompt was to design and implement a BattleBots-style game that features collectible items that
-            can be tracked and traded on the Ethereum blockchain. In unpacking our design brief, we were able to, at a
-            high-level, identify the affordances that the blockchain may bring to a BattleBots-style game. Games are
-            fantastic tools for learning, understanding, and creating joyful experiences. Collectibility can add
-            excitement to games (ie Pogs, Magic: the Gathering, or Overwatch), and the fact that some items are rarer
-            than others is what makes you want to collect them. Blockchains let us track the issuance and transfer of
-            unique digital collectibles on a global scale. The interplay of these concepts formed the basis of our
-            team's ideas.</p>
+          <p>
+            Our team’s prompt was to design and implement a BattleBots-style
+            game that features collectible items that can be tracked and traded
+            on the Ethereum blockchain. In unpacking our design brief, we were
+            able to, at a high-level, identify the affordances that the
+            blockchain may bring to a BattleBots-style game. Games are fantastic
+            tools for learning, understanding, and creating joyful experiences.
+            Collectibility can add excitement to games (ie Pogs, Magic: the
+            Gathering, or Overwatch), and the fact that some items are rarer
+            than others is what makes you want to collect them. Blockchains let
+            us track the issuance and transfer of unique digital collectibles on
+            a global scale. The interplay of these concepts formed the basis of
+            our team's ideas.
+          </p>
         </div>
       </div>
       <!-- Column End -->
@@ -71,28 +111,52 @@
         <h1 class="mainbodytitle">Process</h1>
         <h6 class="submaintitle">Exploratory Research</h6>
         <div class="mainparagraph">
-          <p>Our first step was understanding the current landscape of cryptocollectibles, defining the value of the
-            blockchain in this context, and researching examples of asynchronous gameplay. In this process, we
-            uncovered several existing examples of cryptocollectibles as well as inspiration for various game mechanic.</p>
+          <p>
+            Our first step was understanding the current landscape of
+            cryptocollectibles, defining the value of the blockchain in this
+            context, and researching examples of asynchronous gameplay. In this
+            process, we uncovered several existing examples of
+            cryptocollectibles as well as inspiration for various game mechanic.
+          </p>
         </div>
         <!-- Research - Three Centered Image Start -->
         <div class="row">
           <div class="col-md-4 col-sm-12">
             <div class="video">
-              <img src="./assets/images/pages/cryptonite/research1.png" class="img-responsive" alt="description">
-              <p class="caption-inline">Cryptokitties accounted for 14% of Ethereum’s transactions in just a few weeks.</p>
+              <img
+                src="./assets/images/pages/cryptonite/research1.png"
+                class="img-responsive"
+                alt="description"
+              />
+              <p class="caption-inline">
+                Cryptokitties accounted for 14% of Ethereum’s transactions in
+                just a few weeks.
+              </p>
             </div>
           </div>
           <div class="col-md-4 col-sm-12">
             <div class="video">
-              <img src="./assets/images/pages/cryptonite/research2.png" class="img-responsive" alt="description">
-              <p class="caption-inline">Asynchronous game mechanics in the mobile battle bot game, Cats.</p>
+              <img
+                src="./assets/images/pages/cryptonite/research2.png"
+                class="img-responsive"
+                alt="description"
+              />
+              <p class="caption-inline">
+                Asynchronous game mechanics in the mobile battle bot game, Cats.
+              </p>
             </div>
           </div>
           <div class="col-md-4 col-sm-12">
             <div class="video">
-              <img src="./assets/images/pages/cryptonite/research3.png" class="img-responsive" alt="description">
-              <p class="caption-inline">Neopets has designed hundreds of engaging, humanized digital objects.</p>
+              <img
+                src="./assets/images/pages/cryptonite/research3.png"
+                class="img-responsive"
+                alt="description"
+              />
+              <p class="caption-inline">
+                Neopets has designed hundreds of engaging, humanized digital
+                objects.
+              </p>
             </div>
           </div>
         </div>
@@ -100,67 +164,103 @@
         <!-- Ideation Start -->
         <h6 class="submaintitle">Ideation</h6>
         <div class="mainparagraph">
-          <p>In order to understand the context for which we were designing, we mapped out the user’s journey for
-            playing a game that involves the creation, collection, and interaction of unique digital objects (whatever
-            the content of the objects may be). We outlined the people, situations, environments, and behaviors that
-            exist today in order to identify the key moments that we wanted to prototype for user feedback.</p>
+          <p>
+            In order to understand the context for which we were designing, we
+            mapped out the user’s journey for playing a game that involves the
+            creation, collection, and interaction of unique digital objects
+            (whatever the content of the objects may be). We outlined the
+            people, situations, environments, and behaviors that exist today in
+            order to identify the key moments that we wanted to prototype for
+            user feedback.
+          </p>
         </div>
         <!-- Ideation - Two Centered Image Start -->
         <div class="row">
           <div class="col-md-6 col-sm-12">
             <div class="video">
-              <img src="./assets/images/pages/cryptonite/ideation1.png" class="img-responsive" alt="description">
-              <p class="caption-inline">By mapping out the user’s activities, we were able to highlight the opportunity
-                of prototyping the battle’s “win” moment.</p>
+              <img
+                src="./assets/images/pages/cryptonite/ideation1.png"
+                class="img-responsive"
+                alt="description"
+              />
+              <p class="caption-inline">
+                By mapping out the user’s activities, we were able to highlight
+                the opportunity of prototyping the battle’s “win” moment.
+              </p>
             </div>
           </div>
           <div class="col-md-6 col-sm-12">
             <div class="video">
-              <img src="./assets/images/pages/cryptonite/ideation2.png" class="img-responsive" alt="description">
-              <p class="caption-inline">We brainstormed a ton of ideas for the bot’s identity, attributes, and
-                mechanics before narrowing in.</p>
+              <img
+                src="./assets/images/pages/cryptonite/ideation2.png"
+                class="img-responsive"
+                alt="description"
+              />
+              <p class="caption-inline">
+                We brainstormed a ton of ideas for the bot’s identity,
+                attributes, and mechanics before narrowing in.
+              </p>
             </div>
           </div>
         </div>
         <!-- Ideation - Two Centered Image End -->
         <!-- HMW Start -->
         <div class="mainparagraph">
-          <p class="hmw hmw-cryptonites">How might we gamify the creation, collection, and interaction between unique
-            digital objects?</p>
+          <p class="hmw hmw-cryptonites">
+            How might we gamify the creation, collection, and interaction
+            between unique digital objects?
+          </p>
         </div>
         <!-- HMW End -->
         <!-- Ideation End -->
         <!-- Early Prototyping Start -->
         <h6 class="submaintitle">Exploratory Research</h6>
         <div class="mainparagraph">
-          <p>At this point, we knew our goal, but had many unknowns that loomed over our heads. We decided to
-            cluster our questions in order to figure an area to dive deeper on. In this process, we realized that
-            our primary questions were, “How does the blockchain enable unique, engaging game mechanics? What value, if
-            any, does the blockchain provide in this context? Is it even necessary?” So, we
-            decided to create a simple paper prototype in order to make our questions real enough to effectively
-            communicate to others. We defined a temporary visual identity for the bot in order to allow people to
-            focus on the game mechanics and collectibles. For this early prototype, we modeled the bot after the
-            popular Snapchat sticker pack “Seedlings” because they are animalesque, but abstract enough to easily breed
-            with each other.</p>
+          <p>
+            At this point, we knew our goal, but had many unknowns that loomed
+            over our heads. We decided to cluster our questions in order to
+            figure an area to dive deeper on. In this process, we realized that
+            our primary questions were, “How does the blockchain enable unique,
+            engaging game mechanics? What value, if any, does the blockchain
+            provide in this context? Is it even necessary?” So, we decided to
+            create a simple paper prototype in order to make our questions real
+            enough to effectively communicate to others. We defined a temporary
+            visual identity for the bot in order to allow people to focus on the
+            game mechanics and collectibles. For this early prototype, we
+            modeled the bot after the popular Snapchat sticker pack “Seedlings”
+            because they are animalesque, but abstract enough to easily breed
+            with each other.
+          </p>
         </div>
         <!-- Center Image Section Start -->
         <div class="container videocontainer">
           <div class="row">
             <div class="video">
-              <img src="./assets/images/pages/cryptonite/paper_prototype.png" class="img-responsive" alt="description">
+              <img
+                src="./assets/images/pages/cryptonite/paper_prototype.png"
+                class="img-responsive"
+                alt="description"
+              />
             </div>
           </div>
         </div>
         <!-- Center Image Section End -->
         <div class="mainparagraph">
-          <p>We also prototyped a basic instruction manual that illustrates the bot’s characteristics, the game
-            mechanics, and the collectibles’ (charms, in this case) breeding abilities.</p>
+          <p>
+            We also prototyped a basic instruction manual that illustrates the
+            bot’s characteristics, the game mechanics, and the collectibles’
+            (charms, in this case) breeding abilities.
+          </p>
         </div>
         <!-- Center Image Section Start -->
         <div class="container videocontainer">
           <div class="row">
             <div class="media-inline-spaced">
-              <img src="./assets/images/pages/cryptonite/manual1.png" class="img-responsive" alt="description">
+              <img
+                src="./assets/images/pages/cryptonite/manual1.png"
+                class="img-responsive"
+                alt="description"
+              />
             </div>
           </div>
         </div>
@@ -169,7 +269,11 @@
         <div class="container videocontainer">
           <div class="row">
             <div class="media-inline-spaced">
-              <img src="./assets/images/pages/cryptonite/manual2.png" class="img-responsive" alt="description">
+              <img
+                src="./assets/images/pages/cryptonite/manual2.png"
+                class="img-responsive"
+                alt="description"
+              />
             </div>
           </div>
         </div>
@@ -178,7 +282,11 @@
         <div class="container videocontainer">
           <div class="row">
             <div class="media-inline-spaced">
-              <img src="./assets/images/pages/cryptonite/manual3.png" class="img-responsive" alt="description">
+              <img
+                src="./assets/images/pages/cryptonite/manual3.png"
+                class="img-responsive"
+                alt="description"
+              />
             </div>
           </div>
         </div>
@@ -189,25 +297,43 @@
         <div class="row">
           <div class="col-md-8 no-gutters">
             <div class="mainparagraph">
-              <p>We solicited feedback from 25+ people and started by asking open-ended questions such as <i>“Think out
-                  loud and tell us what you see or don’t see,” “How would you buy a bot,” and “How could we improve the
-                  battle experience?”</i> We talked to game designers, entrepreneurs, engineers, blockchain experts,
-                gamers,
-                collectible-card enthusiasts, and people who work in entirely unrelated industries. We measured both
-                explicit feedback in the form of quotes and behavioral feedback in the form of observation.</p>
+              <p>
+                We solicited feedback from 25+ people and started by asking
+                open-ended questions such as
+                <i
+                  >“Think out loud and tell us what you see or don’t see,” “How
+                  would you buy a bot,” and “How could we improve the battle
+                  experience?”</i
+                >
+                We talked to game designers, entrepreneurs, engineers,
+                blockchain experts, gamers, collectible-card enthusiasts, and
+                people who work in entirely unrelated industries. We measured
+                both explicit feedback in the form of quotes and behavioral
+                feedback in the form of observation.
+              </p>
             </div>
             <div class="mainparagraph">
-              <p>Our next step was to identify themes by clustering and prioritizing the feedback we received. In this
-                process, we realized that we were focusing on the wrong questions. Instead
-                of trying to understand how the blockchain provides value to the game itself (which was not compelling
-                to our testers and strayed from the prompt), we needed to focus on the true value of creating a
-                BattleBots-style game on the blockchain: the collectibles. Our next step was to revisit the prompt,
-                talk to people who are involved with collectibles to better understand their motivations, and to focus
-                on creating a compelling metaphor for the bot.</p>
+              <p>
+                Our next step was to identify themes by clustering and
+                prioritizing the feedback we received. In this process, we
+                realized that we were focusing on the wrong questions. Instead
+                of trying to understand how the blockchain provides value to the
+                game itself (which was not compelling to our testers and strayed
+                from the prompt), we needed to focus on the true value of
+                creating a BattleBots-style game on the blockchain: the
+                collectibles. Our next step was to revisit the prompt, talk to
+                people who are involved with collectibles to better understand
+                their motivations, and to focus on creating a compelling
+                metaphor for the bot.
+              </p>
             </div>
           </div>
           <div class="col-md-4">
-            <img src="./assets/images/pages/cryptonite/feedback.png" class="img-responsive" alt="description">
+            <img
+              src="./assets/images/pages/cryptonite/feedback.png"
+              class="img-responsive"
+              alt="description"
+            />
           </div>
         </div>
         <!-- Feedback End -->
@@ -215,33 +341,47 @@
     </div>
     <!-- Process End -->
 
-    <!-- Iteration #2 Start  -->
+    <!-- Iteration #2 Start -->
     <div class="row projectbody">
       <div class="col-md-12">
         <h1 class="mainbodytitle">Iteration</h1>
         <h6 class="submaintitle">Research</h6>
         <div class="mainparagraph">
-          <p>Our early, rough prototypes pushed our understanding of cryptocollectibles and allowed us to understand
-            the true value proposition behind the prompt.</p>
+          <p>
+            Our early, rough prototypes pushed our understanding of
+            cryptocollectibles and allowed us to understand the true value
+            proposition behind the prompt.
+          </p>
         </div>
         <div class="mainparagraph">
-          <p class="hmw hmw-cryptonites">Using the blockchain as the source of truth for ownership enables us to evoke
-            the
-            emotional, speculative, and utility value of digital collectibles.</p>
+          <p class="hmw hmw-cryptonites">
+            Using the blockchain as the source of truth for ownership enables us
+            to evoke the emotional, speculative, and utility value of digital
+            collectibles.
+          </p>
         </div>
         <div class="mainparagraph">
-          <p>We interviewed people interested in collectibles (i.e. Cryptokitties, Magic: the Gathering, Baseball
-            cards, Pogs, etc) to discover what motivates them to collect. With this knowledge, we created a framework
-            for developing the
-            components of the game with a sensitivity to these motivations.</p>
+          <p>
+            We interviewed people interested in collectibles (i.e.
+            Cryptokitties, Magic: the Gathering, Baseball cards, Pogs, etc) to
+            discover what motivates them to collect. With this knowledge, we
+            created a framework for developing the components of the game with a
+            sensitivity to these motivations.
+          </p>
         </div>
       </div>
       <!-- Center Image Section Start -->
       <div class="container videocontainer">
         <div class="row">
           <div class="media-inline">
-            <img src="./assets/images/pages/cryptonite/components.png" class="img-responsive" alt="description">
-            <p class="caption-inline">Mapping the values of digital collectibles to the components of our game.
+            <img
+              src="./assets/images/pages/cryptonite/components.png"
+              class="img-responsive"
+              alt="description"
+            />
+            <p class="caption-inline">
+              Mapping the values of digital collectibles to the components of
+              our game.
             </p>
           </div>
         </div>
@@ -251,36 +391,53 @@
       <div class="container videocontainer">
         <div class="row">
           <div class="media-inline">
-            <img src="./assets/images/pages/cryptonite/userflow.png" class="img-responsive" alt="description">
-            <p class="caption-inline">A revised user journey based off newfound insights from our interviews.</p>
+            <img
+              src="./assets/images/pages/cryptonite/userflow.png"
+              class="img-responsive"
+              alt="description"
+            />
+            <p class="caption-inline">
+              A revised user journey based off newfound insights from our
+              interviews.
+            </p>
           </div>
         </div>
       </div>
       <!-- Center Image Section End -->
       <h6 class="submaintitle">Metaphor</h6>
       <div class="mainparagraph">
-        <p>Once we understood the value of cryptocollectibles in relation to our game components, we were able to
-          create a narrative.
+        <p>
+          Once we understood the value of cryptocollectibles in relation to our
+          game components, we were able to create a narrative.
         </p>
       </div>
       <div class="mainparagraph">
-        <p class="hmw hmw-cryptonites">We decided to use planets as our metaphor because the familiar structure and
-          visual
-          nature of space makes it compelling and easy to understand. Users collect planets to fill their galaxy,
-          battle other planets to breed stronger, more valuable planets, and auction their planets to the
-          universe.
+        <p class="hmw hmw-cryptonites">
+          We decided to use planets as our metaphor because the familiar
+          structure and visual nature of space makes it compelling and easy to
+          understand. Users collect planets to fill their galaxy, battle other
+          planets to breed stronger, more valuable planets, and auction their
+          planets to the universe.
         </p>
       </div>
       <!-- Metaphor - Two Centered Image Start -->
       <div class="row">
         <div class="col-md-6 col-sm-12">
           <div class="video">
-            <img src="./assets/images/pages/cryptonite/story1.png" class="img-responsive" alt="description">
+            <img
+              src="./assets/images/pages/cryptonite/story1.png"
+              class="img-responsive"
+              alt="description"
+            />
           </div>
         </div>
         <div class="col-md-6 col-sm-12">
           <div class="video">
-            <img src="./assets/images/pages/cryptonite/story2.png" class="img-responsive" alt="description">
+            <img
+              src="./assets/images/pages/cryptonite/story2.png"
+              class="img-responsive"
+              alt="description"
+            />
           </div>
         </div>
       </div>
@@ -289,17 +446,29 @@
       <div class="row">
         <div class="col-md-4 col-sm-12">
           <div class="video">
-            <img src="./assets/images/pages/cryptonite/story3.png" class="img-responsive" alt="description">
+            <img
+              src="./assets/images/pages/cryptonite/story3.png"
+              class="img-responsive"
+              alt="description"
+            />
           </div>
         </div>
         <div class="col-md-4 col-sm-12">
           <div class="video">
-            <img src="./assets/images/pages/cryptonite/story4.png" class="img-responsive" alt="description">
+            <img
+              src="./assets/images/pages/cryptonite/story4.png"
+              class="img-responsive"
+              alt="description"
+            />
           </div>
         </div>
         <div class="col-md-4 col-sm-12">
           <div class="video">
-            <img src="./assets/images/pages/cryptonite/story5.png" class="img-responsive" alt="description">
+            <img
+              src="./assets/images/pages/cryptonite/story5.png"
+              class="img-responsive"
+              alt="description"
+            />
           </div>
         </div>
       </div>
@@ -309,7 +478,11 @@
       <div class="container videocontainer">
         <div class="row">
           <div class="media-inline">
-            <img src="./assets/images/pages/cryptonite/wireframe.png" class="img-responsive" alt="description">
+            <img
+              src="./assets/images/pages/cryptonite/wireframe.png"
+              class="img-responsive"
+              alt="description"
+            />
             <p class="caption-inline">A wireframe of the game's flow.</p>
           </div>
         </div>
@@ -320,21 +493,43 @@
         <div class="row">
           <div class="col-md-6 col-sm-12">
             <div class="video">
-              <video width="600" preload="auto" [autoplay]="true" [controls]="false" [loop]="true" onloadedmetadata="this.muted=true"
-                playsinline="true">
-                <source src="./assets/images/pages/cryptonite/home1_prototype.mp4" type="video/mp4">
+              <video
+                width="600"
+                preload="auto"
+                [autoplay]="true"
+                [controls]="false"
+                [loop]="true"
+                onloadedmetadata="this.muted=true"
+                playsinline="true"
+              >
+                <source
+                  src="./assets/images/pages/cryptonite/home1_prototype.mp4"
+                  type="video/mp4"
+                />
               </video>
             </div>
           </div>
           <div class="col-md-6 col-sm-12">
             <div class="video">
-              <video width="600" preload="auto" [autoplay]="true" [controls]="false" [loop]="true" onloadedmetadata="this.muted=true"
-                playsinline="true">
-                <source src="./assets/images/pages/cryptonite/home2_prototype.mp4" type="video/mp4">
+              <video
+                width="600"
+                preload="auto"
+                [autoplay]="true"
+                [controls]="false"
+                [loop]="true"
+                onloadedmetadata="this.muted=true"
+                playsinline="true"
+              >
+                <source
+                  src="./assets/images/pages/cryptonite/home2_prototype.mp4"
+                  type="video/mp4"
+                />
               </video>
             </div>
           </div>
-          <p class="caption-inline fullcap">Experimenting with home page interactions.</p>
+          <p class="caption-inline fullcap">
+            Experimenting with home page interactions.
+          </p>
         </div>
       </div>
       <!-- Two Centered Video End -->
@@ -343,29 +538,61 @@
         <div class="row">
           <div class="col-md-4 col-sm-12">
             <div class="video">
-              <video width="600" preload="auto" [autoplay]="true" [controls]="false" [loop]="true" onloadedmetadata="this.muted=true"
-                playsinline="true">
-                <source src="./assets/images/pages/cryptonite/planet_prototype.mp4" type="video/mp4">
+              <video
+                width="600"
+                preload="auto"
+                [autoplay]="true"
+                [controls]="false"
+                [loop]="true"
+                onloadedmetadata="this.muted=true"
+                playsinline="true"
+              >
+                <source
+                  src="./assets/images/pages/cryptonite/planet_prototype.mp4"
+                  type="video/mp4"
+                />
               </video>
             </div>
           </div>
           <div class="col-md-4 col-sm-12">
             <div class="video">
-              <video width="600" preload="auto" [autoplay]="true" [controls]="false" [loop]="true" onloadedmetadata="this.muted=true"
-                playsinline="true">
-                <source src="./assets/images/pages/cryptonite/explosion.mp4" type="video/mp4">
+              <video
+                width="600"
+                preload="auto"
+                [autoplay]="true"
+                [controls]="false"
+                [loop]="true"
+                onloadedmetadata="this.muted=true"
+                playsinline="true"
+              >
+                <source
+                  src="./assets/images/pages/cryptonite/explosion.mp4"
+                  type="video/mp4"
+                />
               </video>
             </div>
           </div>
           <div class="col-md-4 col-sm-12">
             <div class="video">
-              <video width="600" preload="auto" [autoplay]="true" [controls]="false" [loop]="true" onloadedmetadata="this.muted=true"
-                playsinline="true">
-                <source src="./assets/images/pages/cryptonite/battle.mp4" type="video/mp4">
+              <video
+                width="600"
+                preload="auto"
+                [autoplay]="true"
+                [controls]="false"
+                [loop]="true"
+                onloadedmetadata="this.muted=true"
+                playsinline="true"
+              >
+                <source
+                  src="./assets/images/pages/cryptonite/battle.mp4"
+                  type="video/mp4"
+                />
               </video>
             </div>
           </div>
-          <p class="caption-inline fullcap">Experimenting with 3D planet, explosion, and battle interactions.</p>
+          <p class="caption-inline fullcap">
+            Experimenting with 3D planet, explosion, and battle interactions.
+          </p>
         </div>
       </div>
       <!-- Three Centered Video End -->
@@ -373,7 +600,11 @@
       <div class="container videocontainer">
         <div class="row">
           <div class="media-inline">
-            <img src="./assets/images/pages/cryptonite/wireframe.png" class="img-responsive" alt="description">
+            <img
+              src="./assets/images/pages/cryptonite/wireframe.png"
+              class="img-responsive"
+              alt="description"
+            />
             <p class="caption-inline">Final flow of website.</p>
           </div>
         </div>
@@ -390,11 +621,21 @@
         <div class="container videocontainer">
           <div class="row">
             <div class="video">
-              <video preload="auto" [controls]="true" [muted]="true" playsinline="true">
-                <source src="./assets/images/pages/cryptonite/demo.mp4" type="video/mp4">
+              <video
+                preload="auto"
+                [controls]="true"
+                [muted]="true"
+                playsinline="true"
+              >
+                <source
+                  src="./assets/images/pages/cryptonite/demo.mp4"
+                  type="video/mp4"
+                />
               </video>
-              <p class="video-caption">Functional Prototype of Cryptonites - built with HTML/CSS, JavaScript (Three.js,
-                WebGL), and Solidity</p>
+              <p class="video-caption">
+                Functional Prototype of Cryptonites - built with HTML/CSS,
+                JavaScript (Three.js, WebGL), and Solidity
+              </p>
             </div>
           </div>
         </div>
@@ -402,32 +643,47 @@
     </div>
     <!-- Demo End -->
 
-
     <!-- Takeaways Start -->
     <div class="container custom-container">
       <div class="row projectbody">
         <div class="col-md-12">
           <h1 class="mainbodytitle">Takeaways</h1>
           <ul class="projects">
-            <li>To quote the CoLab, <b>"Prototype as if you are right, listen as if you are wrong."</b> It is important
-              to not be married to
-              your ideas at any point in the process because openness enables quick iteration and improvement.</li>
-            <li><b>Build to learn.</b> When things seem confusing, it is important to keep pushing. Embodying a
-              question or unknown into a prototype helps you expand your understanding, even if it ends up not being
-              the “right” prototype.</li>
-            <li><b>Narrow in on a small part of a large system.</b>It is tempting to dive into a complex system to try
-              and figure out how it works. It is more realistic and worthwhile to narrow in on a small section of the
-              system and solve problems within that space despite the ambiguity that surrounds it.</li>
+            <li>
+              To quote the CoLab,
+              <b
+                >"Prototype as if you are right, listen as if you are wrong."</b
+              >
+              It is important to not be married to your ideas at any point in
+              the process because openness enables quick iteration and
+              improvement.
+            </li>
+            <li>
+              <b>Build to learn.</b> When things seem confusing, it is important
+              to keep pushing. Embodying a question or unknown into a prototype
+              helps you expand your understanding, even if it ends up not being
+              the “right” prototype.
+            </li>
+            <li>
+              <b>Narrow in on a small part of a large system.</b>It is tempting
+              to dive into a complex system to try and figure out how it works.
+              It is more realistic and worthwhile to narrow in on a small
+              section of the system and solve problems within that space despite
+              the ambiguity that surrounds it.
+            </li>
           </ul>
           <div class="mainparagraph">
-            <p>I learned an incredible amount about human-centered design, user research, prototyping, and methods for
-              breaking down complex systems during this fellowship. Following the winter fellowship, I joined the CoLab
-              as a freelance designer to continue Cryptonites.</p>
+            <p>
+              I learned an incredible amount about human-centered design, user
+              research, prototyping, and methods for breaking down complex
+              systems during this fellowship. Following the winter fellowship, I
+              joined the CoLab as a freelance designer to continue Cryptonites.
+            </p>
           </div>
         </div>
       </div>
     </div>
     <!-- Takeaways End -->
-
   </div>
   <app-footer [currentPage]="'cryptonite'"></app-footer>
+</div>

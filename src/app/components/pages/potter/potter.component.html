@@ -1,17 +1,17 @@
-<!-- <app-header [overlay]="'true'"></app-header> -->
+<app-new-header [targetTransparentLimiter]="parallax"></app-new-header>
 
 <ng-progress
   #progressBar
+  [color]="'#10282A'"
   [direction]="'ltr+'"
+  [ease]="'linear'"
   [max]="100"
+  [meteor]="true"
   [speed]="500"
-  [trickleSpeed]="300"
   [spinner]="false"
   [spinnerPosition]="'left'"
   [thick]="true"
-  [meteor]="true"
-  [color]="'#10282A'"
-  [ease]="'linear'"
+  [trickleSpeed]="300"
 ></ng-progress>
 
 <div
@@ -19,10 +19,12 @@
   (scroll)="scrollHandler($event)"
   #reveal
 >
-  <sticky> <app-new-header></app-new-header> </sticky>
-
   <!-- Full Screen Image Section Start -->
-  <div class="parallax-screen potterhead fade-in one" id="parallax"></div>
+  <div
+    #parallax
+    id="parallax"
+    class="parallax-screen potterhead fade-in one"
+  ></div>
   <!-- Full Screen Image Section End -->
 
   <div class="container custom-container">

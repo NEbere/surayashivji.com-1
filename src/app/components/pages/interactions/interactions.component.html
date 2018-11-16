@@ -1,13 +1,31 @@
-<app-header [overlay]="'true'"></app-header>
+<app-new-header [targetTransparentLimiter]="parallax"></app-new-header>
 
-<ng-progress #progressBar [direction]="'ltr+'" [max]="100" [speed]="500" [trickleSpeed]="300" [spinner]="false" [spinnerPosition]="'left'"
-  [thick]="true" [meteor]="true" [color]="'#10282A'" [ease]="'linear'"></ng-progress>
+<ng-progress
+  #progressBar
+  color="#10282A"
+  direction="ltr+"
+  ease="linear"
+  max="100"
+  speed="500"
+  spinnerPosition="left"
+  trickleSpeed="300"
+  [meteor]="true"
+  [spinner]="false"
+  [thick]="true"
+></ng-progress>
 
-<div class="container reveal-animation" (scroll)="scrollHandler($event)" #reveal>
+<div
+  class="container reveal-animation"
+  (scroll)="scrollHandler($event)"
+  #reveal
+>
   <!-- Full Screen Image Section Start -->
-  <div class="parallax-screen potterhead fade-in one" id="parallax">
-    <!-- Full Screen Image Section End -->
-  </div>
+  <div
+    #parallax
+    id="parallax"
+    class="parallax-screen potterhead fade-in one"
+  ></div>
+  <!-- Full Screen Image Section End -->
 
   <div class="container custom-container">
     <!-- Project Header Start -->
@@ -15,7 +33,9 @@
       <div class="col-md-8 col-sm-12">
         <h1 class="projectHeader_heading">Potter Pics</h1>
         <p class="projectHeader_role">Role: UI/UX Design, iOS Development</p>
-        <p class="projectHeader_tools">Tools: Sketch, AfterEffects, Illustrator, Swift</p>
+        <p class="projectHeader_tools">
+          Tools: Sketch, AfterEffects, Illustrator, Swift
+        </p>
       </div>
       <div class="col-md-4 col-sm-12">
         <p class="projectHeader_desc">Harry Potter themed social network.</p>
@@ -28,10 +48,17 @@
       <div class="col-md-12">
         <h1 class="mainbodytitle">Overview</h1>
         <div class="mainparagraph">
-          <p>Ever wonder what Harry, Ron, and Hermione post on social media? Me too! Potter Pics was an experiment that allowed
-            me to explore two of my favorite worlds: Harry Potter and iOS. Simply enter the app with The Unlocking Charm
-            to be sorted into a house and start interacting with the rest of the magical world.</p>
-          <p>Featured in Natasha Murashev’s iOS newsletter reaching 10,000+ people.</p>
+          <p>
+            Ever wonder what Harry, Ron, and Hermione post on social media? Me
+            too! Potter Pics was an experiment that allowed me to explore two of
+            my favorite worlds: Harry Potter and iOS. Simply enter the app with
+            The Unlocking Charm to be sorted into a house and start interacting
+            with the rest of the magical world.
+          </p>
+          <p>
+            Featured in Natasha Murashev’s iOS newsletter reaching 10,000+
+            people.
+          </p>
         </div>
       </div>
     </div>
@@ -42,18 +69,25 @@
       <div class="col-md-12">
         <h1 class="mainbodytitle">Process</h1>
         <div class="mainparagraph">
-          <p>There are countless aspects of the Harry Potter world that could translate to engaging, digital experiences. Because
-            I created this app for fun, there were few feature constraints that I had to work around. As such, I juggled
-            multiple ideas throughout my design process. I experimented with a sorting house quiz for the user’s onboarding,
-            having an interactive map similar to Marauder’s Map for users to see their friends’ locations, using spells to
-            unlock features, and more.</p>
-          <p>I ultimately decided to integrate three subtle, visual Harry Potter references.</p>
+          <p>
+            There are countless aspects of the Harry Potter world that could
+            translate to engaging, digital experiences. Because I created this
+            app for fun, there were few feature constraints that I had to work
+            around. As such, I juggled multiple ideas throughout my design
+            process. I experimented with a sorting house quiz for the user’s
+            onboarding, having an interactive map similar to Marauder’s Map for
+            users to see their friends’ locations, using spells to unlock
+            features, and more.
+          </p>
+          <p>
+            I ultimately decided to integrate three subtle, visual Harry Potter
+            references.
+          </p>
         </div>
       </div>
     </div>
     <!-- Body Pragraph Sub Main End -->
   </div>
-
 </div>
 
-<app-footer [currentPage]="'interaction'"></app-footer> 
+<app-footer [currentPage]="'interaction'"></app-footer>
