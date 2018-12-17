@@ -66,6 +66,10 @@ export class MaingridComponent implements OnInit, AfterViewInit {
       {
         order: 12, name: 'blaster', img: '/poster/blaster.png', class: 'development ui', video: '/grid/blaster.mp4',
         routerLink: '/blaster', url: ''
+      },
+      {
+        order: 13, name: 'generativeart', img: '/poster/genart.png', class: 'creativecode development', video: '',
+        routerLink: '/generativeart', url: ''
       }
     ];
     this.masonryItemsCopy = [...this.masonryItems];
