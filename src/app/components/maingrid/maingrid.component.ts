@@ -34,7 +34,7 @@ export class MaingridComponent implements OnInit, AfterViewInit {
       },
       {
         order: 3, name: 'wklymotion', img: '/poster/wklymotion.png', class: 'development creativecode 3d', video: '/grid/wklymotion.mp4',
-        routerLink: '/wklymotion', url: ''
+        url: 'http://musicvizz.com'
       },
       {
         order: 4, name: 'mello', img: '/poster/mello.jpeg', class: 'ui graphic development', video: '', routerLink: '/mello', url: ''
