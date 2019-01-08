@@ -1,9 +1,9 @@
 .genhead {
-    background-image: url(/assets/full_screen/desktop/mockup.png);
+    background-image: url(/assets/full_screen/desktop/genart.png);
 }
 
 @media screen and (max-width: 650px) {
     .genhead {
-        background-image: url(/assets/full_screen/mobile/mockup.png);
+        background-image: url(/assets/full_screen/mobile/genart.png);
       }
 }

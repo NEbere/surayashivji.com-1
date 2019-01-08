@@ -37,6 +37,7 @@ import { MaingridComponent } from './components/maingrid/maingrid.component';
 
 import {GridImageServiceService} from './services/grid-image-service.service';
 import { GenerativeartComponent } from './components/pages/generativeart/generativeart.component';
+import { ThreedesignComponent } from './components/pages/threedesign/threedesign.component';
 
 const appRoutes: Routes = [
   { path: '', component: GridviewComponent },
@@ -57,6 +58,7 @@ const appRoutes: Routes = [
   { path: 'synthesize', component: SynthesizeComponent },
   { path: 'wklymotion', component: WklymotionComponent },
   { path: 'generativeart', component: GenerativeartComponent },
+  { path: 'threedesign', component: ThreedesignComponent },
   {
     path: 'about',
     component: AboutComponent,
@@ -90,7 +92,8 @@ const appRoutes: Routes = [
     MelloComponent,
     MaingridComponent,
     WklymotionComponent,
-    GenerativeartComponent
+    GenerativeartComponent,
+    ThreedesignComponent
   ],
   imports: [
     NgProgressModule.forRoot(), NgxMasonryModule, BrowserModule, BrowserAnimationsModule,

@@ -1,0 +1,252 @@
+<app-header [overlay]="'true'"></app-header>
+
+<ng-progress #progressBar [direction]="'ltr+'" [max]="100" [speed]="500" [trickleSpeed]="300" [spinner]="false"
+  [spinnerPosition]="'left'" [thick]="true" [meteor]="true" [color]="'#FF8188'" [ease]="'linear'"></ng-progress>
+
+<div class="container reveal-animation" (scroll)="scrollHandler($event)" #reveal>
+  <!-- Full Screen Image Section Start -->
+  <div class="parallax-screen threehead fade-in one" id="parallax">
+    <!-- Full Screen Image Section End -->
+  </div>
+
+  <div class="container custom-container">
+    <!-- Project Header Start -->
+    <div class="row projectHeader">
+      <div class="col-md-8 col-sm-12">
+        <h1 class="projectHeader_heading">3D Design</h1>
+        <p class="projectHeader_role">Role: 3D Modeling, Animation, Lighting, Texturing</p>
+        <p class="projectHeader_tools">Tools: Cinema4D, AfterEffects</p>
+      </div>
+      <div class="col-md-4 col-sm-12">
+        <p class="projectHeader_desc">3D art and motion pieces.</p>
+      </div>
+    </div>
+    <!-- Project Header End -->
+
+    <!-- Two Centered Image Start -->
+    <div class="row">
+      <div class="col-md-6 col-sm-12">
+        <div class="video">
+          <img src="./assets/images/pages/threedesign/pear.png" class="img-responsive" alt="description">
+        </div>
+      </div>
+      <div class="col-md-6 col-sm-12">
+        <div class="video">
+          <img src="./assets/images/pages/threedesign/leaf.png" class="img-responsive" alt="description">
+        </div>
+      </div>
+    </div>
+    <!-- Two Centered Image End -->
+
+
+    <!-- Two Centered Video Start -->
+    <div class="container videocontainer">
+      <div class="row">
+        <div class="col-md-6 col-sm-12">
+          <div class="video">
+            <video width="600" preload="auto" [autoplay]="true" [controls]="false" [loop]="true" onloadedmetadata="this.muted=true"
+              playsinline="true">
+              <source src="./assets/images/pages/threedesign/cards.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <div class="video">
+            <video width="600" preload="auto" [autoplay]="true" [controls]="false" [loop]="true" onloadedmetadata="this.muted=true"
+              playsinline="true">
+              <source src="./assets/images/pages/threedesign/water.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Two Centered Video End -->
+
+    <!-- Two Centered Image Start -->
+    <div class="row">
+      <div class="col-md-6 col-sm-12">
+        <div class="video">
+          <img src="./assets/images/pages/threedesign/drink1.png" class="img-responsive" alt="description">
+        </div>
+      </div>
+      <div class="col-md-6 col-sm-12">
+        <div class="video">
+          <img src="./assets/images/pages/threedesign/drink2.png" class="img-responsive" alt="description">
+        </div>
+      </div>
+    </div>
+    <!-- Two Centered Image End -->
+
+    <!-- Demo Video Section Start -->
+    <div class="container videocontainer">
+      <div class="row">
+        <div class="video">
+          <div class="video">
+            <video class="vapor" preload="auto" [loop]="true" [autoplay]="true" [controls]="false" onloadedmetadata="this.muted=true"
+              playsinline="true">
+              <source src="./assets/images/pages/threedesign/chopsticks.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Demo Video Section End -->
+
+    <!-- Two Centered Image Start -->
+    <div class="row">
+      <div class="col-md-6 col-sm-12">
+        <div class="video">
+          <img src="./assets/images/pages/threedesign/pop.png" class="img-responsive" alt="description">
+        </div>
+      </div>
+      <div class="col-md-6 col-sm-12">
+        <div class="video">
+          <img src="./assets/images/pages/threedesign/pop2.png" class="img-responsive" alt="description">
+        </div>
+      </div>
+    </div>
+    <!-- Two Centered Image End -->
+
+    <!-- Two Centered Image Start -->
+    <div class="row">
+      <div class="col-md-6 col-sm-12">
+        <div class="video">
+          <img src="./assets/images/pages/threedesign/sword.png" class="img-responsive" alt="description">
+        </div>
+      </div>
+      <div class="col-md-6 col-sm-12">
+        <div class="video">
+          <img src="./assets/images/pages/threedesign/bulb.png" class="img-responsive" alt="description">
+        </div>
+      </div>
+    </div>
+    <!-- Two Centered Image End -->
+
+    <!-- Demo Video Section Start -->
+    <div class="container videocontainer">
+      <div class="row">
+        <div class="video">
+          <div class="video">
+            <video class="vapor" preload="auto" [loop]="true" [autoplay]="true" [controls]="false" onloadedmetadata="this.muted=true"
+              playsinline="true">
+              <source src="./assets/images/pages/threedesign/compass.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Demo Video Section End -->
+
+    <!-- Two Centered Image Start -->
+    <div class="row">
+      <div class="col-md-6 col-sm-12">
+        <div class="video">
+          <img src="./assets/images/pages/threedesign/mountain2.png" class="img-responsive" alt="description">
+        </div>
+      </div>
+      <div class="col-md-6 col-sm-12">
+        <div class="video">
+          <img src="./assets/images/pages/threedesign/mountain4.png" class="img-responsive" alt="description">
+        </div>
+      </div>
+    </div>
+    <!-- Two Centered Image End -->
+
+    <!-- Two Centered Image Start -->
+    <div class="row">
+      <div class="col-md-6 col-sm-12">
+        <div class="video">
+          <img src="./assets/images/pages/threedesign/mountain3.png" class="img-responsive" alt="description">
+        </div>
+      </div>
+      <div class="col-md-6 col-sm-12">
+        <div class="video">
+          <img src="./assets/images/pages/threedesign/mountain1.png" class="img-responsive" alt="description">
+        </div>
+      </div>
+    </div>
+    <!-- Two Centered Image End -->
+
+    <!-- Two Centered Image Start -->
+    <div class="row">
+      <div class="col-md-6 col-sm-12">
+        <div class="video">
+          <img src="./assets/images/pages/threedesign/board1.png" class="img-responsive" alt="description">
+        </div>
+      </div>
+      <div class="col-md-6 col-sm-12">
+        <div class="video">
+          <img src="./assets/images/pages/threedesign/board2.png" class="img-responsive" alt="description">
+        </div>
+      </div>
+    </div>
+    <!-- Two Centered Image End -->
+
+    <!-- Three Centered Image Start -->
+    <!-- <div class="row">
+      <div class="col-md-4 col-sm-12">
+        <div class="video">
+          <img src="./assets/images/pages/threedesign/mountain1.png" class="img-responsive" alt="description">
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-12">
+        <div class="video">
+          <img src="./assets/images/pages/threedesign/mountain2.png" class="img-responsive" alt="description">
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-12">
+        <div class="video">
+          <img src="./assets/images/pages/threedesign/mountain3.png" class="img-responsive" alt="description">
+        </div>
+      </div>
+    </div> -->
+    <!-- Three Centered Image End -->
+
+    <!-- Two Centered Image Start -->
+    <div class="row">
+      <div class="col-md-6 col-sm-12">
+        <div class="video">
+          <img src="./assets/images/pages/threedesign/shadows.png" class="img-responsive" alt="description">
+        </div>
+      </div>
+      <div class="col-md-6 col-sm-12">
+        <div class="video">
+          <img src="./assets/images/pages/threedesign/moon.png" class="img-responsive" alt="description">
+        </div>
+      </div>
+    </div>
+    <!-- Two Centered Image End -->
+
+    <!-- Two Centered Image Start -->
+    <div class="row">
+      <div class="col-md-6 col-sm-12">
+        <div class="video">
+          <img src="./assets/images/pages/threedesign/landscape1.png" class="img-responsive" alt="description">
+        </div>
+      </div>
+      <div class="col-md-6 col-sm-12">
+        <div class="video">
+          <img src="./assets/images/pages/threedesign/landscape2.png" class="img-responsive" alt="description">
+        </div>
+      </div>
+    </div>
+    <!-- Two Centered Image End -->
+
+    <!-- Two Centered Image Start -->
+    <div class="row">
+      <div class="col-md-6 col-sm-12">
+        <div class="video">
+          <img src="./assets/images/pages/threedesign/glitch1.png" class="img-responsive" alt="description">
+        </div>
+      </div>
+      <div class="col-md-6 col-sm-12">
+        <div class="video">
+          <img src="./assets/images/pages/threedesign/glitch2.png" class="img-responsive" alt="description">
+        </div>
+      </div>
+    </div>
+    <!-- Two Centered Image End -->
+
+  </div>
+
+  <app-footer [currentPage]="'threedesign'"></app-footer>
