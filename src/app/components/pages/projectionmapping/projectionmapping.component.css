@@ -1,0 +1,13 @@
+.projhead {
+    background-image: url(/assets/full_screen/desktop/projmap.png);
+}
+
+.projbody {
+    background-image: url(/assets/images/spotify.jpg);
+}
+
+@media screen and (max-width: 650px) {
+    .projhead {
+        background-image: url(/assets/full_screen/mobile/projmap.png);
+      }
+}

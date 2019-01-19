@@ -25,50 +25,49 @@ export class MaingridComponent implements OnInit, AfterViewInit {
   ngOnInit() {
     this.masonryItems = [
       {
-        order: 1, name: 'imessage', img: '/poster/imessage.png', class: 'ui',
-        video: '/grid/events.mp4', routerLink: '/events', url: ''
+        order: 1, name: 'wklymotion', img: '/poster/wklymotion.png', class: 'development creativecode 3d', video: '/grid/wklymotion.mp4',
+        url: 'http://musicvizz.com'
       },
       {
         order: 2, name: 'ideocolab', img: '/poster/ideocolab.png', class: 'development ui 3d creativecode ',
         video: '', routerLink: '/cryptonite', url: ''
       },
       {
-        order: 3, name: 'wklymotion', img: '/poster/wklymotion.png', class: 'development creativecode 3d', video: '/grid/wklymotion.mp4',
-        url: 'http://musicvizz.com'
+        order: 3, name: 'mello', img: '/poster/mello.jpeg', class: 'ui graphic development', video: '', routerLink: '/mello', url: ''
       },
       {
-        order: 4, name: 'mello', img: '/poster/mello.jpeg', class: 'ui graphic development', video: '', routerLink: '/mello', url: ''
+        order: 4, name: 'apple', img: '/poster/apple.png', class: 'development', video: '', routerLink: '/apple', url: ''
       },
       {
-        order: 5, name: 'potter', img: '/poster/potter.png', class: 'development ui',
-        video: '/grid/potter.mp4', routerLink: '/potter', url: ''
+        order: 5, name: 'imessage', img: '/poster/imessage.png', class: 'ui',
+        video: '/grid/events.mp4', routerLink: '/events', url: ''
       },
       {
-        order: 6, name: 'apple', img: '/poster/apple.png', class: 'development', video: '', routerLink: '/apple', url: ''
-      },
-      {
-        order: 7, name: 'rizikitoto', img: '/poster/rizikitoto.png', class: 'development ui', video: '',
+        order: 6, name: 'rizikitoto', img: '/poster/rizikitoto.png', class: 'development ui', video: '',
         routerLink: '/rizikitoto', url: ''
       },
       {
-        order: 8, name: 'spotify', img: '/poster/spotify.png', class: 'ui graphic', video: '', routerLink: '/spotify', url: ''
+        order: 7, name: 'spotify', img: '/poster/spotify.png', class: 'ui graphic', video: '', routerLink: '/spotify', url: ''
+      },
+      // {
+      //   order: 7, name: 'threedesign', img: '/poster/face.jpg', class: '3d', video: '', routerLink: '/threedesign', url: ''
+      // },
+      {
+        order: 8, name: 'projectionmapping', img: '/poster/projmap.png', class: 'creativecode', video: '', routerLink: '/projectionmapping', url: ''
       },
       {
         order: 9, name: 'posters', img: '/poster/posters.png', class: 'graphic', video: '', routerLink: '/posters', url: ''
       },
       {
-        order: 10, name: 'vapor', img: '/poster/vapor.png', class: 'development', video: '/grid/vapor.mp4', routerLink: '/vaporun', url: ''
+        order: 10, name: 'potter', img: '/poster/potter.png', class: 'development ui',
+        video: '/grid/potter.mp4', routerLink: '/potter', url: ''
       },
       {
-        order: 11, name: 'threedesign', img: '/poster/face.jpg', class: '3d', video: '', routerLink: '/threedesign', url: ''
+        order: 11, name: 'vapor', img: '/poster/vapor.png', class: 'development', video: '/grid/vapor.mp4', routerLink: '/vaporun', url: ''
       },
       {
         order: 12, name: 'blaster', img: '/poster/blaster.png', class: 'development ui', video: '/grid/blaster.mp4',
         routerLink: '/blaster', url: ''
-      },
-      {
-        order: 13, name: 'photogram', img: '/poster/photogram.png', class: '3d ui',
-        video: '/grid/photogram.mp4', routerLink: '/photogram', url: ''
       }
     ];
     this.masonryItemsCopy = [...this.masonryItems];

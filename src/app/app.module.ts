@@ -58,6 +58,7 @@ const appRoutes: Routes = [
   { path: 'synthesize', component: SynthesizeComponent },
   { path: 'wklymotion', component: WklymotionComponent },
   { path: 'threedesign', component: ThreedesignComponent },
+  { path: 'projectionmapping', component: ProjectionmappingComponent },
   {
     path: 'about',
     component: AboutComponent,
