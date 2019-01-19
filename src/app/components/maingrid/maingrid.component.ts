@@ -60,16 +60,15 @@ export class MaingridComponent implements OnInit, AfterViewInit {
         order: 10, name: 'vapor', img: '/poster/vapor.png', class: 'development', video: '/grid/vapor.mp4', routerLink: '/vaporun', url: ''
       },
       {
-        order: 11, name: 'photogram', img: '/poster/photogram.png', class: '3d ui',
-        video: '/grid/photogram.mp4', routerLink: '/photogram', url: ''
+        order: 11, name: 'threedesign', img: '/poster/face.jpg', class: '3d', video: '', routerLink: '/threedesign', url: ''
       },
       {
         order: 12, name: 'blaster', img: '/poster/blaster.png', class: 'development ui', video: '/grid/blaster.mp4',
         routerLink: '/blaster', url: ''
       },
       {
-        order: 13, name: 'threedesign', img: '/poster/soft.png', class: '3d',
-        video: '/grid/soft.mp4', routerLink: '/threedesign', url: ''
+        order: 13, name: 'photogram', img: '/poster/photogram.png', class: '3d ui',
+        video: '/grid/photogram.mp4', routerLink: '/photogram', url: ''
       }
     ];
     this.masonryItemsCopy = [...this.masonryItems];
