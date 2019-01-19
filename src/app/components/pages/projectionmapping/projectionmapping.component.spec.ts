@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { GenerativeartComponent } from './generativeart.component';
+import { ProjectionmappingComponent } from './projectionmapping.component';
 
-describe('GenerativeartComponent', () => {
-  let component: GenerativeartComponent;
-  let fixture: ComponentFixture<GenerativeartComponent>;
+describe('ProjectionmappingComponent', () => {
+  let component: ProjectionmappingComponent;
+  let fixture: ComponentFixture<ProjectionmappingComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ GenerativeartComponent ]
+      declarations: [ ProjectionmappingComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(GenerativeartComponent);
+    fixture = TestBed.createComponent(ProjectionmappingComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

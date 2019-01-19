@@ -36,8 +36,8 @@ import { NgxMasonryModule } from 'ngx-masonry';
 import { MaingridComponent } from './components/maingrid/maingrid.component';
 
 import {GridImageServiceService} from './services/grid-image-service.service';
-import { GenerativeartComponent } from './components/pages/generativeart/generativeart.component';
 import { ThreedesignComponent } from './components/pages/threedesign/threedesign.component';
+import { ProjectionmappingComponent } from './components/pages/projectionmapping/projectionmapping.component';
 
 const appRoutes: Routes = [
   { path: '', component: GridviewComponent },
@@ -57,7 +57,6 @@ const appRoutes: Routes = [
   { path: 'mello', component: MelloComponent },
   { path: 'synthesize', component: SynthesizeComponent },
   { path: 'wklymotion', component: WklymotionComponent },
-  { path: 'generativeart', component: GenerativeartComponent },
   { path: 'threedesign', component: ThreedesignComponent },
   {
     path: 'about',
@@ -92,8 +91,8 @@ const appRoutes: Routes = [
     MelloComponent,
     MaingridComponent,
     WklymotionComponent,
-    GenerativeartComponent,
-    ThreedesignComponent
+    ThreedesignComponent,
+    ProjectionmappingComponent
   ],
   imports: [
     NgProgressModule.forRoot(), NgxMasonryModule, BrowserModule, BrowserAnimationsModule,
