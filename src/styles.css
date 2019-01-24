@@ -140,7 +140,8 @@ article {
 body {
   margin: 0;
   padding: 0;
-  overflow-x: hidden
+  overflow-x: hidden;
+  background-color: #ffffff;
 }
 
 .filter-button-group {
@@ -189,7 +190,7 @@ p.home-center.text {
 }
 
 .headername {
-  margin: 40px 0px 10px 0px;
+   margin:40px 0 10px;
 }
 
 .row.projectHeader {
@@ -212,7 +213,7 @@ p.home-center.text {
 }
 
 .imagesblock {
-  padding: 0px 0px 30px 0px;
+  padding:0 0 30px;
 }
 
 .btn-group:focus {
@@ -527,7 +528,7 @@ div#mobilemenu li .is-checked {
 
 .overlay .closebtn {
   position: fixed;
-  top: 43px;
+  top: 25px;
   right: 37px;
   font-size: 24px;
   color: #8181819c;
@@ -1110,4 +1111,30 @@ div#grid-fluid {
     margin: 0px !important;
   }
 
+}
+ @media only screen and (max-width: 600px) {
+  #mobilemenu   {
+         margin-top:50px;
+     }
+     .overlay {
+         top:0%;
+    }
+     .overlay .closebtn {
+         z-index:999;
+    }
+}
+@media (max-width: 479px){
+.grid[_ngcontent-c3] article[_ngcontent-c3] {
+    position: initial !important;
+}
+}
+ @media (max-width: 479px){
+.grid[_ngcontent-c3] article[_ngcontent-c3] {
+    position: initial !important;
+}
+}
+ @media (max-width: 600px){
+.stickyTop[_ngcontent-c2] {
+    padding-left:15px !important;
+}
 }
