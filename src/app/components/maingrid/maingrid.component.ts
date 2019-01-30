@@ -25,15 +25,15 @@ export class MaingridComponent implements OnInit, AfterViewInit {
   ngOnInit() {
     this.masonryItems = [
       {
-        order: 1, name: 'wklymotion', img: '/poster/wklymotion.png', class: 'development creativecode 3d', video: '/grid/wklymotion.mp4',
-        url: 'http://musicvizz.com'
+        order: 1, name: 'mello', img: '/poster/mello.jpeg', class: 'ui graphic development', video: '', routerLink: '/mello', url: ''
       },
       {
         order: 2, name: 'ideocolab', img: '/poster/ideocolab.png', class: 'development ui 3d creativecode ',
         video: '', routerLink: '/cryptonite', url: ''
       },
       {
-        order: 3, name: 'mello', img: '/poster/mello.jpeg', class: 'ui graphic development', video: '', routerLink: '/mello', url: ''
+        order: 3, name: 'wklymotion', img: '/poster/wklymotion.png', class: 'development creativecode 3d', video: '/grid/wklymotion.mp4',
+        url: 'http://musicvizz.com'
       },
       {
         order: 4, name: 'apple', img: '/poster/apple.png', class: 'development', video: '', routerLink: '/apple', url: ''
@@ -49,9 +49,6 @@ export class MaingridComponent implements OnInit, AfterViewInit {
       {
         order: 7, name: 'spotify', img: '/poster/spotify.png', class: 'ui graphic', video: '', routerLink: '/spotify', url: ''
       },
-      // {
-      //   order: 7, name: 'threedesign', img: '/poster/face.jpg', class: '3d', video: '', routerLink: '/threedesign', url: ''
-      // },
       {
         order: 8, name: 'projectionmapping', img: '/poster/projmap.png', class: 'creativecode', video: '', routerLink: '/projectionmapping', url: ''
       },
