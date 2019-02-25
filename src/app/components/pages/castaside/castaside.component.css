@@ -1,0 +1,13 @@
+.casthead {
+    background-image: url(/assets/full_screen/desktop/castaside.png);
+}
+
+.castbody {
+    background-image: url(/assets/images/castaside.png);
+}
+
+@media screen and (max-width: 650px) {
+    .casthead {
+        background-image: url(/assets/full_screen/mobile/castaside.png);
+      }
+}

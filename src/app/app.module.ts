@@ -38,9 +38,10 @@ import { MaingridComponent } from './components/maingrid/maingrid.component';
 import {GridImageServiceService} from './services/grid-image-service.service';
 import { ThreedesignComponent } from './components/pages/threedesign/threedesign.component';
 import { ProjectionmappingComponent } from './components/pages/projectionmapping/projectionmapping.component';
+import { CastasideComponent } from './components/pages/castaside/castaside.component';
 
 const appRoutes: Routes = [
-  { path: '', component: GridviewComponent },
+  { path: 'work', component: GridviewComponent },
   { path: 'home/:name', component: GridviewComponent },
   { path: 'potter', component: PotterComponent },
   { path: 'events', component: EventsComponent },
@@ -59,8 +60,9 @@ const appRoutes: Routes = [
   { path: 'wklymotion', component: WklymotionComponent },
   { path: 'threedesign', component: ThreedesignComponent },
   { path: 'projectionmapping', component: ProjectionmappingComponent },
+  { path: 'castaside', component: CastasideComponent },
   {
-    path: 'about',
+    path: '',
     component: AboutComponent,
     data: {
       headerColor: '#FFF'
@@ -93,8 +95,9 @@ const appRoutes: Routes = [
     MaingridComponent,
     WklymotionComponent,
     ThreedesignComponent,
-    ProjectionmappingComponent
-  ],
+    ProjectionmappingComponent,
+    CastasideComponent
+    ],
   imports: [
     NgProgressModule.forRoot(), NgxMasonryModule, BrowserModule, BrowserAnimationsModule,
     RouterModule.forRoot(appRoutes, { scrollPositionRestoration: 'enabled' }), VgCoreModule, VgControlsModule,

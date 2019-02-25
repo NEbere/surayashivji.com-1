@@ -1,7 +1,7 @@
 $(function () {
 
 	var location = window.location.href;
-	if (location.includes('about')) {
+	if (location.includes('')) {
 		{
 			// Helper vars and functions.
 			const extend = function (a, b) {

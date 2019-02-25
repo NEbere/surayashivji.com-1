@@ -47,17 +47,17 @@ export class MaingridComponent implements OnInit, AfterViewInit {
         routerLink: '/rizikitoto', url: ''
       },
       {
-        order: 7, name: 'spotify', img: '/poster/spotify.png', class: 'ui graphic', video: '', routerLink: '/spotify', url: ''
+        order: 7, name: 'projectionmapping', img: '/poster/projmap.png', class: 'creativecode', video: '/grid/projmap.mp4', routerLink: '/projectionmapping', url: ''
       },
       {
-        order: 8, name: 'projectionmapping', img: '/poster/projmap.png', class: 'creativecode', video: '', routerLink: '/projectionmapping', url: ''
+        order: 8, name: 'posters', img: '/poster/posters.png', class: 'graphic', video: '', routerLink: '/posters', url: ''
       },
       {
-        order: 9, name: 'posters', img: '/poster/posters.png', class: 'graphic', video: '', routerLink: '/posters', url: ''
-      },
-      {
-        order: 10, name: 'potter', img: '/poster/potter.png', class: 'development ui',
+        order: 9, name: 'potter', img: '/poster/potter.png', class: 'development ui',
         video: '/grid/potter.mp4', routerLink: '/potter', url: ''
+      },
+      {
+        order: 10, name: 'castaside', img: '/poster/castaside.png', class: 'ui development graphic', video: '', routerLink: '/castaside', url: ''
       },
       {
         order: 11, name: 'vapor', img: '/poster/vapor.png', class: 'development', video: '/grid/vapor.mp4', routerLink: '/vaporun', url: ''

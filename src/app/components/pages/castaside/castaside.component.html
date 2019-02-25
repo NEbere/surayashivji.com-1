@@ -1,0 +1,98 @@
+<app-header [overlay]="'true'"></app-header>
+
+<ng-progress #progressBar [direction]="'ltr+'" [max]="100" [speed]="500" [trickleSpeed]="300" [spinner]="false"
+  [spinnerPosition]="'left'" [thick]="true" [meteor]="true" [color]="'#E6EBED'" [ease]="'linear'"></ng-progress>
+
+<div class="container reveal-animation" (scroll)="scrollHandler($event)" #reveal>
+  <!-- Full Screen Image Section Start -->
+  <div class="parallax-screen casthead fade-in one" id="parallax">
+    <!-- Full Screen Image Section End -->
+  </div>
+  <div class="container custom-container">
+    <!-- Project Header Start -->
+    <div class="row projectHeader">
+      <div class="col-md-8 col-sm-12">
+        <h1 class="projectHeader_heading">Podcast Website & Brand</h1>
+        <p class="projectHeader_role">Web Design, Development, Brand Identity</p>
+        <p class="projectHeader_tools"><a target="_blank" href="http://castasidepodcast.com">Castaside.com</a> & <a
+            target="_blank" href="https://github.com/surayashivji/Cast-Aside-Website">Source Code</a></p>
+      </div>
+      <div class="col-md-4 col-sm-12">
+        <p class="projectHeader_desc">Cast Aside, a podcast on the Entertainment Industry.</p>
+      </div>
+    </div>
+    <!-- Project Header End -->
+    <!-- Body Pragraph Main Start -->
+    <div class="row projectbody">
+      <div class="col-md-12">
+        <h1 class="mainbodytitle">Overview</h1>
+        <div class="mainparagraph">
+          <p>Cast Aside is a podcast that shares untold stories from the Entertainment Industry. It is hosted and
+            created by Jameel Shivji, a professional actor (and my brother!). Check it out on <a target="_blank"
+              href="https://itunes.apple.com/us/podcast/cast-aside-with-jameel-shivji/id1453363909">iTunes</a> and on <a
+              href="https://open.spotify.com/show/4qXCefkRqFcaiCzapFWKCv?si=ePCMvZz3TBmK5M9D4TouGw"
+              target="_blank">Spotify!</a> I designed and developed the <a target="_blank"
+              href="http://castasidepodcast.com">website</a> and created the brand identity. Follow Cast Aside <a target="_blank" href="https://instagram.com/podcastaside/">@podcastaside.</a></p>
+        </div>
+        <!-- Demo Video Section Start -->
+        <div class="container videocontainer">
+          <div class="row">
+            <div class="video">
+              <div class="video">
+                <a target="_blank" href="http://castasidepodcast.com"><img src="./assets/images/pages/castaside/home.png" class="img-responsive" alt="description"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Demo Video Section End -->
+        <!-- End -->
+        <div class="container videocontainer">
+          <div class="row">
+            <div class="col-md-6 col-sm-12">
+              <div class="video">
+                <img src="./assets/images/pages/castaside/one.png" class="img-responsive" alt="description">
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-12">
+              <div class="video">
+                <img src="./assets/images/pages/castaside/two.png" class="img-responsive" alt="description">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Row 2 -->
+        <div class="container videocontainer">
+          <div class="row">
+            <div class="col-md-6 col-sm-12">
+              <div class="video">
+                <img src="./assets/images/pages/castaside/three.png" class="img-responsive" alt="description">
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-12">
+              <div class="video">
+                <img src="./assets/images/pages/castaside/four.png" class="img-responsive" alt="description">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Row 3 -->
+        <div class="container videocontainer">
+          <div class="row">
+            <div class="col-md-6 col-sm-12">
+              <div class="video">
+                <img src="./assets/images/pages/castaside/logo.jpg" class="img-responsive" alt="description">
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-12">
+              <div class="video">
+                <img src="./assets/images/pages/castaside/roxy.png" class="img-responsive" alt="description">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Website Images End -->
+      </div>
+    </div>
+    <!-- Body Pragraph Main End -->
+  </div>
+  <app-footer [currentPage]="'castaside'"></app-footer>
