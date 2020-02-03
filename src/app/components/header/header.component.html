@@ -74,9 +74,9 @@
     <div class="col-md-3 txtright dkpmenu">
       <ul class="mainmenu">
 
-        <li class="hiddenmobile"><a (click)="reloadroute('/work')"
+        <li class="hiddenmobile"><a (click)="navigateToPage()"
           [routerLinkActiveOptions]="{exact:true}"
-          routerLinkActive="activeLink" [ngStyle]="{'color': headerColor}">{{navigationRoute}}</a></li>
+          routerLinkActive="activeLink" [ngStyle]="{'color': headerColor}">{{this.navigationRouteText}}</a></li>
 
                   
         <li class="visiblemobile" id="visiblemobile">

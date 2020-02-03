@@ -56,8 +56,11 @@ export class MaingridComponent implements OnInit, AfterViewInit {
         order: 9, name: 'potter', img: '/poster/potter.png', class: 'development ui',
         video: '/grid/potter.mp4', routerLink: '/potter', url: ''
       },
+      // {
+      //   order: 10, name: 'castaside', img: '/poster/castaside.png', class: 'ui development graphic', video: '', routerLink: '/castaside', url: ''
+      // },
       {
-        order: 10, name: 'castaside', img: '/poster/castaside.png', class: 'ui development graphic', video: '', routerLink: '/castaside', url: ''
+        order: 10, name: 'spotify', img: '/poster/spotify.png', class: 'ui graphic', video: '', routerLink: '/spotify', url: ''
       },
       {
         order: 11, name: 'vapor', img: '/poster/vapor.png', class: 'development', video: '/grid/vapor.mp4', routerLink: '/vaporun', url: ''

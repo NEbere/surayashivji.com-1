@@ -9,7 +9,8 @@ declare var $: any;
 })
 export class HeaderComponent implements OnInit {
 
-  @Input('navigationRoute') navigationRoute: string;
+  @Input('navigationRouteText') navigationRouteText: string;
+  @Input('nextRoute') nextRoute: string;
 
   @ViewChild('keywordsInput') keywordsInput;
   @ViewChild('keywordsInput1') keywordsInput1;
@@ -24,10 +25,12 @@ export class HeaderComponent implements OnInit {
     this.Homeheader = false;
     if (window.location.pathname === '/') {
       this.Homeheader = true;
-      this.navigationRoute = "work"
+      this.navigationRouteText = "work"
+      this.nextRoute = "work"
     } else {
       this.Homeheader = false;
-      this.navigationRoute = "about"
+      this.navigationRouteText = "about"
+      this.nextRoute = ""
     }
 
     this.activatedRoute.data.subscribe(routeData => {
@@ -48,6 +51,10 @@ export class HeaderComponent implements OnInit {
     this.keywordsInput1.nativeElement.style.display = 'block';
     this.closebtn.nativeElement.style.display = 'none';
     $('#Homeheader').removeAttr('style');
+  }
+
+  navigateToPage() {
+    window.location.href = '/' + this.nextRoute;
   }
 
   closeNavTimer(item) {
