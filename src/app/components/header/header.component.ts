@@ -1,7 +1,6 @@
 import { Component, OnInit, ViewChild, ElementRef, Input, Output, EventEmitter } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 declare var $: any;
-// declare var myTitleColor: any;
 
 @Component({
   selector: 'app-header',
@@ -9,6 +8,8 @@ declare var $: any;
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
+
+  @Input('navigationRoute') navigationRoute: string;
 
   @ViewChild('keywordsInput') keywordsInput;
   @ViewChild('keywordsInput1') keywordsInput1;
@@ -23,13 +24,14 @@ export class HeaderComponent implements OnInit {
     this.Homeheader = false;
     if (window.location.pathname === '/') {
       this.Homeheader = true;
+      this.navigationRoute = "work"
     } else {
       this.Homeheader = false;
+      this.navigationRoute = "about"
     }
 
     this.activatedRoute.data.subscribe(routeData => {
       this.headerColor = routeData.headerColor || '#000';
-      // console.log(this.headerColor);
     })
   }
 

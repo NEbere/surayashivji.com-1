@@ -73,10 +73,12 @@
     </div>
     <div class="col-md-3 txtright dkpmenu">
       <ul class="mainmenu">
+
         <li class="hiddenmobile"><a (click)="reloadroute('/work')"
           [routerLinkActiveOptions]="{exact:true}"
-          routerLinkActive="activeLink" [ngStyle]="{'color': headerColor}">work</a></li>
-        <!-- <li class="hiddenmobile"><a href="/" [ngStyle]="{'color': headerColor}" routerLinkActive="activeLink">about</a></li> -->
+          routerLinkActive="activeLink" [ngStyle]="{'color': headerColor}">{{navigationRoute}}</a></li>
+
+                  
         <li class="visiblemobile" id="visiblemobile">
           <a (click)="openNav()" id="keywords-input1" #keywordsInput1>
             <i class="fa fa-bars" aria-hidden="true"></i></a>

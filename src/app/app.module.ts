@@ -99,7 +99,7 @@ const appRoutes: Routes = [
     CastasideComponent
     ],
   imports: [
-    NgProgressModule.forRoot(), NgxMasonryModule, BrowserModule, BrowserAnimationsModule,
+    NgProgressModule, NgxMasonryModule, BrowserModule, BrowserAnimationsModule,
     RouterModule.forRoot(appRoutes, { scrollPositionRestoration: 'enabled' }), VgCoreModule, VgControlsModule,
     VgOverlayPlayModule, VgBufferingModule
 
