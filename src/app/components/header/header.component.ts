@@ -38,7 +38,6 @@ export class HeaderComponent implements OnInit {
     })
   }
 
-
   openNav() {
     this.keywordsInput.nativeElement.style.width = '100%';
     this.keywordsInput1.nativeElement.style.display = 'none';
@@ -77,6 +76,6 @@ export class HeaderComponent implements OnInit {
   }
 
   reloadroute(item) {
-    window.location.href = '/';
+    window.location.href = '/' + item;
   }
 } 
