@@ -3,7 +3,7 @@
 }
 
 .installationbody {
-    background-image: url(/assets/images/installation.jpg);
+    background-image: url(/assets/images/installation.png);
 }
 
 @media screen and (max-width: 650px) {

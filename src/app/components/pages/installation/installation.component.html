@@ -1,11 +1,11 @@
 <app-header [overlay]="'true'"></app-header>
 
 <ng-progress #progressBar [direction]="'ltr+'" [max]="100" [speed]="500" [trickleSpeed]="300" [spinner]="false"
-  [spinnerPosition]="'left'" [thick]="true" [meteor]="true" [color]="'#FF3AFF'" [ease]="'linear'"></ng-progress>
+  [spinnerPosition]="'left'" [thick]="true" [meteor]="true" [color]="'#000000'" [ease]="'linear'"></ng-progress>
 
 <div class="container reveal-animation" (scroll)="scrollHandler($event)" #reveal>
   <!-- Full Screen Image Section Start -->
-  <div class="parallax-screen vaporhead fade-in one" id="parallax">
+  <div class="parallax-screen installationhead fade-in one" id="parallax">
     <!-- Full Screen Image Section End -->
   </div>
 
@@ -33,7 +33,9 @@
             (Animation, Editing), and <a href="https://www.eddiemestre.com/"></a>Eddie Mestre (Animation, Editing,
             Production). This project was installed at USC's annual music festival, Springfest, which brought together
             thousands of students and featured performances from popular musical artists such as Still Woozy, Gunna, JID
-            and more. Our project was selected to be a part of their immersive playground that was filled with
+            and more. </p>
+            
+            <p>Our project was selected to be a part of their immersive playground that was filled with
             interactive experiences and installations. In collaboration with Eastside LED, our team constructed 5 12ft
             video panels that we spaced out in a semi-circle formation for viewers to step into. The piece explores a
             variety of abstract landscapes and experiments created in Cinema4D and with Three.js which we composited
@@ -55,8 +57,85 @@
     <!-- Demo Video Section End -->
 
     <!-- Images -->
+
+    <div class="row">
+      <div class="col-md-4 col-sm-12">
+        <div class="video">
+          <img src="./assets/images/pages/installation/2.png" class="img-responsive" alt="description">
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-12">
+        <div class="video">
+          <img src="./assets/images/pages/installation/2-1.png" class="img-responsive" alt="description">
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-12">
+        <div class="video">
+          <img src="./assets/images/pages/installation/2-2.png" class="img-responsive" alt="description">
+        </div>
+      </div>
+    </div>
+
+      <!-- Three Centered Video Start -->
+      <div class="container videocontainer">
+        <div class="row">
+          <div class="col-md-4 col-sm-12">
+            <div class="video">
+              <video width="600" preload="auto" [autoplay]="true" [controls]="false" [loop]="true" onloadedmetadata="this.muted=true"
+                playsinline="true">
+                <source src="./assets/images/pages/installation/3-1.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-12">
+            <div class="video">
+              <video width="600" preload="auto" [autoplay]="true" [controls]="false" [loop]="true" onloadedmetadata="this.muted=true"
+                playsinline="true">
+                <source src="./assets/images/pages/installation/3-2.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-12">
+            <div class="video">
+              <video width="600" preload="auto" [autoplay]="true" [controls]="false" [loop]="true" onloadedmetadata="this.muted=true"
+                playsinline="true">
+                <source src="./assets/images/pages/installation/3-3.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Three Centered Video End -->
+
+
+
+    <div class="row">
+      <div class="col-md-6 col-sm-12">
+        <div class="video">
+          <img src="./assets/images/pages/installation/3.jpg" class="img-responsive" alt="description">
+        </div>
+      </div>
+      <div class="col-md-6 col-sm-12">
+        <div class="video">
+          <img src="./assets/images/pages/installation/3-2.jpg" class="img-responsive" alt="description">
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-md-6 col-sm-12">
+        <div class="video">
+          <img src="./assets/images/pages/installation/4-1.png" class="img-responsive" alt="description">
+        </div>
+      </div>
+      <div class="col-md-6 col-sm-12">
+        <div class="video">
+          <img src="./assets/images/pages/installation/4-2.png" class="img-responsive" alt="description">
+        </div>
+      </div>
+    </div>
     
 
   </div>
 
-  <app-footer [currentPage]="'vapor'"></app-footer>
+  <app-footer [currentPage]="'installation'"></app-footer>
