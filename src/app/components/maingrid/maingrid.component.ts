@@ -46,8 +46,9 @@ export class MaingridComponent implements OnInit, AfterViewInit {
         order: 6, name: 'rizikitoto', img: '/poster/rizikitoto.png', class: 'development ui', video: '',
         routerLink: '/rizikitoto', url: ''
       },
+     
       {
-        order: 7, name: 'projectionmapping', img: '/poster/projmap.png', class: 'creativecode', video: '/grid/projmap.mp4', routerLink: '/projectionmapping', url: ''
+        order: 7, name: 'installation', img: '/poster/installation.png', class: 'creativecode graphic', video: '/grid/installation.mp4', routerLink: '/installation', url: ''
       },
       {
         order: 8, name: 'posters', img: '/poster/posters.png', class: 'graphic', video: '', routerLink: '/posters', url: ''
@@ -63,10 +64,13 @@ export class MaingridComponent implements OnInit, AfterViewInit {
         order: 10, name: 'spotify', img: '/poster/spotify.png', class: 'ui graphic', video: '', routerLink: '/spotify', url: ''
       },
       {
-        order: 11, name: 'vapor', img: '/poster/vapor.png', class: 'development', video: '/grid/vapor.mp4', routerLink: '/vaporun', url: ''
+        order: 11, name: 'projectionmapping', img: '/poster/projmap.png', class: 'creativecode', video: '/grid/projmap.mp4', routerLink: '/projectionmapping', url: ''
       },
       {
-        order: 12, name: 'blaster', img: '/poster/blaster.png', class: 'development ui', video: '/grid/blaster.mp4',
+        order: 12, name: 'vapor', img: '/poster/vapor.png', class: 'development', video: '/grid/vapor.mp4', routerLink: '/vaporun', url: ''
+      },
+      {
+        order: 13, name: 'blaster', img: '/poster/blaster.png', class: 'development ui', video: '/grid/blaster.mp4',
         routerLink: '/blaster', url: ''
       }
     ];
