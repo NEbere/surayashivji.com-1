@@ -39,6 +39,7 @@ import {GridImageServiceService} from './services/grid-image-service.service';
 import { ThreedesignComponent } from './components/pages/threedesign/threedesign.component';
 import { ProjectionmappingComponent } from './components/pages/projectionmapping/projectionmapping.component';
 import { CastasideComponent } from './components/pages/castaside/castaside.component';
+import { InstallationComponent } from './components/pages/installation/installation.component';
 
 const appRoutes: Routes = [
   { path: 'work', component: GridviewComponent },
@@ -61,6 +62,7 @@ const appRoutes: Routes = [
   { path: 'threedesign', component: ThreedesignComponent },
   { path: 'projectionmapping', component: ProjectionmappingComponent },
   { path: 'castaside', component: CastasideComponent },
+  { path: 'installation', component: InstallationComponent },
   {
     path: '',
     component: AboutComponent,
@@ -96,7 +98,8 @@ const appRoutes: Routes = [
     WklymotionComponent,
     ThreedesignComponent,
     ProjectionmappingComponent,
-    CastasideComponent
+    CastasideComponent,
+    InstallationComponent
     ],
   imports: [
     NgProgressModule, NgxMasonryModule, BrowserModule, BrowserAnimationsModule,

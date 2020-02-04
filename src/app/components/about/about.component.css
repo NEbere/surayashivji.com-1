@@ -471,8 +471,11 @@ a.social-icon-about:hover {
 	}
 
 	span.mobile-smaller-subtext {
-		font-size: 0.79em !important;
-		line-height: 0em !important;
+		font-size: 0.80em !important;
+	}
+
+	.content__desc-padded {
+		line-height: 1.5em;
 	}
 
 	/* layout-4 mobile */

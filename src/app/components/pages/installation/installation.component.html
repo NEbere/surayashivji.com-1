@@ -1,0 +1,62 @@
+<app-header [overlay]="'true'"></app-header>
+
+<ng-progress #progressBar [direction]="'ltr+'" [max]="100" [speed]="500" [trickleSpeed]="300" [spinner]="false"
+  [spinnerPosition]="'left'" [thick]="true" [meteor]="true" [color]="'#FF3AFF'" [ease]="'linear'"></ng-progress>
+
+<div class="container reveal-animation" (scroll)="scrollHandler($event)" #reveal>
+  <!-- Full Screen Image Section Start -->
+  <div class="parallax-screen vaporhead fade-in one" id="parallax">
+    <!-- Full Screen Image Section End -->
+  </div>
+
+  <div class="container custom-container">
+    <!-- Project Header Start -->
+    <div class="row projectHeader">
+      <div class="col-md-8 col-sm-12">
+        <h1 class="projectHeader_heading">Festival Installation</h1>
+        <p class="projectHeader_role">Role: 3D Animation, Creative Coding</p>
+        <p class="projectHeader_tools">Tools: Cinema4D, AfterEffects, Three.js</p>
+      </div>
+      <div class="col-md-4 col-sm-12">
+        <p class="projectHeader_desc">"The Journey" Installation</p>
+      </div>
+    </div>
+    <!-- Project Header End -->
+
+    <!-- Body Pragraph Main Start -->
+    <div class="row projectbody">
+      <div class="col-md-12">
+        <h1 class="mainbodytitle">Overview</h1>
+        <div class="mainparagraph">
+          <p>
+            The Journey is an installation created by myself, <a href="https://www.jhaberman.com/"></a>Jamie Haberman
+            (Animation, Editing), and <a href="https://www.eddiemestre.com/"></a>Eddie Mestre (Animation, Editing,
+            Production). This project was installed at USC's annual music festival, Springfest, which brought together
+            thousands of students and featured performances from popular musical artists such as Still Woozy, Gunna, JID
+            and more. Our project was selected to be a part of their immersive playground that was filled with
+            interactive experiences and installations. In collaboration with Eastside LED, our team constructed 5 12ft
+            video panels that we spaced out in a semi-circle formation for viewers to step into. The piece explores a
+            variety of abstract landscapes and experiments created in Cinema4D and with Three.js which we composited
+            together in After Effects to music by Kaytranada. </p>
+        </div>
+      </div>
+    </div>
+    <!-- Body Pragraph Main End -->
+    <!-- Demo Video Section Start -->
+    <div class="container videocontainer">
+      <div class="row">
+        <div style="padding:56.25% 0 0 0;position:relative;"><iframe
+            src="https://player.vimeo.com/video/329261015?loop=1&color=ffffff&title=0&byline=0&portrait=0"
+            style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen"
+            allowfullscreen></iframe></div>
+        <script src="https://player.vimeo.com/api/player.js"></script>
+      </div>
+    </div>
+    <!-- Demo Video Section End -->
+
+    <!-- Images -->
+    
+
+  </div>
+
+  <app-footer [currentPage]="'vapor'"></app-footer>

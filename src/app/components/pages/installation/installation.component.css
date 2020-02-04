@@ -1,0 +1,13 @@
+.installationhead {
+    background-image: url(/assets/full_screen/desktop/installation.png);
+}
+
+.installationbody {
+    background-image: url(/assets/images/installation.jpg);
+}
+
+@media screen and (max-width: 650px) {
+    .installationhead {
+        background-image: url(/assets/full_screen/mobile/installation.png);
+      }
+}
