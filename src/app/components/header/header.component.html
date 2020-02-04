@@ -16,6 +16,10 @@
               data-filter=".ui" (click)="checkroute('ui')">UI/UX</button>
             </li>
             <li class="btn-group" role="group">
+              <button type="button" id="development"  class="btn filterbtn btn-default"
+               data-filter=".development" (click)="checkroute('development')">Development</button>
+            </li>
+            <li class="btn-group" role="group">
               <button type="button" id="graphic" class="btn filterbtn btn-default"
                data-filter=".graphic" (click)="checkroute()">Graphic Design</button>
             </li>
@@ -27,10 +31,7 @@
               <button type="button" id="creativecode"  class="btn filterbtn btn-default" 
               data-filter=".creativecode" (click)="checkroute('creativecode')">Creative Code</button>
             </li>
-            <li class="btn-group" role="group">
-              <button type="button" id="development"  class="btn filterbtn btn-default"
-               data-filter=".development" (click)="checkroute('development')">Development</button>
-            </li>
+
           </ul>
           <ul *ngIf="overlay == 'true'">
               <li class="btn-group" role="group">
@@ -40,6 +41,10 @@
               <li class="btn-group" role="group">
                 <button type="button" id="mobile" (click)="mobilevaigate('ui')"  class="btn filterbtn btn-default" 
                 data-filter=".ui">UI/UX</button>
+              </li>
+              <li class="btn-group" role="group">
+                <button type="button" id="web" (click)="mobilevaigate('development')"  class="btn filterbtn btn-default"
+                 data-filter=".development">Development</button>
               </li>
               <li class="btn-group" role="group">
                 <button type="button" id="mobile" (click)="mobilevaigate('graphic')"  class="btn filterbtn btn-default"
@@ -53,10 +58,7 @@
                 <button type="button" id="ar" (click)="mobilevaigate('creativecode')"  class="btn filterbtn btn-default" 
                 data-filter=".creativecode">Creative Code</button>
               </li>
-              <li class="btn-group" role="group">
-                <button type="button" id="web" (click)="mobilevaigate('development')"  class="btn filterbtn btn-default"
-                 data-filter=".development">Development</button>
-              </li>
+
             </ul>
         </li>
         <li><a href="/" class="mainmobilehead">about</a></li>
@@ -68,7 +70,7 @@
 <div class="container-fluid headercontainer top" [ngClass]="{'Homeheader':overlay == 'false'}"  id="Homeheader">
   <div class="row">
     <div class="col-md-9 col-sm-12 headername">
-      <h1 (click)="reloadroute('/')" [ngStyle]="{'color': headerColor}" class="maintitle">Suraya Shivji</h1>
+      <h1 (click)="reloadroute('/work')" [ngStyle]="{'color': headerColor}" class="maintitle">Suraya Shivji</h1>
       <p class="maintit_caption">design technologist</p>
     </div>
     <div class="col-md-3 txtright dkpmenu">
