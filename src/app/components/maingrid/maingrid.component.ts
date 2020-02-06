@@ -47,7 +47,7 @@ export class MaingridComponent implements OnInit, AfterViewInit {
         routerLink: '/rizikitoto', url: ''
       },
       {
-        order: 7, name: 'installation', img: '/poster/installation.png', class: 'creativecode graphic', video: '', routerLink: '/installation', url: ''
+        order: 7, name: 'installation', img: '/poster/installation.png', class: 'creativecode graphic 3d', video: '', routerLink: '/installation', url: ''
       },
       {
         order: 8, name: 'posters', img: '/poster/posters.png', class: 'graphic', video: '', routerLink: '/posters', url: ''

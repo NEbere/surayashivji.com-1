@@ -32,8 +32,8 @@
         <div class="mainparagraph">
           <p>Blaster is an AR mobile game that I designed and developed with <a target="_blank"
               href="https://github.com/yiytan92">Yang Tan.</a> We programmed the game in C# using
-            Unity and Vuforia. My role included the AR programming as well as designing the assets/interface. Check out
-            a demo below and the <a target="_blank" href="https://github.com/surayashivji/Blaster">source code</a>.</p>
+            Unity and Vuforia. My role included the AR programming as well as designing the interface/assets. Check out
+            our demo and <a target="_blank" href="https://github.com/surayashivji/Blaster">source code</a>.</p>
         </div>
       </div>
     </div>
@@ -44,34 +44,40 @@
       <div class="row">
         <h1 class="mainbodytitle maindivhead">Demo</h1>
         <div class="video">
-          <video width="450" height="500" preload="auto" [autoplay]="true" [controls]="true"
+          <video width="450" height="500" preload="auto" [autoplay]="true" [controls]="false"
             onloadedmetadata="this.muted=true" playsinline="true" [loop]="true">
             <source src="./assets/images/pages/blaster/home.mp4" type="video/mp4">
           </video>
           <p class="video-caption">Home</p>
         </div>
       </div>
-      <div class="row">
-        <div class="video">
-          <video width="450" height="500" preload="auto" [autoplay]="true" [controls]="true"
-            onloadedmetadata="this.muted=true" playsinline="true" [loop]="true">
-            <source src="./assets/images/pages/blaster/targets.mp4" type="video/mp4">
-          </video>
-          <p class="video-caption">AR Targets</p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="video">
-          <video width="450" height="500" preload="auto" [autoplay]="true" [controls]="true"
-            onloadedmetadata="this.muted=true" playsinline="true" [loop]="true">
-            <source src="./assets/images/pages/blaster/ducks.mp4" type="video/mp4">
-          </video>
-          <p class="video-caption">AR Ducks</p>
-        </div>
-      </div>
     </div>
     <!-- Demo Center End -->
 
+    <!-- Two Centered Video Start -->
+    <div class="container videocontainer">
+      <div class="row">
+        <div class="col-md-6 col-sm-12">
+          <div class="video">
+            <video width="450" height="650" preload="auto" [autoplay]="true" [controls]="false"
+              onloadedmetadata="this.muted=true" playsinline="true">
+              <source src="./assets/images/pages/blaster/targets.mp4" type="video/mp4">
+            </video>
+            <p class="video-caption">AR Targets</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <div class="video">
+            <video width="450" height="650" preload="auto" [autoplay]="true" [controls]="false"
+              onloadedmetadata="this.muted=true" playsinline="true">
+              <source src="./assets/images/pages/blaster/ducks.mp4" type="video/mp4">
+            </video>
+            <p class="video-caption">AR Ducks</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Two Centered Video End -->
 
   </div>
   <app-footer [currentPage]="'blaster'"></app-footer>
